@@ -3,27 +3,35 @@
 エンティティ船舶  
 ========<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.MarineTransport/blob/master/Vessel/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.MarineTransport/blob/master/Vessel/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな記述。**このデータモデルは船舶の情報を提供することを目的としている。各船舶の特性（静的、動的情報）を表現することができる**。  
-バージョン: 0.0.1  
+グローバルな記述：**データモデルは船舶に関する情報を提供することを意図している。各船舶の特性を表すことができる：静的情報と動的情報**。  
+バージョン: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `airDraught[number]`: 空気吃水（船舶の最高点から喫水線までの距離）  . Model: [http://schema.org/Number](http://schema.org/Number)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `beam[number]`: 船舶のビーム  . Model: [https://schema.org/Number](https://schema.org/Number)- `buildingAt[string]`: ISO 8601 UTCフォーマットで表現された船舶の建造日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `callSign[string]`: 海上コールサインとは、船舶に固有の識別子として割り当てられるコールサインのことです  . Model: [https://schema.org/Text](https://schema.org/Text)- `courseOverGround[number]`: Course Over Ground（COG）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `createdAt[string]`: ISO 8601 UTCフォーマットで表されるエンティティの作成日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 整合データエンティティの提供者を特定する一連の文字列  . Model: [https://schema.org/Text](https://schema.org/Text)- `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deadweightTonnage[number]`: DWT（Deadweight Tonnage）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: このアイテムの説明  - `destinationPort[string]`: 仕向港（地理的コード体系 UN/LOCODE (United Nations Code for Trade and Transport Locations)。https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `draught[number]`: 喫水線と船底（キール）の垂直距離  . Model: [http://schema.org/Number](http://schema.org/Number)- `financialOwner[string]`: ファイナンシャルオーナー  . Model: [https://schema.org/Text](https://schema.org/Text)- `flagCode[string]`: 国際フラグコード（ISO 3166-1 alfa-2）  . Model: [https://schema.org/Text](https://schema.org/Text)- `grossTonnage[number]`: 総トン数（GT）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `heading[number]`: ヘディング・オブ・ザ・ベッセル（HDG）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[string]`: エンティティの一意な識別子  - `imo[number]`: 国際海事機関番号（グローバルな永久UID）  . Model: [https://schema.org/Number](https://schema.org/Number)- `length[number]`: 船舶の長さ  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[object]`: 項目への Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString または MultiPolygoProperty とすることができる。  - `manager[string]`: マネージャー・ベッセル  . Model: [https://schema.org/Text](https://schema.org/Text)- `maximumDraught[number]`: 最大喫水。  . Model: [https://schema.org/Number](https://schema.org/Number)- `mmsi[number]`: かいじょうゆうびんばんごう  . Model: [https://schema.org/Number](https://schema.org/Number)- `modifiedAt[string]`: ISO 8601 UTCフォーマットで表されるエンティティの最終更新日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: 船舶名  . Model: [https://schema.org/Text](https://schema.org/Text)- `navigationStatus[number]`: Enum:0=エンジン使用中,1=停泊中,2=指揮下なし,3=操船制限中,4=喫水制限中,5=係留中,6=停泊中,7=漁業中,8=航海中,9=HSCの航行状態の将来の変更のために保存されます.14=ASCの航行状態の将来の変更のために保存されます,10=Reserved for future amendment of Navigational Status for WIG, 11=Reserved for future use, 12=Reserved for future use, 13=Reserved for future use, 14=AIS-SART is active, 15=Not defined (default)' となる。航行状況。AIVDM/AIVDOのデータフォーマット。  . Model: [http://schema.org/Number](http://schema.org/Number)- `observedAt[string]`: ISO 8601 UTCフォーマットで表現されたこの観測の日付と時刻。  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `ownerVessel[string]`: オーナー船  . Model: [https://schema.org/Text](https://schema.org/Text)- `photo[string]`: 船舶写真URL  . Model: [https://schema.org/Text](https://schema.org/Text)- `previousPort[string]`: 旧港（地理的コード体系 UN/LOCODE (United Nations Code for Trade and Transport Locations)。https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `rateOfTurn[number]`: ROT（Rate of Turn）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `speedOverGround[number]`: Speed Over Ground（SOG）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `technicalManager[string]`: テクニカルマネージャー  . Model: [https://schema.org/Text](https://schema.org/Text)- `toBow[number]`: Dimension to Bow.  . Model: [http://schema.org/Number](http://schema.org/Number)- `toPort[number]`: ポートまでの寸法。  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStardboard[number]`: スターボードまでの寸法。  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStern[number]`: 寸法は船尾まで。  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: NGSI Entityタイプ。Vesselである必要があります。  - `vesselSubType[number]`: Enumです。'0=利用不可（デフォルト）,1-19=将来の使用のために保存,20=Wing in Ground (WIG), このタイプのすべての船,21=Wing in Ground (WIG), 危険カテゴリ A,22=Wing in Ground (WIG),危険等級B,23=ウィングイングラウンド（WIG）,危険等級C,24=ウィングイングラウンド（WIG）,危険等級D,25-29=ウィングイングラウンド（WIG）, 将来使用のために予約,30=フィッシング,31=トーイング,32=トーキング:長さ200m超または幅25m超,33=浚渫または水中作業,34=潜水作業,35=軍事作業,36=セーリング,37=プレジャー・クラフト,38-39=予備,40=高速艇(HSC), このタイプの全ての船舶,41=高速艇(HSC), 危険カテゴリA,42=高速艇(HSC), 危険カテゴリB,43=高速艇(HSC), 危険カテゴリC.の船,44=高速艇(HSC)、危険カテゴリD,45-48=高速艇(HSC)、将来の使用のために予約、49=高速艇(HSC)、追加情報なし、50=パイロット船、51=捜索及び救助船、52=タグ、53=ポートテンダー、54=防汚装置、55=法執行、56-57=スペア - ローカル船、58=医療輸送、59=RR決議番号による不戦闘船(Noncombatant Ship according to RR No. 18),60=乗客、60-70=船級士、60-70=船級士、70=船舶,60=船舶,60=船舶,70=船舶のための傭船、70=船舶,70=船舶,70=船舶,90=船舶のための傭船、70=船舶のための傭船18,60=旅客、このタイプの全ての船舶,61=旅客、危険カテゴリA,62=旅客、危険カテゴリB,63=旅客、危険カテゴリC,64=旅客、危険カテゴリD,65-68=旅客、将来の使用のために予約,69=旅客、追加情報なし。70=貨物、このタイプの全ての船舶,71=貨物、危険カテゴリA,72=貨物、危険カテゴリB,73=貨物、危険カテゴリC,74=貨物、危険カテゴリD,75-78=貨物、将来の使用のために予約,79=貨物、追加情報なし,80=タンカー,このタイプの全ての船舶、81=貨物、危険カテゴリC,74=貨物、将来の使用のために予約,90=貨物、追加情報なし、91=貨物、危険カテゴリC,74=貨物,90=貨物,90=タンクトップ,90=タンカー、このタイプの全ての船舶、82=貨物、危険カテゴリC81=タンカー、危険物カテゴリーA、82=タンカー、危険物カテゴリーB、83=タンカー、危険物カテゴリーC、84=タンカー、危険物カテゴリーD、85-88=タンカー、将来の使用のために予約、89=タンカー、追加情報なし、90=その他のタイプ,このタイプのすべての船舶、81=タンカー、危険物カテゴリーD、83=タンカー、危険物カテゴリーD、84=タンカー、追加の情報なし,このタイプのすべての船舶、88=タンカー、将来の使用のために予約、88=タンカー、追加の情報なし、99=その他のタイプ,このタイプのすべての船舶,81=タンカー、危険物カテゴリーA91=その他型、危険物カテゴリーA、92=その他型、危険物カテゴリーB、93=その他型、危険物カテゴリーC、94=その他型、危険物カテゴリーD、95-98=その他型、将来の使用のために予約、99=その他型、追加情報なし'このタイプのすべての船舶。船舶のサブタイプのコード  . Model: [https://schema.org/Number](https://schema.org/Number)- `vesselType[number]`: Enum: '1=Reserved,2=Wing In Ground,3=Special Category,4=High-Speed Craft,5=Special Category,6=Passenger,7=Cargo,8=Tanker,9=Other' です。船舶の種類を表すコード  . Model: [https://schema.org/Number](https://schema.org/Number)- `estimatedTimeOfArrival[string]`: 当初計画され、荷送人が入力した到着予定時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `positionAccuracy[number]`: Enum: '0=Low (> 10 m; GNSS受信機や他の電子位置固定装置の自律モード; デフォルト),1=High (< 10 m; DGNSS受信機などの差分モード)'.船舶位置フラグの精度を表すコード。  . Model: [https://schema.org/Number](https://schema.org/Number)- `specialManeuverIndicator[number]`: Enum: '0=Not available (default),1=Not engaged in special maneuver,2=Engaged in special maneuver'.特殊作戦フラグを表すコード。  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `airDraught[number]`: 喫水（船舶の最上部から喫水線までの距離）  . Model: [http://schema.org/Number](http://schema.org/Number)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `beam[number]`: 船幅  . Model: [https://schema.org/Number](https://schema.org/Number)- `buildingAt[date-time]`: ISO 8601 UTCフォーマットで表された船舶の建造日時  . Model: [https://schema.org/Text](https://schema.org/Text)- `callSign[string]`: 海上コールサインとは、船舶に固有の識別子として割り当てられるコールサインのことである。  . Model: [https://schema.org/Text](https://schema.org/Text)- `courseOverGround[number]`: コース・オーバー・グラウンド（COG）  . Model: [https://schema.org/Number](https://schema.org/Number)- `createdAt[date-time]`: ISO 8601 UTCフォーマットで表されるエンティティの作成日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deadweightTonnage[number]`: 載貨重量トン数（DWT）  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: この商品の説明  - `destinationPort[string]`: 仕向港（地理的コード化スキームUN/LOCODE（国連貿易・輸送地コード）https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `draught[number]`: 喫水線（喫水線から船底（キール）までの垂直距離）  . Model: [http://schema.org/Number](http://schema.org/Number)- `estimatedTimeOfArrival[date-time]`: 荷送人が当初予定し、入力した到着予定時刻（ISO 8601 UTCフォーマットで表される  . Model: [https://schema.org/Text](https://schema.org/Text)- `financialOwner[string]`: 財務オーナー  . Model: [https://schema.org/Text](https://schema.org/Text)- `flagCode[string]`: 国際国旗コード (ISO 3166-1 alfa-2)  . Model: [https://schema.org/Text](https://schema.org/Text)- `grossTonnage[number]`: 総トン数（GT）  . Model: [https://schema.org/Number](https://schema.org/Number)- `heading[number]`: 船首方位（HDG）  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[string]`: エンティティの一意識別子  - `imo[number]`: 国際海事機関番号（世界共通のUID）  . Model: [https://schema.org/Number](https://schema.org/Number)- `length[number]`: 船の長さ  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[object]`: 項目への Geojson 参照。これは、Point、LineString、Polygon、MultiPoint、MultiLineString、または MultiPolygoProperty です。  	- `coordinates`:     
+- `manager[string]`: マネージャー・ベッセル  . Model: [https://schema.org/Text](https://schema.org/Text)- `maximumDraught[number]`: 最大喫水  . Model: [https://schema.org/Number](https://schema.org/Number)- `mmsi[number]`: 海上移動サービス識別番号（一時的に割り当てられたUID。）  . Model: [https://schema.org/Number](https://schema.org/Number)- `modifiedAt[date-time]`: ISO 8601 UTCフォーマットで表されるエンティティの最終変更日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: 船舶名  . Model: [https://schema.org/Text](https://schema.org/Text)- `navigationStatus[number]`: 列挙する：'0=エンジンを使用して航行中,1=停泊中,2=指揮下にない,3=操船が制限されている,4=喫水による制約がある,5=係留中,6=着底中,7=漁業に従事している,8=航行中,9=HSCの航行状態の将来の修正のために予約されている、10=Reserved for future amendment of Navigational Status for WIG, 11=Reserved for future use, 12=Reserved for future use, 13=Reserved for future use, 14=AIS-SART is active, 15=Not defined (default)'.航行状況。AIVDM/AIVDOデータフォーマット  . Model: [http://schema.org/Number](http://schema.org/Number)- `observedAt[date-time]`: ISO 8601 UTCフォーマットで表された観測日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `ownerVessel[string]`: オーナー船  . Model: [https://schema.org/Text](https://schema.org/Text)- `photo[string]`: 船舶写真URL  . Model: [https://schema.org/Text](https://schema.org/Text)- `positionAccuracy[number]`: 全地球航法衛星システム(GNSS)受信機または他の電子位置固定装置のもの。デフォルト),1=High (< 10 m; DGNSS受信機などのディファレンシャルモード)'.船舶位置フラグの精度を表すコード  . Model: [https://schema.org/Number.Enum: 0=Low (> 10 m; autonomous mode of e.g](https://schema.org/Number.Enum: 0=Low (> 10 m; autonomous mode of e.g)- `previousPort[string]`: 前港（地理的コード体系UN/LOCODE（国連貿易・輸送機関コード）https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations）  . Model: [https://schema.org/Text](https://schema.org/Text)- `rateOfTurn[number]`: 回転率（ROT）  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `specialManeuverIndicator[number]`: Enum: '0=使用不可(デフォルト),1=特殊作戦に参加していない,2=特殊作戦に参加している'.特別作戦フラグのコード  . Model: [https://schema.org/Number](https://schema.org/Number)- `speedOverGround[number]`: 地上速度（SOG）  . Model: [https://schema.org/Number](https://schema.org/Number)- `technicalManager[string]`: テクニカル・マネージャー  . Model: [https://schema.org/Text](https://schema.org/Text)- `toBow[number]`: 船首までの寸法  . Model: [http://schema.org/Number](http://schema.org/Number)- `toPort[number]`: 港までの寸法  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStardboard[number]`: 右舷寸法  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStern[number]`: ディメンション・トゥ・スターン  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: NGSIエンティティタイプ。Vesselでなければならない。  - `vesselSubType[number]`: 列挙：'0=利用不可(デフォルト),1-19=将来の使用のために予約,20=ウィング・イン・グラウンド(WIG),このタイプの全船舶,21=ウィング・イン・グラウンド(WIG),危険カテゴリA,22=ウィング・イン・グラウンド(WIG)、危険カテゴリB,23=ウィングイングラウンド(WIG),危険カテゴリC,24=ウィングイングラウンド(WIG),危険カテゴリD,25-29=ウィングイングラウンド(WIG),将来の使用のために予約,30=釣り,31=曳航,32=曳航：長さが200mを超えるか、幅が25mを超える,33=浚渫または水中作業,34=潜水作業,35=軍事作業,36=帆走,37=プレジャークラフト,38-39=予約,40=高速船(HSC)、この種の全ての船舶,41=高速船(HSC)、危険分類A,42=高速船(HSC)、危険分類B,43=高速船(HSC)、危険分類C、44=高速船(HSC)、危険カテゴリD,45-48=高速船(HSC)、将来の使用のために予約,49=高速船(HSC)、追加情報なし,50=パイロット船,51=捜索救助船,52=タグ,53=港湾テンダー,54=公害防止装置,55=法執行,56-57=予備-地方船,58=医療輸送,59=RR決議No.18,60=Passenger, all ships of this type,61=Passenger, Hazardous category A,62=Passenger, Hazardous category B,63=Passenger, Hazardous category C,64=Passenger, Hazardous category D,65-68=Passenger, reserved for future use,69=Passenger, No additional information、70=貨物、この種の全ての船舶,71=貨物、危険なカテゴリーA,72=貨物、危険なカテゴリーB,73=貨物、危険なカテゴリーC,74=貨物、危険なカテゴリーD,75-78=貨物、将来の使用のために予約,79=貨物、追加情報なし,80=タンカー、この型の全船,81=タンカー,危険等級A,82=タンカー,危険等級B,83=タンカー,危険等級C,84=タンカー,危険等級D,85-88=タンカー,今後の使用のため予約,89=タンカー,追加情報なし,90=その他の型、91=その他型、危険分類A,92=その他型、危険分類B,93=その他型、危険分類C,94=その他型、危険分類D,95-98=その他型、今後の使用予約,99=その他型、追加情報なし」。容器サブタイプのコード  . Model: [https://schema.org/Number](https://schema.org/Number)- `vesselType[number]`: 列挙型：'1=Reserved,2=Wing In Ground,3=Special Category,4=High-Speed Craft,5=Special Category,6=Passenger,7=Cargo,8=Tanker,9=Other'.船種コード  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -35,29 +43,51 @@ Vessel:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -81,7 +111,7 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     beam:    
-      description: Beam of Vessel.    
+      description: Beam of Vessel    
       maximum: 1000    
       minimum: 0    
       type: number    
@@ -90,7 +120,7 @@ Vessel:
         type: Property    
         units: ' meters'    
     buildingAt:    
-      description: Date and time of building of the vessel represented by an ISO 8601 UTC format.    
+      description: Date and time of building of the vessel represented by an ISO 8601 UTC format    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -103,14 +133,14 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     courseOverGround:    
-      description: Course Over Ground (COG).    
+      description: Course Over Ground (COG)    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
         units: ' degree'    
     createdAt:    
-      description: Date and time of creation of the entity represented by an ISO 8601 UTC format.    
+      description: Date and time of creation of the entity represented by an ISO 8601 UTC format    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -123,19 +153,19 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     deadweightTonnage:    
-      description: Deadweight Tonnage (DWT).    
+      description: Deadweight Tonnage (DWT)    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -160,7 +190,7 @@ Vessel:
         type: Property    
         units: ' meters'    
     estimatedTimeOfArrival:    
-      description: 'Estimated time of arrival, as it was originally planned and entered by the shipper, represented by an ISO 8601 UTC format.'    
+      description: 'Estimated time of arrival, as it was originally planned and entered by the shipper, represented by an ISO 8601 UTC format'    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -179,14 +209,14 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     grossTonnage:    
-      description: Gross Tonnage (GT).    
+      description: Gross Tonnage (GT)    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
         units: ' moorson tons'    
     heading:    
-      description: Heading of the Vessel (HDG).    
+      description: Heading of the Vessel (HDG)    
       maximum: 511    
       minimum: 0    
       type: number    
@@ -206,7 +236,7 @@ Vessel:
         model: https://schema.org/Number    
         type: Property    
     length:    
-      description: Length of Vessel.    
+      description: Length of Vessel    
       maximum: 8000    
       minimum: 0    
       type: number    
@@ -215,7 +245,7 @@ Vessel:
         type: Property    
         units: ' meters'    
     location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty.'    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty'    
       properties:    
         coordinates:    
           items:    
@@ -225,7 +255,7 @@ Vessel:
           type: string    
       type: object    
       x-ngsi:    
-        type: Geoproperty    
+        type: GeoProperty    
     manager:    
       description: Manager Vessel    
       type: string    
@@ -233,7 +263,7 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     maximumDraught:    
-      description: Maximum Draught.    
+      description: Maximum Draught    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -246,7 +276,7 @@ Vessel:
         model: https://schema.org/Number    
         type: Property    
     modifiedAt:    
-      description: Date and time of last modification of the entity represented by an ISO 8601 UTC format.    
+      description: Date and time of last modification of the entity represented by an ISO 8601 UTC format    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -259,7 +289,7 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     navigationStatus:    
-      description: 'Enum: ''0=Under way using engine,1=At anchor,2=Not under command,3=Restricted manoeuverability,4=Constrained by her draught,5=Moored,6=Aground,7=Engaged in Fishing,8=Under way sailing,9=Reserved for future amendment of Navigational Status for HSC,10=Reserved for future amendment of Navigational Status for WIG,11=Reserved for future use,12=Reserved for future use,13=Reserved for future use,14=AIS-SART is active,15=Not defined (default)''. Navigation Status. AIVDM/AIVDO data format.'    
+      description: 'Enum: ''0=Under way using engine,1=At anchor,2=Not under command,3=Restricted manoeuverability,4=Constrained by her draught,5=Moored,6=Aground,7=Engaged in Fishing,8=Under way sailing,9=Reserved for future amendment of Navigational Status for HSC,10=Reserved for future amendment of Navigational Status for WIG,11=Reserved for future use,12=Reserved for future use,13=Reserved for future use,14=AIS-SART is active,15=Not defined (default)''. Navigation Status. AIVDM/AIVDO data format'    
       enum:    
         - 0    
         - 1    
@@ -282,7 +312,7 @@ Vessel:
         model: http://schema.org/Number    
         type: Property    
     observedAt:    
-      description: Date and time of this observation represented by an ISO 8601 UTC format.    
+      description: Date and time of this observation represented by an ISO 8601 UTC format    
       format: date-time    
       type: string    
       x-ngsi:    
@@ -292,15 +322,21 @@ Vessel:
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
         anyOf:    
-          - description: Property. Identifier format of any NGSI entity    
+          - description: Identifier format of any NGSI entity    
             maxLength: 256    
             minLength: 1    
             pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
             type: string    
-          - description: Property. Identifier format of any NGSI entity    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
             format: uri    
             type: string    
-        description: Property. Unique identifier of the entity    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
@@ -317,7 +353,7 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     positionAccuracy:    
-      description: 'global navigation satellite system (GNSS) receiver or of other electronic position fixing device; default),1=High (< 10 m; differential mode of e.g. DGNSS receiver)''. Code for the accuracy of the vessel position flag.'    
+      description: 'global navigation satellite system (GNSS) receiver or of other electronic position fixing device; default),1=High (< 10 m; differential mode of e.g. DGNSS receiver)''. Code for the accuracy of the vessel position flag'    
       enum:    
         - 0    
         - 1    
@@ -332,7 +368,7 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     rateOfTurn:    
-      description: Rate of Turn (ROT).    
+      description: Rate of Turn (ROT)    
       maximum: 708    
       minimum: 0    
       type: number    
@@ -353,12 +389,12 @@ Vessel:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     specialManeuverIndicator:    
-      description: 'Enum: ''0=Not available (default),1=Not engaged in special maneuver,2=Engaged in special maneuver''. Code for the special maneuver flag.'    
+      description: 'Enum: ''0=Not available (default),1=Not engaged in special maneuver,2=Engaged in special maneuver''. Code for the special maneuver flag'    
       enum:    
         - 0    
         - 1    
@@ -368,7 +404,7 @@ Vessel:
         model: https://schema.org/Number    
         type: Property    
     speedOverGround:    
-      description: Speed Over Ground (SOG).    
+      description: Speed Over Ground (SOG)    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
@@ -381,28 +417,28 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     toBow:    
-      description: Dimension to Bow.    
+      description: Dimension to Bow    
       type: number    
       x-ngsi:    
         model: http://schema.org/Number    
         type: Property    
         units: ' meters'    
     toPort:    
-      description: Dimension to Port.    
+      description: Dimension to Port    
       type: number    
       x-ngsi:    
         model: http://schema.org/Number    
         type: Property    
         units: ' meters'    
     toStardboard:    
-      description: Dimension to Starboard.    
+      description: Dimension to Starboard    
       type: number    
       x-ngsi:    
         model: http://schema.org/Number    
         type: Property    
         units: ' meters'    
     toStern:    
-      description: Dimension to Stern.    
+      description: Dimension to Stern    
       type: number    
       x-ngsi:    
         model: http://schema.org/Number    
@@ -554,8 +590,8 @@ Vessel:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### Vessel NGSI-v2 key-value の例。  
-ここでは、VesselをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 容器 NGSI-v2 キー値の例  
+以下はJSON-LD形式のVesselのkey-valuesの例です。これはNGSI-v2と互換性があり、`options=keyValues`を使用すると個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -610,8 +646,8 @@ Vessel:
 }  
 ```  
 </details>  
-#### 容器 NGSI-v2 正規化例  
-VesselをJSON-LDフォーマットで正規化した例を示します。これはオプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 血管 NGSI-v2 正規化例  
+正規化されたJSON-LD形式のVesselの例です。これはNGSI-v2と互換性があり、オプションを使用しない場合、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -782,8 +818,8 @@ Vessel:
 }  
 ```  
 </details>  
-#### 容器NGSI-LDのキー値例  
-ここでは、VesselをJSON-LD形式でkey-valuesにした例を示します。これは`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 容器 NGSI-LD キー値の例  
+以下はJSON-LD形式のVesselのkey-valuesの例です。これは`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -841,8 +877,8 @@ Vessel:
 }  
 ```  
 </details>  
-#### NGSI-LDで規格化された容器 例  
-VesselをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 血管 NGSI-LD 正規化例  
+正規化されたJSON-LD形式のVesselの例です。これはオプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -1034,7 +1070,7 @@ Vessel:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
