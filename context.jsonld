@@ -15,6 +15,10 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "availabilityRestriction": "https://smartdatamodels.org/availabilityRestriction",
         "availableLanguage": "https://smartdatamodels.org/availableLanguage",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "beam": "https://smartdatamodels.org/dataModel.MarineTransport/beam",
         "bookingDate": "https://smartdatamodels.org/dataModel.MarineTransport/bookingDate",
         "bookingNumber": "https://smartdatamodels.org/dataModel.MarineTransport/bookingNumber",
