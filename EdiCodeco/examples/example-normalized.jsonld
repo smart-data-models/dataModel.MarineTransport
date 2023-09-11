@@ -1,6 +1,6 @@
 {
     "id": "urn:mrn:eshuv:edi-codeco:1625763902090",
-    "type": "EDICodeco",
+    "type": "EdiCodeco",
     "fileName": {
         "type": "Property",
         "value": "file name"
