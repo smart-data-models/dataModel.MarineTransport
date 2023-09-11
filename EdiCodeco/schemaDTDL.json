@@ -1,0 +1,1640 @@
+{
+    "@id": "dtmi:com:ngsi-ld:EdiCodeco;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models EDI Codeco schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/EdiCodeco/schema.json",
+    "description": "A message by which a terminal, depot, etc. confirms that the containers specified have been delivered or picked up by the inland carrier (road, rail or barge). This message can also be used to report internal terminal container movements (excluding loading and discharging the vessel) and to report the change in status of container(s) without those containers having physically been moved. See [UN/EDIFACT - CODECO](https://service.unece.org/trade/untdid/d19a/trmd/codeco_c.htm)",
+    "displayName": "EdiCodeco",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "ata",
+            "writable": true,
+            "displayName": "ata",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Actual time of arrival or departure to/from Terminal. (ISO 8601 UTC format). See [UNTDID - D.95B - Segment DTM - C507 (2380)](https://service.unece.org/trade/untdid/d95b/uncl/uncl2380.htm)"
+        },
+        {
+            "name": "bookingCode",
+            "writable": true,
+            "displayName": "bookingCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Booking Reference. See [UNTDID - D.95B - Segment RFF - C506 (1154)](https://service.unece.org/trade/untdid/d95b/uncl/uncl1154.htm)"
+        },
+        {
+            "name": "containerCarrierIdentification",
+            "writable": true,
+            "displayName": "containerCarrierIdentification",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Code identifying a party involved in a transaction. See [UNTDID - D.95B - Segment NAD - C082 (3039)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3039.htm)"
+        },
+        {
+            "name": "containerIdentification",
+            "writable": true,
+            "displayName": "containerIdentification",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Containter identification. See [UNTDID - D.95B - Segment EQD - C237 (8260)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8260.htm)"
+        },
+        {
+            "name": "containerSeal",
+            "writable": true,
+            "displayName": "containerSeal",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The number of a custom seal or another seal affixed to the containers. See [UNTDID - D.95B - Segment SEL - 9308](https://service.unece.org/trade/untdid/d95b/uncl/uncl9308.htm)"
+        },
+        {
+            "name": "containerWeight",
+            "writable": true,
+            "displayName": "containerWeight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Weight of the container. See [UNTDID - D.95B - Segment MEA - C174 (6314)](https://service.unece.org/trade/untdid/d95b/uncl/uncl6314.htm)"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "destination",
+            "writable": true,
+            "displayName": "destination",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Final destination of the container (UN/LOCODE: United Nations Code for Trade and Transport Locations). See [UNTDID - D.95B - Segment LOC - C517 (3225)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3225.htm) and [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)"
+        },
+        {
+            "name": "destinationTransportType",
+            "writable": true,
+            "displayName": "destinationTransportType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Method of transport code (UN/ECE). See [UNTDID - D.95B - Segment TDT - C220 (8067)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8067.htm) and [UN/ECE - Rec 19](https://unece.org/trade/uncefact/cl-recommendations)"
+        },
+        {
+            "name": "dischargingPort",
+            "writable": true,
+            "displayName": "dischargingPort",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Port where the container is discharged (UN/LOCODE: United Nations Code for Trade and Transport Locations). See [UNTDID - D.95B - Segment LOC - C517 (3225)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3225.htm) and [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)"
+        },
+        {
+            "name": "fileName",
+            "writable": true,
+            "displayName": "fileName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "File name of EDI Codeco message"
+        },
+        {
+            "name": "isContainerEmpty",
+            "writable": true,
+            "displayName": "isContainerEmpty",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "Information about if the container is full or empty. See [UNTDID - D.95B - Segment EQD - 8169](https://service.unece.org/trade/untdid/d95b/uncl/uncl8169.htm)"
+        },
+        {
+            "name": "loadingPort",
+            "writable": true,
+            "displayName": "loadingPort",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Port where the container is loaded (UN/LOCODE: United Nations Code for Trade and Transport Locations). See [UNTDID - D.95B - Segment LOC - C517 (3225)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3225.htm) and [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "messageRaw",
+            "writable": true,
+            "displayName": "messageRaw",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Raw message of the EDI Codeco"
+        },
+        {
+            "name": "messageVersion",
+            "writable": true,
+            "displayName": "messageVersion",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Version of the message type. See [UNTDID - D.95B - UNH - S009 (0052)](https://service.unece.org/trade/untdid/d95b/trmd/codeco_d.htm#DSGI)"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "originTransportType",
+            "writable": true,
+            "displayName": "originTransportType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Method of transport code (UN/ECE). See [UNTDID - D.95B - Segment TDT - C220 (8067)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8067.htm) and [UN/ECE - Rec 19](https://unece.org/trade/uncefact/cl-recommendations)"
+        },
+        {
+            "name": "receiverIdentification",
+            "writable": true,
+            "displayName": "receiverIdentification",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Interchange Recipient Identification. See [UN/EDIFACT - S003](https://unece.org/trade/uncefact/unedifact/part-4-Annex-B)"
+        },
+        {
+            "name": "release",
+            "writable": true,
+            "displayName": "release",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Release number within current version number. See [UNTDID - D.95B - UNH - S009 (0054)](https://service.unece.org/trade/untdid/d95b/trmd/codeco_d.htm#DSGI)"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "senderIdentification",
+            "writable": true,
+            "displayName": "senderIdentification",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Interchange Sender Identification. See [UN/EDIFACT - S002](https://unece.org/trade/uncefact/unedifact/part-4-Annex-B)"
+        },
+        {
+            "name": "sentAt",
+            "writable": true,
+            "displayName": "sentAt",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of message has been sent represented by an ISO 8601 UTC format. See [UN/EDIFACT - S004](https://unece.org/trade/uncefact/unedifact/part-4-Annex-B)"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "travelReference",
+            "writable": true,
+            "displayName": "travelReference",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Conveyance reference number. See [UNTDID - D.95B - Segment TDT - 8028](https://service.unece.org/trade/untdid/d95b/uncl/uncl8028.htm)"
+        },
+        {
+            "name": "truckLicenseCode",
+            "writable": true,
+            "displayName": "truckLicenseCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "License Plate of the Truck. See [UNTDID - D.95B - Segment TDT - C222 (8213)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)"
+        },
+        {
+            "name": "vesselCallSign",
+            "writable": true,
+            "displayName": "vesselCallSign",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Maritime call signs are call signs assigned as unique identifiers to vessels. See [UNTDID - D.95B - Segment TDT - C222 (8213)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)"
+        },
+        {
+            "name": "vesselCarrier",
+            "writable": true,
+            "displayName": "vesselCarrier",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Vessel carrier Identification (identification of party undertaking or arranging transport of goods between named points). See [UNTDID - D.95B - Segment TDT - C040 (3127)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3127.htm)"
+        },
+        {
+            "name": "vesselImo",
+            "writable": true,
+            "displayName": "vesselImo",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "International Maritime Organization Number (a global forever UID). See [UNTDID - D.95B - Segment TDT - C222 (8213)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)"
+        },
+        {
+            "name": "vesselMmsi",
+            "writable": true,
+            "displayName": "vesselMmsi",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Marine Mobile Service Identity Number (a temporarily assigned UID, issued by that object's current flag state). See [UNTDID - D.95B - Segment TDT - C222 (8213)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)"
+        },
+        {
+            "name": "vesselName",
+            "writable": true,
+            "displayName": "vesselName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Vessel Name. See [UNTDID - D.95B - Segment TDT - C222 (8212)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8212.htm)"
+        },
+        {
+            "name": "vesselVoyage",
+            "writable": true,
+            "displayName": "vesselVoyage",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Reference number of vessel voyage. See [UNTDID - D.95B - Segment RFF - C506 (1154)](https://service.unece.org/trade/untdid/d95b/uncl/uncl1154.htm)"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "containerClass",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Continental",
+                        "displayName": "Continental",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Export",
+                        "displayName": "Export",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Import",
+                        "displayName": "Import",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Remain on board",
+                        "displayName": "Remain on board",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "Shifter",
+                        "displayName": "Shifter",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "Transhipment",
+                        "displayName": "Transhipment",
+                        "enumValue": 6
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "containerIsoCode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Dime coated tank",
+                        "displayName": "Dime coated tank",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Epoxy coated tank",
+                        "displayName": "Epoxy coated tank",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "IMO1",
+                        "displayName": "IMO1",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "IMO2",
+                        "displayName": "IMO2",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "IMO3",
+                        "displayName": "IMO3",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "Pressurized tank",
+                        "displayName": "Pressurized tank",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "Refrigerated tank",
+                        "displayName": "Refrigerated tank",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "Semi-refrigerated",
+                        "displayName": "Semi-refrigerated",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "Stainless steel tank",
+                        "displayName": "Stainless steel tank",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "Nonworking reefer container 40 ft",
+                        "displayName": "Nonworking reefer container 40 ft",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "Box pallet",
+                        "displayName": "Box pallet",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "Europallet",
+                        "displayName": "Europallet",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "Scandinavian pallet",
+                        "displayName": "Scandinavian pallet",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "Trailer",
+                        "displayName": "Trailer",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "Nonworking reefer container 20 ft",
+                        "displayName": "Nonworking reefer container 20 ft",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "Exchangeable pallet",
+                        "displayName": "Exchangeable pallet",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "Semi-trailer",
+                        "displayName": "Semi-trailer",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "Tank container 20 ft.",
+                        "displayName": "Tank container 20 ft.",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "Tank container 30 ft.",
+                        "displayName": "Tank container 30 ft.",
+                        "enumValue": 19
+                    },
+                    {
+                        "name": "Tank container 40 ft.",
+                        "displayName": "Tank container 40 ft.",
+                        "enumValue": 20
+                    },
+                    {
+                        "name": "Container IC 20 ft.",
+                        "displayName": "Container IC 20 ft.",
+                        "enumValue": 21
+                    },
+                    {
+                        "name": "Container IC 30 ft.",
+                        "displayName": "Container IC 30 ft.",
+                        "enumValue": 22
+                    },
+                    {
+                        "name": "Container IC 40 ft.",
+                        "displayName": "Container IC 40 ft.",
+                        "enumValue": 23
+                    },
+                    {
+                        "name": "Refrigerator tank 20 ft.",
+                        "displayName": "Refrigerator tank 20 ft.",
+                        "enumValue": 24
+                    },
+                    {
+                        "name": "Refrigerator tank 30 ft.",
+                        "displayName": "Refrigerator tank 30 ft.",
+                        "enumValue": 25
+                    },
+                    {
+                        "name": "Refrigerator tank 40 ft.",
+                        "displayName": "Refrigerator tank 40 ft.",
+                        "enumValue": 26
+                    },
+                    {
+                        "name": "Tank container IC 20 ft.",
+                        "displayName": "Tank container IC 20 ft.",
+                        "enumValue": 27
+                    },
+                    {
+                        "name": "Tank container IC 30 ft.",
+                        "displayName": "Tank container IC 30 ft.",
+                        "enumValue": 28
+                    },
+                    {
+                        "name": "Tank container IC 40 ft.",
+                        "displayName": "Tank container IC 40 ft.",
+                        "enumValue": 29
+                    },
+                    {
+                        "name": "Refrigerator tank IC 20 ft.",
+                        "displayName": "Refrigerator tank IC 20 ft.",
+                        "enumValue": 30
+                    },
+                    {
+                        "name": "Refrigerator tank IC 40 ft.",
+                        "displayName": "Refrigerator tank IC 40 ft.",
+                        "enumValue": 31
+                    },
+                    {
+                        "name": "Movable case: L < 6,15m",
+                        "displayName": "Movable case: L < 6,15m",
+                        "enumValue": 32
+                    },
+                    {
+                        "name": "Movable case: 6,15m < L < 7,82m",
+                        "displayName": "Movable case: 6,15m < L < 7,82m",
+                        "enumValue": 33
+                    },
+                    {
+                        "name": "Movable case: 7,82m < L < 9,15m",
+                        "displayName": "Movable case: 7,82m < L < 9,15m",
+                        "enumValue": 34
+                    },
+                    {
+                        "name": "Movable case: 9,15m < L < 10,90m",
+                        "displayName": "Movable case: 9,15m < L < 10,90m",
+                        "enumValue": 35
+                    },
+                    {
+                        "name": "Movable case: 10,90m < L < 13,75m",
+                        "displayName": "Movable case: 10,90m < L < 13,75m",
+                        "enumValue": 36
+                    },
+                    {
+                        "name": "Totebin",
+                        "displayName": "Totebin",
+                        "enumValue": 37
+                    },
+                    {
+                        "name": "Temperature controlled container 20 ft",
+                        "displayName": "Temperature controlled container 20 ft",
+                        "enumValue": 38
+                    },
+                    {
+                        "name": "Temperature controlled container 40 ft",
+                        "displayName": "Temperature controlled container 40 ft",
+                        "enumValue": 39
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "functionCode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Cancellation",
+                        "displayName": "Cancellation",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Addition",
+                        "displayName": "Addition",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Deletion",
+                        "displayName": "Deletion",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Change",
+                        "displayName": "Change",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "Replace",
+                        "displayName": "Replace",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "Confirmation",
+                        "displayName": "Confirmation",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "Duplicate",
+                        "displayName": "Duplicate",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "Status",
+                        "displayName": "Status",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "Original",
+                        "displayName": "Original",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "Not found",
+                        "displayName": "Not found",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "Response",
+                        "displayName": "Response",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "Not processed",
+                        "displayName": "Not processed",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "Request",
+                        "displayName": "Request",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "Advance notification",
+                        "displayName": "Advance notification",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "Reminder",
+                        "displayName": "Reminder",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "Proposal",
+                        "displayName": "Proposal",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "Cancel, to be reissued",
+                        "displayName": "Cancel, to be reissued",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "Reissue",
+                        "displayName": "Reissue",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "Seller initiated change",
+                        "displayName": "Seller initiated change",
+                        "enumValue": 19
+                    },
+                    {
+                        "name": "Replace heading section only",
+                        "displayName": "Replace heading section only",
+                        "enumValue": 20
+                    },
+                    {
+                        "name": "Replace item detail and summary only",
+                        "displayName": "Replace item detail and summary only",
+                        "enumValue": 21
+                    },
+                    {
+                        "name": "Final transmission",
+                        "displayName": "Final transmission",
+                        "enumValue": 22
+                    },
+                    {
+                        "name": "Transaction on hold",
+                        "displayName": "Transaction on hold",
+                        "enumValue": 23
+                    },
+                    {
+                        "name": "Delivery instruction",
+                        "displayName": "Delivery instruction",
+                        "enumValue": 24
+                    },
+                    {
+                        "name": "Forecast",
+                        "displayName": "Forecast",
+                        "enumValue": 25
+                    },
+                    {
+                        "name": "Delivery instruction and forecast",
+                        "displayName": "Delivery instruction and forecast",
+                        "enumValue": 26
+                    },
+                    {
+                        "name": "Not accepted",
+                        "displayName": "Not accepted",
+                        "enumValue": 27
+                    },
+                    {
+                        "name": "Accepted, with amendment in heading section",
+                        "displayName": "Accepted, with amendment in heading section",
+                        "enumValue": 28
+                    },
+                    {
+                        "name": "Accepted without amendment",
+                        "displayName": "Accepted without amendment",
+                        "enumValue": 29
+                    },
+                    {
+                        "name": "Accepted, with amendment in detail section",
+                        "displayName": "Accepted, with amendment in detail section",
+                        "enumValue": 30
+                    },
+                    {
+                        "name": "Copy",
+                        "displayName": "Copy",
+                        "enumValue": 31
+                    },
+                    {
+                        "name": "Approval",
+                        "displayName": "Approval",
+                        "enumValue": 32
+                    },
+                    {
+                        "name": "Change in heading section",
+                        "displayName": "Change in heading section",
+                        "enumValue": 33
+                    },
+                    {
+                        "name": "Accepted with amendment",
+                        "displayName": "Accepted with amendment",
+                        "enumValue": 34
+                    },
+                    {
+                        "name": "Retransmission",
+                        "displayName": "Retransmission",
+                        "enumValue": 35
+                    },
+                    {
+                        "name": "Change in detail section",
+                        "displayName": "Change in detail section",
+                        "enumValue": 36
+                    },
+                    {
+                        "name": "Reversal of a debit",
+                        "displayName": "Reversal of a debit",
+                        "enumValue": 37
+                    },
+                    {
+                        "name": "Reversal of a credit",
+                        "displayName": "Reversal of a credit",
+                        "enumValue": 38
+                    },
+                    {
+                        "name": "Reversal for cancellation",
+                        "displayName": "Reversal for cancellation",
+                        "enumValue": 39
+                    },
+                    {
+                        "name": "Request for deletion",
+                        "displayName": "Request for deletion",
+                        "enumValue": 40
+                    },
+                    {
+                        "name": "Finishing/closing order",
+                        "displayName": "Finishing/closing order",
+                        "enumValue": 41
+                    },
+                    {
+                        "name": "Confirmation via specific means",
+                        "displayName": "Confirmation via specific means",
+                        "enumValue": 42
+                    },
+                    {
+                        "name": "Additional transmission",
+                        "displayName": "Additional transmission",
+                        "enumValue": 43
+                    },
+                    {
+                        "name": "Accepted without reserves",
+                        "displayName": "Accepted without reserves",
+                        "enumValue": 44
+                    },
+                    {
+                        "name": "Accepted with reserves",
+                        "displayName": "Accepted with reserves",
+                        "enumValue": 45
+                    },
+                    {
+                        "name": "Provisional",
+                        "displayName": "Provisional",
+                        "enumValue": 46
+                    },
+                    {
+                        "name": "Definitive",
+                        "displayName": "Definitive",
+                        "enumValue": 47
+                    },
+                    {
+                        "name": "Accepted, contents rejected",
+                        "displayName": "Accepted, contents rejected",
+                        "enumValue": 48
+                    },
+                    {
+                        "name": "Settled dispute",
+                        "displayName": "Settled dispute",
+                        "enumValue": 49
+                    },
+                    {
+                        "name": "Withdraw",
+                        "displayName": "Withdraw",
+                        "enumValue": 50
+                    },
+                    {
+                        "name": "Authorisation",
+                        "displayName": "Authorisation",
+                        "enumValue": 51
+                    },
+                    {
+                        "name": "Proposed amendment",
+                        "displayName": "Proposed amendment",
+                        "enumValue": 52
+                    },
+                    {
+                        "name": "Test",
+                        "displayName": "Test",
+                        "enumValue": 53
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "operationType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Place of terms of delivery",
+                        "displayName": "Place of terms of delivery",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Payment place",
+                        "displayName": "Payment place",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Goods receipt place",
+                        "displayName": "Goods receipt place",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Place of departure",
+                        "displayName": "Place of departure",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "Place of delivery",
+                        "displayName": "Place of delivery",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "Place of destination",
+                        "displayName": "Place of destination",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "Place/port of loading",
+                        "displayName": "Place/port of loading",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "Place of acceptance",
+                        "displayName": "Place of acceptance",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "Place/port of discharge",
+                        "displayName": "Place/port of discharge",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "Port of discharge",
+                        "displayName": "Port of discharge",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "Place of transhipment",
+                        "displayName": "Place of transhipment",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "Location of goods",
+                        "displayName": "Location of goods",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "Place of transfer responsibility",
+                        "displayName": "Place of transfer responsibility",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "Place of transfer of ownership",
+                        "displayName": "Place of transfer of ownership",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "Border crossing place",
+                        "displayName": "Border crossing place",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "Warehouse",
+                        "displayName": "Warehouse",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "Factory/plant",
+                        "displayName": "Factory/plant",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "Place of ultimate destination of goods",
+                        "displayName": "Place of ultimate destination of goods",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "Terms of sale place",
+                        "displayName": "Terms of sale place",
+                        "enumValue": 19
+                    },
+                    {
+                        "name": "Customs office of clearance",
+                        "displayName": "Customs office of clearance",
+                        "enumValue": 20
+                    },
+                    {
+                        "name": "Port of release",
+                        "displayName": "Port of release",
+                        "enumValue": 21
+                    },
+                    {
+                        "name": "Port of entry",
+                        "displayName": "Port of entry",
+                        "enumValue": 22
+                    },
+                    {
+                        "name": "Country",
+                        "displayName": "Country",
+                        "enumValue": 23
+                    },
+                    {
+                        "name": "City",
+                        "displayName": "City",
+                        "enumValue": 24
+                    },
+                    {
+                        "name": "Country of origin",
+                        "displayName": "Country of origin",
+                        "enumValue": 25
+                    },
+                    {
+                        "name": "Country of destination of goods",
+                        "displayName": "Country of destination of goods",
+                        "enumValue": 26
+                    },
+                    {
+                        "name": "Railway station",
+                        "displayName": "Railway station",
+                        "enumValue": 27
+                    },
+                    {
+                        "name": "Country of source",
+                        "displayName": "Country of source",
+                        "enumValue": 28
+                    },
+                    {
+                        "name": "Building",
+                        "displayName": "Building",
+                        "enumValue": 29
+                    },
+                    {
+                        "name": "Beginning of chargeable section",
+                        "displayName": "Beginning of chargeable section",
+                        "enumValue": 30
+                    },
+                    {
+                        "name": "Baseport of discharge",
+                        "displayName": "Baseport of discharge",
+                        "enumValue": 31
+                    },
+                    {
+                        "name": "Baseport of loading",
+                        "displayName": "Baseport of loading",
+                        "enumValue": 32
+                    },
+                    {
+                        "name": "Country of exportation/despatch",
+                        "displayName": "Country of exportation/despatch",
+                        "enumValue": 33
+                    },
+                    {
+                        "name": "Country of ultimate destination",
+                        "displayName": "Country of ultimate destination",
+                        "enumValue": 34
+                    },
+                    {
+                        "name": "Country of last consignment",
+                        "displayName": "Country of last consignment",
+                        "enumValue": 35
+                    },
+                    {
+                        "name": "Country of first destination",
+                        "displayName": "Country of first destination",
+                        "enumValue": 36
+                    },
+                    {
+                        "name": "Country of production",
+                        "displayName": "Country of production",
+                        "enumValue": 37
+                    },
+                    {
+                        "name": "Country of trading",
+                        "displayName": "Country of trading",
+                        "enumValue": 38
+                    },
+                    {
+                        "name": "Customs office of entry",
+                        "displayName": "Customs office of entry",
+                        "enumValue": 39
+                    },
+                    {
+                        "name": "Customs office of exit",
+                        "displayName": "Customs office of exit",
+                        "enumValue": 40
+                    },
+                    {
+                        "name": "Place of Customs examination",
+                        "displayName": "Place of Customs examination",
+                        "enumValue": 41
+                    },
+                    {
+                        "name": "Place of authentication of document",
+                        "displayName": "Place of authentication of document",
+                        "enumValue": 42
+                    },
+                    {
+                        "name": "Customs office of destination (transit)",
+                        "displayName": "Customs office of destination (transit)",
+                        "enumValue": 43
+                    },
+                    {
+                        "name": "Region of despatch",
+                        "displayName": "Region of despatch",
+                        "enumValue": 44
+                    },
+                    {
+                        "name": "Region of destination",
+                        "displayName": "Region of destination",
+                        "enumValue": 45
+                    },
+                    {
+                        "name": "Region of production",
+                        "displayName": "Region of production",
+                        "enumValue": 46
+                    },
+                    {
+                        "name": "Country of transit",
+                        "displayName": "Country of transit",
+                        "enumValue": 47
+                    },
+                    {
+                        "name": "Customs office of transit",
+                        "displayName": "Customs office of transit",
+                        "enumValue": 48
+                    },
+                    {
+                        "name": "Country of invalid transit guarantee",
+                        "displayName": "Country of invalid transit guarantee",
+                        "enumValue": 49
+                    },
+                    {
+                        "name": "Country of destination (transit)",
+                        "displayName": "Country of destination (transit)",
+                        "enumValue": 50
+                    },
+                    {
+                        "name": "Charge and freight due from",
+                        "displayName": "Charge and freight due from",
+                        "enumValue": 51
+                    },
+                    {
+                        "name": "Manufacturing department",
+                        "displayName": "Manufacturing department",
+                        "enumValue": 52
+                    },
+                    {
+                        "name": "Charges and freight payable to",
+                        "displayName": "Charges and freight payable to",
+                        "enumValue": 53
+                    },
+                    {
+                        "name": "End of chargeable section",
+                        "displayName": "End of chargeable section",
+                        "enumValue": 54
+                    },
+                    {
+                        "name": "Place of payment",
+                        "displayName": "Place of payment",
+                        "enumValue": 55
+                    },
+                    {
+                        "name": "Full track loading or unloading",
+                        "displayName": "Full track loading or unloading",
+                        "enumValue": 56
+                    },
+                    {
+                        "name": "Place of arrival",
+                        "displayName": "Place of arrival",
+                        "enumValue": 57
+                    },
+                    {
+                        "name": "Next port of call",
+                        "displayName": "Next port of call",
+                        "enumValue": 58
+                    },
+                    {
+                        "name": "On-carriage port",
+                        "displayName": "On-carriage port",
+                        "enumValue": 59
+                    },
+                    {
+                        "name": "First optional place of discharge",
+                        "displayName": "First optional place of discharge",
+                        "enumValue": 60
+                    },
+                    {
+                        "name": "Express railway station",
+                        "displayName": "Express railway station",
+                        "enumValue": 61
+                    },
+                    {
+                        "name": "Mixed cargo railway station",
+                        "displayName": "Mixed cargo railway station",
+                        "enumValue": 62
+                    },
+                    {
+                        "name": "Second optional place of discharge",
+                        "displayName": "Second optional place of discharge",
+                        "enumValue": 63
+                    },
+                    {
+                        "name": "Next non-discharge port of call",
+                        "displayName": "Next non-discharge port of call",
+                        "enumValue": 64
+                    },
+                    {
+                        "name": "Third optional place of discharge",
+                        "displayName": "Third optional place of discharge",
+                        "enumValue": 65
+                    },
+                    {
+                        "name": "Reconsolidation point",
+                        "displayName": "Reconsolidation point",
+                        "enumValue": 66
+                    },
+                    {
+                        "name": "Fourth optional place of discharge",
+                        "displayName": "Fourth optional place of discharge",
+                        "enumValue": 67
+                    },
+                    {
+                        "name": "Bill of lading release office",
+                        "displayName": "Bill of lading release office",
+                        "enumValue": 68
+                    },
+                    {
+                        "name": "Transhipment excluding this place",
+                        "displayName": "Transhipment excluding this place",
+                        "enumValue": 69
+                    },
+                    {
+                        "name": "Transhipment limited to this place",
+                        "displayName": "Transhipment limited to this place",
+                        "enumValue": 70
+                    },
+                    {
+                        "name": "Original port of loading",
+                        "displayName": "Original port of loading",
+                        "enumValue": 71
+                    },
+                    {
+                        "name": "First port of call - non-discharging",
+                        "displayName": "First port of call - non-discharging",
+                        "enumValue": 72
+                    },
+                    {
+                        "name": "First port of call - discharging",
+                        "displayName": "First port of call - discharging",
+                        "enumValue": 73
+                    },
+                    {
+                        "name": "Place/port of first entry",
+                        "displayName": "Place/port of first entry",
+                        "enumValue": 74
+                    },
+                    {
+                        "name": "Place of despatch",
+                        "displayName": "Place of despatch",
+                        "enumValue": 75
+                    },
+                    {
+                        "name": "Fifth optional place of discharge",
+                        "displayName": "Fifth optional place of discharge",
+                        "enumValue": 76
+                    },
+                    {
+                        "name": "Pre-carriage port",
+                        "displayName": "Pre-carriage port",
+                        "enumValue": 77
+                    },
+                    {
+                        "name": "Place of delivery (by on carriage)",
+                        "displayName": "Place of delivery (by on carriage)",
+                        "enumValue": 78
+                    },
+                    {
+                        "name": "Transport contract place of acceptance",
+                        "displayName": "Transport contract place of acceptance",
+                        "enumValue": 79
+                    },
+                    {
+                        "name": "Transport contract place of destination",
+                        "displayName": "Transport contract place of destination",
+                        "enumValue": 80
+                    },
+                    {
+                        "name": "Country of valid transit guarantee",
+                        "displayName": "Country of valid transit guarantee",
+                        "enumValue": 81
+                    },
+                    {
+                        "name": "Place/port of conveyance initial arrival",
+                        "displayName": "Place/port of conveyance initial arrival",
+                        "enumValue": 82
+                    },
+                    {
+                        "name": "Place of receipt",
+                        "displayName": "Place of receipt",
+                        "enumValue": 83
+                    },
+                    {
+                        "name": "Place of registration",
+                        "displayName": "Place of registration",
+                        "enumValue": 84
+                    },
+                    {
+                        "name": "Place/location where special treatments have happened or must happen",
+                        "displayName": "Place/location where special treatments have happened or must happen",
+                        "enumValue": 85
+                    },
+                    {
+                        "name": "Place of document issue",
+                        "displayName": "Place of document issue",
+                        "enumValue": 86
+                    },
+                    {
+                        "name": "Routing",
+                        "displayName": "Routing",
+                        "enumValue": 87
+                    },
+                    {
+                        "name": "Station of application of additional costs",
+                        "displayName": "Station of application of additional costs",
+                        "enumValue": 88
+                    },
+                    {
+                        "name": "Place of lodgement of documents",
+                        "displayName": "Place of lodgement of documents",
+                        "enumValue": 89
+                    },
+                    {
+                        "name": "Optional place of discharge",
+                        "displayName": "Optional place of discharge",
+                        "enumValue": 90
+                    },
+                    {
+                        "name": "Place of empty equipment despatch",
+                        "displayName": "Place of empty equipment despatch",
+                        "enumValue": 91
+                    },
+                    {
+                        "name": "Place of empty equipment return",
+                        "displayName": "Place of empty equipment return",
+                        "enumValue": 92
+                    },
+                    {
+                        "name": "Place/port of warehouse entry",
+                        "displayName": "Place/port of warehouse entry",
+                        "enumValue": 93
+                    },
+                    {
+                        "name": "Country of first sale",
+                        "displayName": "Country of first sale",
+                        "enumValue": 94
+                    },
+                    {
+                        "name": "Country of purchase",
+                        "displayName": "Country of purchase",
+                        "enumValue": 95
+                    },
+                    {
+                        "name": "Place of transfer",
+                        "displayName": "Place of transfer",
+                        "enumValue": 96
+                    },
+                    {
+                        "name": "Place of deconsolidation",
+                        "displayName": "Place of deconsolidation",
+                        "enumValue": 97
+                    },
+                    {
+                        "name": "Place of consumption",
+                        "displayName": "Place of consumption",
+                        "enumValue": 98
+                    },
+                    {
+                        "name": "Region of origin",
+                        "displayName": "Region of origin",
+                        "enumValue": 99
+                    },
+                    {
+                        "name": "Place of consolidation",
+                        "displayName": "Place of consolidation",
+                        "enumValue": 100
+                    },
+                    {
+                        "name": "Rate combination point",
+                        "displayName": "Rate combination point",
+                        "enumValue": 101
+                    },
+                    {
+                        "name": "Place of prolongation decision of delivery delay",
+                        "displayName": "Place of prolongation decision of delivery delay",
+                        "enumValue": 102
+                    },
+                    {
+                        "name": "Recharging place/location",
+                        "displayName": "Recharging place/location",
+                        "enumValue": 103
+                    },
+                    {
+                        "name": "Customs office of despatch",
+                        "displayName": "Customs office of despatch",
+                        "enumValue": 104
+                    },
+                    {
+                        "name": "Country of despatch",
+                        "displayName": "Country of despatch",
+                        "enumValue": 105
+                    },
+                    {
+                        "name": "Customs office of export",
+                        "displayName": "Customs office of export",
+                        "enumValue": 106
+                    },
+                    {
+                        "name": "Free zone of export",
+                        "displayName": "Free zone of export",
+                        "enumValue": 107
+                    },
+                    {
+                        "name": "Region of export/despatch",
+                        "displayName": "Region of export/despatch",
+                        "enumValue": 108
+                    },
+                    {
+                        "name": "Customs office of departure",
+                        "displayName": "Customs office of departure",
+                        "enumValue": 109
+                    },
+                    {
+                        "name": "Customs office of transit guarantee",
+                        "displayName": "Customs office of transit guarantee",
+                        "enumValue": 110
+                    },
+                    {
+                        "name": "Country of transhipment",
+                        "displayName": "Country of transhipment",
+                        "enumValue": 111
+                    },
+                    {
+                        "name": "Country of sale",
+                        "displayName": "Country of sale",
+                        "enumValue": 112
+                    },
+                    {
+                        "name": "Customs office of destination",
+                        "displayName": "Customs office of destination",
+                        "enumValue": 113
+                    },
+                    {
+                        "name": "Wagon-load railway station",
+                        "displayName": "Wagon-load railway station",
+                        "enumValue": 114
+                    },
+                    {
+                        "name": "Siding",
+                        "displayName": "Siding",
+                        "enumValue": 115
+                    },
+                    {
+                        "name": "Last place/port of call of conveyance",
+                        "displayName": "Last place/port of call of conveyance",
+                        "enumValue": 116
+                    },
+                    {
+                        "name": "Country of previous Customs procedure",
+                        "displayName": "Country of previous Customs procedure",
+                        "enumValue": 117
+                    },
+                    {
+                        "name": "Customs office of registration of previous Customs declaration",
+                        "displayName": "Customs office of registration of previous Customs declaration",
+                        "enumValue": 118
+                    },
+                    {
+                        "name": "Participant sender location",
+                        "displayName": "Participant sender location",
+                        "enumValue": 119
+                    },
+                    {
+                        "name": "Wage negotiation district",
+                        "displayName": "Wage negotiation district",
+                        "enumValue": 120
+                    },
+                    {
+                        "name": "Place of ultimate destination of conveyance",
+                        "displayName": "Place of ultimate destination of conveyance",
+                        "enumValue": 121
+                    },
+                    {
+                        "name": "Place of loading of empty equipment",
+                        "displayName": "Place of loading of empty equipment",
+                        "enumValue": 122
+                    },
+                    {
+                        "name": "Place of discharge of empty equipment",
+                        "displayName": "Place of discharge of empty equipment",
+                        "enumValue": 123
+                    },
+                    {
+                        "name": "Region of delivery",
+                        "displayName": "Region of delivery",
+                        "enumValue": 124
+                    },
+                    {
+                        "name": "Petroleum warehouse",
+                        "displayName": "Petroleum warehouse",
+                        "enumValue": 125
+                    },
+                    {
+                        "name": "Place of entry (Customs)",
+                        "displayName": "Place of entry (Customs)",
+                        "enumValue": 126
+                    },
+                    {
+                        "name": "Living animals care place",
+                        "displayName": "Living animals care place",
+                        "enumValue": 127
+                    },
+                    {
+                        "name": "Re-icing place",
+                        "displayName": "Re-icing place",
+                        "enumValue": 128
+                    },
+                    {
+                        "name": "Weighting place",
+                        "displayName": "Weighting place",
+                        "enumValue": 129
+                    },
+                    {
+                        "name": "Marshalling yard",
+                        "displayName": "Marshalling yard",
+                        "enumValue": 130
+                    },
+                    {
+                        "name": "Shopping station",
+                        "displayName": "Shopping station",
+                        "enumValue": 131
+                    },
+                    {
+                        "name": "Loading dock",
+                        "displayName": "Loading dock",
+                        "enumValue": 132
+                    },
+                    {
+                        "name": "Port connection",
+                        "displayName": "Port connection",
+                        "enumValue": 133
+                    },
+                    {
+                        "name": "Place of expiry",
+                        "displayName": "Place of expiry",
+                        "enumValue": 134
+                    },
+                    {
+                        "name": "Place of negotiation",
+                        "displayName": "Place of negotiation",
+                        "enumValue": 135
+                    },
+                    {
+                        "name": "Claims payable place",
+                        "displayName": "Claims payable place",
+                        "enumValue": 136
+                    },
+                    {
+                        "name": "Documentary credit available in",
+                        "displayName": "Documentary credit available in",
+                        "enumValue": 137
+                    },
+                    {
+                        "name": "Stowage cell",
+                        "displayName": "Stowage cell",
+                        "enumValue": 138
+                    },
+                    {
+                        "name": "For transportation to",
+                        "displayName": "For transportation to",
+                        "enumValue": 139
+                    },
+                    {
+                        "name": "Loading on board/despatch/taking in charge at/from",
+                        "displayName": "Loading on board/despatch/taking in charge at/from",
+                        "enumValue": 140
+                    },
+                    {
+                        "name": "Private box",
+                        "displayName": "Private box",
+                        "enumValue": 141
+                    },
+                    {
+                        "name": "Next port of discharge",
+                        "displayName": "Next port of discharge",
+                        "enumValue": 142
+                    },
+                    {
+                        "name": "Port of call",
+                        "displayName": "Port of call",
+                        "enumValue": 143
+                    },
+                    {
+                        "name": "Place/location of on-hire",
+                        "displayName": "Place/location of on-hire",
+                        "enumValue": 144
+                    },
+                    {
+                        "name": "Place/location of off-hire",
+                        "displayName": "Place/location of off-hire",
+                        "enumValue": 145
+                    },
+                    {
+                        "name": "Other carriers terminal",
+                        "displayName": "Other carriers terminal",
+                        "enumValue": 146
+                    },
+                    {
+                        "name": "Country of Value Added Tax (VAT) jurisdiction",
+                        "displayName": "Country of Value Added Tax (VAT) jurisdiction",
+                        "enumValue": 147
+                    },
+                    {
+                        "name": "Contact location",
+                        "displayName": "Contact location",
+                        "enumValue": 148
+                    },
+                    {
+                        "name": "Additional internal destination",
+                        "displayName": "Additional internal destination",
+                        "enumValue": 149
+                    },
+                    {
+                        "name": "Foreign port of call",
+                        "displayName": "Foreign port of call",
+                        "enumValue": 150
+                    },
+                    {
+                        "name": "Maintenance location",
+                        "displayName": "Maintenance location",
+                        "enumValue": 151
+                    },
+                    {
+                        "name": "Mutually defined",
+                        "displayName": "Mutually defined",
+                        "enumValue": 152
+                    }
+                ]
+            }
+        }
+    ]
+}
