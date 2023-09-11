@@ -4,7 +4,7 @@
     "modelTags": "",
     "derivedFrom": "",
     "license": "",
-    "$id":"https://smart-data-models.github.io/dataModels.Ports/EdiCodeco/schema.json",
+    "$id":"https://smart-data-models.github.io/dataModels.MarineTransport/EdiCodeco/schema.json",
     "title": "Smart Data models EDI Codeco schema",
     "description": "A message by which a terminal, depot, etc. confirms that the containers specified have been delivered or picked up by the inland carrier (road, rail or barge). This message can also be used to report internal terminal container movements (excluding loading and discharging the vessel) and to report the change in status of container(s) without those containers having physically been moved. See [UN/EDIFACT - CODECO](https://service.unece.org/trade/untdid/d19a/trmd/codeco_c.htm)",
     "type": "object",
@@ -23,9 +23,9 @@
                 },
                 "type": {
                     "type": "string",
-                    "description": "Property. NGSI Entity type. It has to be EDICodeco",
+                    "description": "Property. NGSI Entity type. It has to be EdiCodeco",
                     "enum": [
-                        "EDICodeco"
+                        "EdiCodeco"
                     ]
                 },
                 "senderIdentification": {
@@ -157,21 +157,6 @@
                 "travelReference": {
                     "type": "string",
                     "description": "Property. Model:'https://schema.org/Text'. Conveyance reference number. See [UNTDID - D.95B - Segment TDT - 8028](https://service.unece.org/trade/untdid/d95b/uncl/uncl8028.htm)"
-                },
-                "location": {
-                    "type": "object",
-                    "properties": {
-                        "type": {
-                            "type": "string"
-                        },
-                        "coordinates": {
-                            "type": "array",
-                            "items": {
-                                "type": "number"
-                            }
-                        }
-                    },
-                    "description": "Geoproperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty."
                 }
             }
         }
@@ -182,4 +167,5 @@
         "vesselImo",
         "containerIdentification"
     ]
-}
+  }
+  
