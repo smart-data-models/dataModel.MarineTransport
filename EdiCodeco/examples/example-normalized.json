@@ -6,7 +6,7 @@
         "value": "file name"
     },
     "sentAt": {
-        "type": "DataTime",
+        "type": "DateTime",
         "value": "2023-08-11T14:50:00Z"
     },
     "travelReference": {
@@ -14,7 +14,7 @@
         "value": "110823110823CCHRIB"
     },
     "ata": {
-        "type": "DataTime",
+        "type": "DateTime",
         "value": "2023-08-11T14:47:00Z"
     },
     "bookingCode": {
