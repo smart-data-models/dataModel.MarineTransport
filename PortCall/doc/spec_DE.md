@@ -7,17 +7,32 @@
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Globale Beschreibung: **Ein Hafenaufenthalt ist der zeitlich begrenzte Besuch eines Schiffes im Hafen, um eine nützliche Funktion zu erfüllen, z. B. das Laden oder Löschen von Waren.**  
+Version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
 <sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
-<!-- /30-PropertiesList -->  
+- `UNLOCODE[string]`: Code der Vereinten Nationen für Handels- und Verkehrsstandorte, [UN/LOCODE] (https://unece.org/trade/cefact/unlocode-code-list-country-and-territory), des Hafens  - `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivalDate[date-time]`: Datum/Uhrzeit der Ankunft des Schiffes im Hafengebiet  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `arrivalDateScheduled[date-time]`: Geplantes Datum/Uhrzeit der Schiffsankunft im Hafengebiet, wie vom Schiffsagenten angegeben  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `departureDate[date-time]`: Datum/Uhrzeit des Auslaufens des Schiffes aus dem Hafengebiet  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `departureDateScheduled[date-time]`: Geplantes Datum/Uhrzeit des Auslaufens des Schiffes aus dem Hafengebiet, wie vom Schiffsagenten angegeben  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `regularLine[string]`: Reguläre Leitung des Portcalls  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `status[string]`: Status des Vorgangs. Enum: 'Voraussichtlich, Genehmigt, Einsatzbereit, Abgeschlossen'  - `terminal[string]`: Terminal des Portcalls  - `vessel[object]`: Rufendes Schiff des Hafenrufs  	- `IMO[number]`: IMO-Schiffsidentifikationsnummer nach dem von der Internationalen Seeschifffahrtsorganisation festgelegten [Schema] (https://www.imo.org/en/OurWork/IIIS/Pages/IMO-Identification-Number-Schemes.aspx).    
+	- `shipName[string]`: Name des Schiffes    
+	- `shipTypeCategory[string]`: Beschreibung der Schiffskategorie. Enum: 'CONTAINER, GENERAL CARGO NON SPECIALIZED, LIQUID BULK, DRY BULK, CRUISE'    
+	- `shipTypeClass[string]`: Beschreibung der Schiffsklasse. Enum: 'MULTI-DECKER, CHEMIE-TANKER, VOLLCONTAINER, ÖL-TANKER, SCHÜTTGUTFÄHRER, LG-TANKER'.    
+- `vesselAgent[string]`: Schiffsagent des Hafenanrufs  - `voyageCode[string]`: Reisecode (eindeutige ID einer Reise)  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- Keine erforderlichen Eigenschaften  <!-- /35-RequiredProperties -->  
+- `arrivalDate`  - `id`  - `type`  - `vessel`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
+Datenmodell aus dem H2020-Projekt DataPorts.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
@@ -464,13 +479,201 @@ PortCall:
 ## Beispiel-Nutzlasten  
 #### PortCall NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für einen PortCall im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+    "type": "PortCall",  
+    "UNLOCODE": "ESVLC",  
+    "arrivalDate": "2021-12-01T00:46:00Z",  
+    "arrivalDateScheduled": "2021-12-01T00:46:00Z",  
+    "departureDate": "2021-12-01T11:35:00Z",  
+    "departureDateScheduled": "2021-12-01T11:35:00Z",  
+    "regularLine": "GRIMALDI - SHORT SEA SERVICE B",  
+    "status": "Completed",  
+    "terminal": "VALENCIA TERMINAL EUROPA, S.A.",  
+    "vessel": {  
+        "shipName": "ECO BARCELONA",  
+        "IMO": 8712345,  
+        "shipTypeCategory": "CONTAINER",  
+        "shipTypeClass": "FULL CONTAINER"  
+    },  
+    "vesselAgent": "GRIMALDI LOGISTICA ESPAÑA S.L.",  
+    "voyageCode": "1202106029"  
+}  
+```  
+</details>  
 #### PortCall NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für einen PortCall im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+    {  
+        "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+        "type": "PortCall",  
+        "UNLOCODE": {  
+            "type": "Text",  
+            "value": "ESVLC",  
+            "metadata": {}  
+        },  
+        "arrivalDate": {  
+            "type": "Text",  
+            "value": "2021-12-01T00:46:00Z",  
+            "metadata": {}  
+        },  
+        "arrivalDateScheduled": {  
+            "type": "Text",  
+            "value": "2021-12-01T00:46:00Z",  
+            "metadata": {}  
+        },  
+        "departureDate": {  
+            "type": "Text",  
+            "value": "2021-12-01T11:35:00Z",  
+            "metadata": {}  
+        },  
+        "departureDateScheduled": {  
+            "type": "Text",  
+            "value": "2021-12-01T11:35:00Z",  
+            "metadata": {}  
+        },  
+        "regularLine": {  
+            "type": "Text",  
+            "value": "GRIMALDI - SHORT SEA SERVICE B",  
+            "metadata": {}  
+        },  
+        "status": {  
+            "type": "Text",  
+            "value": "Completed",  
+            "metadata": {}  
+        },  
+        "terminal": {  
+            "type": "Text",  
+            "value": "VALENCIA TERMINAL EUROPA, S.A.",  
+            "metadata": {}  
+        },  
+        "vessel": {  
+            "type": "StructuredValue",  
+            "value": {  
+                "shipName": "ECO BARCELONA",  
+                "IMO": 8712345,  
+                "shipTypeCategory": "CONTAINER",  
+                "shipTypeClass": "FULL CONTAINER"  
+            },  
+            "metadata": {}  
+        },  
+        "vesselAgent": {  
+            "type": "Text",  
+            "value": "GRIMALDI LOGISTICA ESPAÑA S.L.",  
+            "metadata": {}  
+        },  
+        "voyageCode": {  
+            "type": "Text",  
+            "value": "1202106029",  
+            "metadata": {}  
+        }  
+    }  
+```  
+</details>  
 #### PortCall NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für einen PortCall im JSON-LD-Format als Key-Values. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+  "type": "PortCall",  
+  "UNLOCODE": "ESVLC",  
+  "arrivalDate": "2021-12-01T00:46:00Z",  
+  "arrivalDateScheduled": "2021-12-01T00:46:00Z",  
+  "departureDate": "2021-12-01T11:35:00Z",  
+  "departureDateScheduled": "2021-12-01T11:35:00Z",  
+  "regularLine": "GRIMALDI - SHORT SEA SERVICE B",  
+  "status": "Completed",  
+  "terminal": "VALENCIA TERMINAL EUROPA, S.A.",  
+  "vessel": {  
+    "shipName": "ECO BARCELONA",  
+    "IMO": 8712345,  
+    "shipTypeCategory": "CONTAINER",  
+    "shipTypeClass": "FULL CONTAINER"  
+  },  
+  "vesselAgent": "GRIMALDI LOGISTICA ESPAÃ‘A S.L.",  
+  "voyageCode": "1202106029",  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
+  ]  
+}  
+```  
+</details>  
 #### PortCall NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für einen PortCall im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+  "type": "PortCall",  
+  "UNLOCODE": {  
+    "type": "Text",  
+    "value": "ESVLC"  
+  },  
+  "arrivalDate": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "date-time",  
+      "@value": "2021-12-01T00:46:00Z"  
+    }  
+  },  
+  "arrivalDateScheduled": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "date-time",  
+      "@value": "2021-12-01T00:46:00Z"  
+    }  
+  },  
+  "departureDate": {  
+    "type": "Property",  
+    "value": "2021-12-01T11:35:00Z",  
+    "metadata": {}  
+  },  
+  "departureDateScheduled": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "date-time",  
+      "@value": "2021-12-01T11:35:00Z"  
+    }  
+  },  
+  "regularLine": {  
+    "type": "Property",  
+    "value": "GRIMALDI - SHORT SEA SERVICE B"  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "Completed"  
+  },  
+  "terminal": {  
+    "type": "Property",  
+    "value": "VALENCIA TERMINAL EUROPA, S.A."  
+  },  
+  "vessel": {  
+    "type": "Property",  
+    "value": {  
+      "shipName": "ECO BARCELONA",  
+      "IMO": 8712345,  
+      "shipTypeCategory": "CONTAINER",  
+      "shipTypeClass": "FULL CONTAINER"  
+    }  
+  },  
+  "vesselAgent": {  
+    "type": "Property",  
+    "value": "GRIMALDI LOGISTICA ESPAÃ‘A S.L."  
+  },  
+  "voyageCode": {  
+    "type": "Property",  
+    "value": "1202106029"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
