@@ -1,17 +1,23 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
+- name: Andreu
+  surname: Belsa
+  mail: anbelpel@upv.es
+  organization: Universitat Politecnica de Valencia
+  project: DataPorts (H2020)
+  year: 2023
+- name: Grigorios
+  surname: Dimitriadis
+  mail: gdimitriadis@thpa.gr
+  organization: ThPA S.A. - Port of Thessaloniki
+  project: Dataports
+  year: 2023
 - name: Salome
   surname: Gonzalez
   mail: sgonzalez@hiades.es
   organization: HIADES BUSINESS PATTERNS SL
   project: iGreenPort  (i4Trust Program) and others
   comments: HIADES is a consolidated company in the port sector, with its Ecosystem of Products 'AMURA' present internationally in more than 20 ports, and its Digital Twin 'AURORA'  Fiware-based, for the digitization of Smart Ports.
-  year: 2023
-- name: Andreu
-  surname: Belsa
-  mail: anbelpel@upv.es
-  organization: Universitat Politecnica de Valencia
-  project: DataPorts (H2020)
   year: 2023
 - name: Matilde
   surname: Julian
@@ -23,20 +29,22 @@ contributors:
   surname: Zerzelidis
   mail: alexander_zerzelidis@iti.gr
   organization: CERTH
-  project: DataPorts (H2020)
+  project: Dataports
   year: 2023
-- name: 
-  surname: 
-  mail: 
+- name:
+  surname:
+  mail:
   organization: Autoridad Portuaria de Huelva
   project: SmartEDIPort (i4Trust Program)
   comments:
   year: 2023
-- name: 
-  surname: 
-  mail: 
+- name:
+  surname:
+  mail:
   organization: Nextport
   project: SmartEDIPort (i4Trust Program)
   comments:
   year: 2023
+
+
 
