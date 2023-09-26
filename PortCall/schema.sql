@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PortCall of the subject dataModel.MarineTransport for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE status_type AS ENUM ('Estimated', 'Authorized', 'Operational', 'Completed');
+CREATE TABLE PortCall (UNLOCODE text, address json, alternateName text, areaServed text, arrivalDate timestamp, arrivalDateScheduled timestamp, dataProvider text, dateCreated timestamp, dateModified timestamp, departureDate timestamp, departureDateScheduled timestamp, description text, id text, location json, name text, owner json, regularLine text, seeAlso json, source text, status status_type, terminal text, vessel json, vesselAgent text, voyageCode text);
