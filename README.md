@@ -11,6 +11,8 @@ The following entity types are available:
 
 - [PortAuthority](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortAuthority/README.md). The data model is intended to provide information about Port Authorities
 
+- [PortCall](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortCall/README.md). A Port Call is a vessel's visit to the port for a period of time, in order to perform some kind of useful function, like the loading or unloading of goods.
+
 - [Vessel](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Vessel/README.md). The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information
 
 
