@@ -7,17 +7,32 @@
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+全球描述：**靠港是指船只到港口停靠一段时间，以执行某种有用的功能，如装卸货物。  
+版本： 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## 属性列表  
 
 <sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
-<!-- /30-PropertiesList -->  
+- `UNLOCODE[string]`: 港口的联合国贸易和运输地点代码[UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)  - `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivalDate[date-time]`: 船舶抵达港区的日期/时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `arrivalDateScheduled[date-time]`: 船运代理申报的船舶抵达港区的预定日期/时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `departureDate[date-time]`: 船舶离开港区的日期/时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `departureDateScheduled[date-time]`: 船运代理申报的船舶离开港区的预定日期/时间  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `regularLine[string]`: 端口呼叫的常规线路  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `status[string]`: 操作状态。枚举："估计、授权、运行、完成"。  - `terminal[string]`: 端口呼叫终端  - `vessel[object]`: 呼叫港口的船只  	- `IMO[number]`: 按照国际海事组织规定的[方案](https://www.imo.org/en/OurWork/IIIS/Pages/IMO-Identification-Number-Schemes.aspx) 确定的国际海事组织船舶识别号。    
+	- `shipName[string]`: 船名    
+	- `shipTypeCategory[string]`: 船舶类别说明。枚举："集装箱、普通货物（非专用）、散装液体、散装干货、游轮"。    
+	- `shipTypeClass[string]`: 船舶类别描述。枚举："多层油轮、化学品油轮、满载油轮、油轮、散装货轮、轻型油轮"。    
+- `vesselAgent[string]`: 港口呼叫的船舶代理  - `voyageCode[string]`: 航次代码（航次的唯一 ID）  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
-- 无必要属性  <!-- /35-RequiredProperties -->  
+- `arrivalDate`  - `id`  - `type`  - `vessel`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
+数据模型来自 H2020 项目数据端口。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## 属性的数据模型描述  
@@ -464,13 +479,201 @@ PortCall:
 ## 有效载荷示例  
 #### PortCall NGSI-v2 键值示例  
 下面是一个以 JSON-LD 格式作为键值的 PortCall 实例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+    "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+    "type": "PortCall",  
+    "UNLOCODE": "ESVLC",  
+    "arrivalDate": "2021-12-01T00:46:00Z",  
+    "arrivalDateScheduled": "2021-12-01T00:46:00Z",  
+    "departureDate": "2021-12-01T11:35:00Z",  
+    "departureDateScheduled": "2021-12-01T11:35:00Z",  
+    "regularLine": "GRIMALDI - SHORT SEA SERVICE B",  
+    "status": "Completed",  
+    "terminal": "VALENCIA TERMINAL EUROPA, S.A.",  
+    "vessel": {  
+        "shipName": "ECO BARCELONA",  
+        "IMO": 8712345,  
+        "shipTypeCategory": "CONTAINER",  
+        "shipTypeClass": "FULL CONTAINER"  
+    },  
+    "vesselAgent": "GRIMALDI LOGISTICA ESPAÑA S.L.",  
+    "voyageCode": "1202106029"  
+}  
+```  
+</details>  
 #### PortCall NGSI-v2 标准化示例  
 下面是一个规范化 JSON-LD 格式的 PortCall 示例。当不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+    {  
+        "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+        "type": "PortCall",  
+        "UNLOCODE": {  
+            "type": "Text",  
+            "value": "ESVLC",  
+            "metadata": {}  
+        },  
+        "arrivalDate": {  
+            "type": "Text",  
+            "value": "2021-12-01T00:46:00Z",  
+            "metadata": {}  
+        },  
+        "arrivalDateScheduled": {  
+            "type": "Text",  
+            "value": "2021-12-01T00:46:00Z",  
+            "metadata": {}  
+        },  
+        "departureDate": {  
+            "type": "Text",  
+            "value": "2021-12-01T11:35:00Z",  
+            "metadata": {}  
+        },  
+        "departureDateScheduled": {  
+            "type": "Text",  
+            "value": "2021-12-01T11:35:00Z",  
+            "metadata": {}  
+        },  
+        "regularLine": {  
+            "type": "Text",  
+            "value": "GRIMALDI - SHORT SEA SERVICE B",  
+            "metadata": {}  
+        },  
+        "status": {  
+            "type": "Text",  
+            "value": "Completed",  
+            "metadata": {}  
+        },  
+        "terminal": {  
+            "type": "Text",  
+            "value": "VALENCIA TERMINAL EUROPA, S.A.",  
+            "metadata": {}  
+        },  
+        "vessel": {  
+            "type": "StructuredValue",  
+            "value": {  
+                "shipName": "ECO BARCELONA",  
+                "IMO": 8712345,  
+                "shipTypeCategory": "CONTAINER",  
+                "shipTypeClass": "FULL CONTAINER"  
+            },  
+            "metadata": {}  
+        },  
+        "vesselAgent": {  
+            "type": "Text",  
+            "value": "GRIMALDI LOGISTICA ESPAÑA S.L.",  
+            "metadata": {}  
+        },  
+        "voyageCode": {  
+            "type": "Text",  
+            "value": "1202106029",  
+            "metadata": {}  
+        }  
+    }  
+```  
+</details>  
 #### PortCall NGSI-LD 键值示例  
 下面是一个以 JSON-LD 格式作为键值的 PortCall 实例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+  "type": "PortCall",  
+  "UNLOCODE": "ESVLC",  
+  "arrivalDate": "2021-12-01T00:46:00Z",  
+  "arrivalDateScheduled": "2021-12-01T00:46:00Z",  
+  "departureDate": "2021-12-01T11:35:00Z",  
+  "departureDateScheduled": "2021-12-01T11:35:00Z",  
+  "regularLine": "GRIMALDI - SHORT SEA SERVICE B",  
+  "status": "Completed",  
+  "terminal": "VALENCIA TERMINAL EUROPA, S.A.",  
+  "vessel": {  
+    "shipName": "ECO BARCELONA",  
+    "IMO": 8712345,  
+    "shipTypeCategory": "CONTAINER",  
+    "shipTypeClass": "FULL CONTAINER"  
+  },  
+  "vesselAgent": "GRIMALDI LOGISTICA ESPAÃ‘A S.L.",  
+  "voyageCode": "1202106029",  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
+  ]  
+}  
+```  
+</details>  
 #### PortCall NGSI-LD 标准化示例  
 下面是一个规范化 JSON-LD 格式的 PortCall 示例。当不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
-<!-- /80-Examples -->  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+  "type": "PortCall",  
+  "UNLOCODE": {  
+    "type": "Text",  
+    "value": "ESVLC"  
+  },  
+  "arrivalDate": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "date-time",  
+      "@value": "2021-12-01T00:46:00Z"  
+    }  
+  },  
+  "arrivalDateScheduled": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "date-time",  
+      "@value": "2021-12-01T00:46:00Z"  
+    }  
+  },  
+  "departureDate": {  
+    "type": "Property",  
+    "value": "2021-12-01T11:35:00Z",  
+    "metadata": {}  
+  },  
+  "departureDateScheduled": {  
+    "type": "Property",  
+    "value": {  
+      "@type": "date-time",  
+      "@value": "2021-12-01T11:35:00Z"  
+    }  
+  },  
+  "regularLine": {  
+    "type": "Property",  
+    "value": "GRIMALDI - SHORT SEA SERVICE B"  
+  },  
+  "status": {  
+    "type": "Property",  
+    "value": "Completed"  
+  },  
+  "terminal": {  
+    "type": "Property",  
+    "value": "VALENCIA TERMINAL EUROPA, S.A."  
+  },  
+  "vessel": {  
+    "type": "Property",  
+    "value": {  
+      "shipName": "ECO BARCELONA",  
+      "IMO": 8712345,  
+      "shipTypeCategory": "CONTAINER",  
+      "shipTypeClass": "FULL CONTAINER"  
+    }  
+  },  
+  "vesselAgent": {  
+    "type": "Property",  
+    "value": "GRIMALDI LOGISTICA ESPAÃ‘A S.L."  
+  },  
+  "voyageCode": {  
+    "type": "Property",  
+    "value": "1202106029"  
+  },  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
+  ]  
+}  
+```  
+</details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
