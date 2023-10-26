@@ -22,6 +22,8 @@ Link alla [specifica](https://github.com/smart-data-models/dataModel.MarineTrans
 [仕様へのリンク](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortCall/doc/spec_JA.md)
 
 [链接到规范](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortCall/doc/spec_ZH.md)
+
+[사양 링크](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortCall/doc/spec_KO.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.MarineTransport/PortCall/examples/example.json) (keyvalues) for NGSI v2
