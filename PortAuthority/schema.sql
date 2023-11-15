@@ -1,0 +1,3 @@
+/* (Beta) Export of data model PortAuthority of the subject dataModel.MarineTransport for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE PortAuthority_type AS ENUM ('PortAuthority');
+CREATE TABLE PortAuthority (address JSON, alternateName TEXT, areaServed TEXT, contactPoint JSON, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, owner JSON, seeAlso JSON, source TEXT, timezone TEXT, type PortAuthority_type, unlocode TEXT);
