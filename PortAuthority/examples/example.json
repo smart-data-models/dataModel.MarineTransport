@@ -4,8 +4,8 @@
   "location": {
     "type": "Point",
     "coordinates": [
-        -0.3048254137983776,
-        39.431348987126704
+      -0.3048254137983776,
+      39.431348987126704
     ]
   },
   "name": "Port Authoriy name",
@@ -22,11 +22,11 @@
     "telephone": "+34 12 34 56 78",
     "email": "example@portauthority.com",
     "availableLanguage": [
-        "en-EN",
-        "es-ES"
+      "en-EN",
+      "es-ES"
     ],
     "faxNumber": "12 345 67 89",
     "name": "Port Authoriy name",
     "url": "https://URL"
-  }    
+  }
 }
