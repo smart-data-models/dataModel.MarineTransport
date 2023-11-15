@@ -2,14 +2,14 @@
   "id": "urn:mrn:amura:port-authority:UNLOCODE",
   "type": "PortAuthority",
   "location": {
-      "type": "geo:json",
-      "value": {
-          "type": "Point",
-          "coordinates": [
-              -0.3048254137983776,
-              39.431348987126704
-          ]
-      }
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -0.3048254137983776,
+        39.431348987126704
+      ]
+    }
   },
   "name": {
     "type": "Text",
