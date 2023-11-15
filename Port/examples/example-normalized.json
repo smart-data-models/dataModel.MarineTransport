@@ -6,14 +6,14 @@
     "value": {
       "type": "Point",
       "coordinates": [
-          -0.3048254137983776,
-          39.431348987126704
+        -0.3048254137983776,
+        39.431348987126704
       ]
     }
   },
   "name": {
-      "type": "Text",
-      "value": "Port name"
+    "type": "Text",
+    "value": "Port name"
   },
   "unlocode": {
     "type": "Text",
@@ -46,7 +46,7 @@
       "url": "https://URL"
     }
   },
-  "portArea":{
+  "portArea": {
     "type": "geo:json",
     "value": {
       "type": "MultiPolygon",
@@ -91,7 +91,7 @@
     "value": "Sea"
   },
   "refPortAuthority": {
-      "type": "Reference",
-      "value": "urn:mrn:amura:port-authority:UNLOCODE"
+    "type": "Text",
+    "value": "urn:mrn:amura:port-authority:UNLOCODE"
   }
 }
