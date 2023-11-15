@@ -2,20 +2,20 @@
   "id": "urn:mrn:amura:port:UNLOCODE",
   "type": "Port",
   "location": {
-      "type": "Point",
-      "coordinates": [
-          -0.3048254137983776,
-          39.431348987126704
-      ]
+    "type": "Point",
+    "coordinates": [
+      -0.3048254137983776,
+      39.431348987126704
+    ]
   },
   "name": "Port name",
   "unlocode": "Unlocode",
   "description": "Port description",
   "address": {
     "streetAddress": "Avda. Example",
-      "addressCountry": "ES",
-      "addressLocality": "Locality",
-      "postalCode": "1234"
+    "addressCountry": "ES",
+    "addressLocality": "Locality",
+    "postalCode": "1234"
   },
   "contactPoint": {
     "telephone": "+34 12 34 56 78",
@@ -58,7 +58,7 @@
     ]
   },
   "timeZone": "Europe/London",
-  "gln":  123456789,
+  "gln": 123456789,
   "portType": "Sea",
   "refPortAuthority": "urn:mrn:amura:port-authority:UNLOCODE"
 }
