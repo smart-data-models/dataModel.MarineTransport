@@ -22,7 +22,8 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `ata[date-time]`: Heure réelle d'arrivée ou de départ du terminal. (format ISO 8601 UTC). Voir [UNTDID - D.95B - Segment DTM - C507 (2380)](https://service.unece.org/trade/untdid/d95b/uncl/uncl2380.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `bookingCode[string]`: Référence de réservation. Voir [UNTDID - D.95B - Segment RFF - C506 (1154)](https://service.unece.org/trade/untdid/d95b/uncl/uncl1154.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerCarrierIdentification[string]`: Code identifiant une partie impliquée dans une transaction. Voir [UNTDID - D.95B - Segment NAD - C082 (3039)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3039.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerClass[string]`: Classe de conteneur (indication de l'action liée à l'équipement). Enum : "Continental, Export, Import, Remain on board, Shifter, Transhipment". Voir [UNTDID - D.95B - Segment EQD - 8249] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8249.htm).  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerIdentification[string]`: Identification du conteneur. Voir [UNTDID - D.95B - Segment EQD - C237 (8260)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8260.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerIsoCode[string]`: Description codée de la taille et du type d'équipement. Enum 'Réservoir enduit de chaux,Réservoir enduit d'époxy,IMO1,IMO2,IMO3,Réservoir pressurisé,Réservoir réfrigéré,Semi-réfrigéré,Réservoir en acier inoxydable,Conteneur frigorifique non ouvrable de 40 pieds,Caisse-palette,Europalette,Palette scandinave,Remorque,Conteneur frigorifique non ouvrable de 20 pieds,Palette interchangeable,Semi-remorque,Conteneur-citerne de 20 pieds,Conteneur-citerne 30 ft.,Conteneur-citerne 40 ft.,Conteneur IC 20 ft.,Conteneur IC 30 ft.,Conteneur IC 40 ft.,Citerne frigorifique 20 ft.,Citerne frigorifique 30 ft.,Citerne frigorifique 40 ft.,Conteneur-citerne IC 20 ft.,Conteneur-citerne IC 30 ft.,Conteneur-citerne IC 40 ft.,Citerne frigorifique IC 20 ft.,Citerne frigorifique IC 40 ft.,Caisson déplaçable : L < 6,15m,Caisse mobile : 6,15m < L < 7,82m,Caisse mobile : 7,82m < L < 9,15m,Caisse mobile : 9,15m < L < 10,90m,Caisse mobile : 10,90m < L < 13,75m,Totebin,Conteneur à température contrôlée 20 ft,Conteneur à température contrôlée 40 ft'. Voir [UNTDID - D.95B - Segment EQD - C224 (8155)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8155.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerSeal[string]`: Le numéro d'un scellé personnalisé ou d'un autre scellé apposé sur les conteneurs. Voir [UNTDID - D.95B - Segment SEL - 9308](https://service.unece.org/trade/untdid/d95b/uncl/uncl9308.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerWeight[number]`: Poids du conteneur. Voir [UNTDID - D.95B - Segment MEA - C174 (6314)](https://service.unece.org/trade/untdid/d95b/uncl/uncl6314.htm)  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `destination[string]`: Destination finale du conteneur (UN/LOCODE : Code des Nations Unies pour les lieux de commerce et de transport). Voir [UNTDID - D.95B - Segment LOC - C517 (3225)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3225.htm) et [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)  . Model: [https://schema.org/Text](https://schema.org/Text)- `destinationTransportType[string]`: Code de la méthode de transport (CEE/ONU). Voir [UNTDID - D.95B - Segment TDT - C220 (8067)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8067.htm) et [UN/ECE - Rec 19](https://unece.org/trade/uncefact/cl-recommendations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `dischargingPort[string]`: Port où le conteneur est déchargé (UN/LOCODE : Code des Nations Unies pour les lieux de commerce et de transport). Voir [UNTDID - D.95B - Segment LOC - C517 (3225)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3225.htm) et [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)  . Model: [https://schema.org/Text](https://schema.org/Text)- `fileName[string]`: Nom de fichier du message EDI Codeco  . Model: [https://schema.org/Text](https://schema.org/Text)- `functionCode[string]`: Code indiquant la fonction du message. Enum='Annulation, Ajout, Suppression, Modification, Remplacement, Confirmation, Duplicata, Statut, Original, Non trouvé, Réponse, Non traité, Demande, Notification préalable, Rappel, Proposition, Annulation, à réémettre, Réémission, Modification à l'initiative du vendeur, Remplacement de la section d'en-tête uniquement, Remplacement du détail de l'article et du résumé uniquement, Transmission finale, Transaction en attente, Instruction de livraison, Prévision, Instruction de livraison et prévision, Non accepté, Accepté, avec modification dans la section d'en-tête, Accepté sans modification, Accepté, avec modification dans la section détaillée, Copie, Approbation, Modification dans la section du titre, Accepté avec modification, Retransmission, Modification dans la section détaillée, Annulation d'un débit, Annulation d'un crédit, Annulation pour annulation, Demande de suppression, Finir/fermer l'ordre, Confirmation par des moyens spécifiques, Transmission supplémentaire, Accepté sans réserves, Accepté avec réserves, Provisoire, Définitif, Accepté, contenu rejeté, Litige réglé, Retrait, Autorisation, Proposition de modification, Test". Voir [UNTDID - D.95B - BGM - 1225] (https://service.unece.org/trade/untdid/d95b/uncl/uncl1225.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[string]`: Identifiant unique de l'entité  - `isContainerEmpty[boolean]`: Information indiquant si le conteneur est plein ou vide. Voir [UNTDID - D.95B - Segment EQD - 8169](https://service.unece.org/trade/untdid/d95b/uncl/uncl8169.htm)  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `loadingPort[string]`: Port où le conteneur est chargé (UN/LOCODE : Code des Nations Unies pour les lieux de commerce et de transport). Voir [UNTDID - D.95B - Segment LOC - C517 (3225)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3225.htm) et [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `messageRaw[string]`: Message brut de l'EDI Codeco  . Model: [https://schema.org/Text](https://schema.org/Text)- `messageVersion[string]`: Version du type de message. Voir [UNTDID - D.95B - UNH - S009 (0052)] (https://service.unece.org/trade/untdid/d95b/trmd/codeco_d.htm#DSGI)  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Le nom de cet élément  - `operationType[string]`: Code identifiant la fonction d'un lieu. Enum : 'Lieu des conditions de livraison, Lieu de paiement, Lieu de réception des marchandises, Lieu de départ, Lieu de livraison, Lieu de destination, Lieu/port de chargement, Lieu d'acceptation, Lieu/port de déchargement, Port de déchargement, Lieu de transbordement, Emplacement des marchandises, Lieu de transfert de responsabilité, Lieu de transfert de propriété, Lieu de passage de la frontière, Entrepôt, Usine/usine, Lieu de destination finale des marchandises, Lieu des conditions de vente, Bureau de douane de dédouanement, Port de mainlevée, Port d'entrée, Pays, Ville, Pays d'origine, Pays de destination des marchandises, Gare ferroviaire, Pays de provenance, Bâtiment, Début de la section taxable, Port de base du déchargement, Port de base du chargement, Pays d'exportation/d'expédition, Pays de destination finale, Pays de dernier envoi, Pays de première destination, Pays de production, Pays de commerce, Bureau de douane d'entrée, Bureau de douane de sortie, Lieu d'examen douanier, Lieu d'authentification du document, Bureau de douane de destination (transit), Région d'expédition, Région de destination, Région de production, Pays de transit, Bureau de douane de transit, Pays de garantie de transit non valable, Pays de destination (transit), Frais et fret dus par, Département de fabrication, Frais et fret dus à, Fin de la section imposable, Lieu de paiement, Chargement ou déchargement en pleine voie, Lieu d'arrivée, Port d'escale suivant, Port d'embarquement, Premier lieu de déchargement facultatif, Gare ferroviaire express, Gare ferroviaire pour cargaisons mixtes, Deuxième lieu de déchargement facultatif, Port d'escale suivant sans déchargement, Troisième lieu de déchargement facultatif, Point de regroupement, Quatrième lieu de déchargement facultatif, Bureau de libération du connaissement, Transbordement excluant ce lieu, Transbordement limité à ce lieu, Port de chargement initial, Premier port d'escale sans déchargement, Premier port d'escale avec déchargement, Lieu/port de première entrée, Lieu d'expédition, Cinquième lieu de déchargement facultatif, Port de préacheminement, Lieu de livraison (par transport sur wagon), Lieu d'acceptation du contrat de transport, Lieu de destination du contrat de transport, Pays de garantie de transit valable, Lieu/port d'arrivée initiale du moyen de transport, Lieu de réception, Lieu d'enregistrement, Lieu/emplacement où des traitements spéciaux ont eu lieu ou doivent avoir lieu, Lieu de délivrance des documents, Acheminement, Station d'application des frais supplémentaires, Lieu de dépôt des documents, Lieu de déchargement facultatif, Lieu d'expédition de l'équipement vide, Lieu de retour de l'équipement vide, Lieu/port d'entrée de l'entrepôt, Pays de la première vente, Pays de l'achat, Lieu de transfert, lieu de dégroupement, lieu de consommation, région d'origine, lieu de groupage, point de combinaison des taux, lieu de décision de prolongation du retard de livraison, lieu/emplacement de rechargement, bureau de douane d'expédition, pays d'expédition, bureau de douane d'exportation, zone franche d'exportation, région d'exportation/d'expédition, bureau de douane de départ, bureau de douane de garantie de transit, pays de transbordement, pays de vente, bureau de douane de destination, gare ferroviaire de wagons isolés, Voie d'évitement, dernier lieu/port d'escale du moyen de transport, pays du régime douanier précédent, bureau de douane d'enregistrement de la déclaration en douane précédente, lieu de l'expéditeur participant, district de négociation salariale, lieu de destination finale du moyen de transport, lieu de chargement de l'équipement vide, lieu de déchargement de l'équipement vide, région de livraison, entrepôt de produits pétroliers, lieu d'entrée (douane), lieu de soins aux animaux vivants, lieu de reglaçage, lieu de pesage, gare de triage, station de magasinage, quai de chargement, Connexion portuaire, Lieu d'expiration, Lieu de négociation, Lieu de paiement des créances, Crédit documentaire disponible dans, Cellule d'arrimage, Pour le transport vers, Chargement à bord/expédition/prise en charge à/depuis, Box privé, Port de déchargement suivant, Port d'escale, Lieu/emplacement d'embarquement, Lieu/emplacement de débarquement, Terminal d'autres transporteurs, Pays de la juridiction de la taxe sur la valeur ajoutée (TVA), Lieu de contact, Destination interne supplémentaire, Port d'escale étranger, Lieu d'entretien Défini mutuellement". Voir [UNTDID - D.95B - Segment TDT - LOC - 3227] (https://service.unece.org/trade/untdid/d95b/uncl/uncl3227.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `originTransportType[string]`: Code de la méthode de transport (CEE/ONU). Voir [UNTDID - D.95B - Segment TDT - C220 (8067)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8067.htm) et [UN/ECE - Rec 19](https://unece.org/trade/uncefact/cl-recommendations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `receiverIdentification[string]`: Identification du destinataire de l'échange. Voir [UN/EDIFACT - S003] (https://unece.org/trade/uncefact/unedifact/part-4-Annex-B)  . Model: [https://schema.org/Text](https://schema.org/Text)- `release[string]`: Numéro de version dans le numéro de version actuel. Voir [UNTDID - D.95B - UNH - S009 (0054)] (https://service.unece.org/trade/untdid/d95b/trmd/codeco_d.htm#DSGI)  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `senderIdentification[string]`: Interchange Sender Identification (identification de l'expéditeur de l'échange). Voir [UN/EDIFACT - S002] (https://unece.org/trade/uncefact/unedifact/part-4-Annex-B)  . Model: [https://schema.org/Text](https://schema.org/Text)- `sentAt[date-time]`: Date et heure d'envoi du message représentées par un format ISO 8601 UTC. Voir [UN/EDIFACT - S004] (https://unece.org/trade/uncefact/unedifact/part-4-Annex-B)  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `travelReference[string]`: Numéro de référence du moyen de transport. Voir [UNTDID - D.95B - Segment TDT - 8028] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8028.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `truckLicenseCode[string]`: Plaque d'immatriculation du camion. Voir [UNTDID - D.95B - Segment TDT - C222 (8213)] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Type d'entité NGSI. Il doit s'agir d'EdiCodeco  - `vesselCallSign[string]`: Les indicatifs d'appel maritimes sont des indicatifs d'appel attribués comme identificateurs uniques aux navires. Voir [UNTDID - D.95B - Segment TDT - C222 (8213)] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `vesselCarrier[string]`: Identification du transporteur maritime (identification de la partie qui entreprend ou organise le transport de marchandises entre des points désignés). Voir [UNTDID - D.95B - Segment TDT - C040 (3127)] (https://service.unece.org/trade/untdid/d95b/uncl/uncl3127.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `vesselImo[number]`: Numéro de l'Organisation maritime internationale (un UID mondial pour toujours). Voir [UNTDID - D.95B - Segment TDT - C222 (8213)] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)  . Model: [https://schema.org/Number](https://schema.org/Number)- `vesselMmsi[number]`: Numéro d'identité du service mobile maritime (UID attribué temporairement, délivré par l'État du pavillon actuel de l'objet). Voir [UNTDID - D.95B - Segment TDT - C222 (8213)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)  . Model: [https://schema.org/Number](https://schema.org/Number)- `vesselName[string]`: Nom du navire. Voir [UNTDID - D.95B - Segment TDT - C222 (8212)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8212.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `vesselVoyage[string]`: Numéro de référence du voyage du navire. Voir [UNTDID - D.95B - Segment RFF - C506 (1154)](https://service.unece.org/trade/untdid/d95b/uncl/uncl1154.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
+- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `ata[date-time]`: Heure réelle d'arrivée ou de départ du terminal. (format ISO 8601 UTC). Voir [UNTDID - D.95B - Segment DTM - C507 (2380)](https://service.unece.org/trade/untdid/d95b/uncl/uncl2380.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `bookingCode[string]`: Référence de réservation. Voir [UNTDID - D.95B - Segment RFF - C506 (1154)](https://service.unece.org/trade/untdid/d95b/uncl/uncl1154.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerCarrierIdentification[string]`: Code identifiant une partie impliquée dans une transaction. Voir [UNTDID - D.95B - Segment NAD - C082 (3039)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3039.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerClass[string]`: Classe de conteneur (indication de l'action liée à l'équipement). Enum : "Continental, Export, Import, Remain on board, Shifter, Transhipment". Voir [UNTDID - D.95B - Segment EQD - 8249] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8249.htm).  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerIdentification[string]`: Identification du conteneur. Voir [UNTDID - D.95B - Segment EQD - C237 (8260)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8260.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerIsoCode[string]`: Description codée de la taille et du type d'équipement. Enum 'Réservoir enduit de chaux,Réservoir enduit d'époxy,IMO1,IMO2,IMO3,Réservoir pressurisé,Réservoir réfrigéré,Semi-réfrigéré,Réservoir en acier inoxydable,Conteneur frigorifique non ouvrable de 40 pieds,Caisse-palette,Europalette,Palette scandinave,Remorque,Conteneur frigorifique non ouvrable de 20 pieds,Palette interchangeable,Semi-remorque,Conteneur-citerne de 20 pieds,Conteneur-citerne 30 ft.,Conteneur-citerne 40 ft.,Conteneur IC 20 ft.,Conteneur IC 30 ft.,Conteneur IC 40 ft.,Citerne frigorifique 20 ft.,Citerne frigorifique 30 ft.,Citerne frigorifique 40 ft.,Conteneur-citerne IC 20 ft.,Conteneur-citerne IC 30 ft.,Conteneur-citerne IC 40 ft.,Citerne frigorifique IC 20 ft.,Citerne frigorifique IC 40 ft.,Caisson déplaçable : L < 6,15m,Caisse mobile : 6,15m < L < 7,82m,Caisse mobile : 7,82m < L < 9,15m,Caisse mobile : 9,15m < L < 10,90m,Caisse mobile : 10,90m < L < 13,75m,Totebin,Conteneur à température contrôlée 20 ft,Conteneur à température contrôlée 40 ft'. Voir [UNTDID - D.95B - Segment EQD - C224 (8155)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8155.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerSeal[string]`: Le numéro d'un scellé personnalisé ou d'un autre scellé apposé sur les conteneurs. Voir [UNTDID - D.95B - Segment SEL - 9308](https://service.unece.org/trade/untdid/d95b/uncl/uncl9308.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `containerWeight[number]`: Poids du conteneur. Voir [UNTDID - D.95B - Segment MEA - C174 (6314)](https://service.unece.org/trade/untdid/d95b/uncl/uncl6314.htm)  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `destination[string]`: Destination finale du conteneur (UN/LOCODE : Code des Nations Unies pour les lieux de commerce et de transport). Voir [UNTDID - D.95B - Segment LOC - C517 (3225)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3225.htm) et [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)  . Model: [https://schema.org/Text](https://schema.org/Text)- `destinationTransportType[string]`: Code de la méthode de transport (CEE/ONU). Voir [UNTDID - D.95B - Segment TDT - C220 (8067)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8067.htm) et [UN/ECE - Rec 19](https://unece.org/trade/uncefact/cl-recommendations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `dischargingPort[string]`: Port où le conteneur est déchargé (UN/LOCODE : Code des Nations Unies pour les lieux de commerce et de transport). Voir [UNTDID - D.95B - Segment LOC - C517 (3225)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3225.htm) et [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)  . Model: [https://schema.org/Text](https://schema.org/Text)- `fileName[string]`: Nom de fichier du message EDI Codeco  . Model: [https://schema.org/Text](https://schema.org/Text)- `functionCode[string]`: Code indiquant la fonction du message. Enum='Annulation, Ajout, Suppression, Modification, Remplacement, Confirmation, Duplicata, Statut, Original, Non trouvé, Réponse, Non traité, Demande, Notification préalable, Rappel, Proposition, Annulation, à réémettre, Réémission, Modification à l'initiative du vendeur, Remplacement de la section d'en-tête uniquement, Remplacement du détail de l'article et du résumé uniquement, Transmission finale, Transaction en attente, Instruction de livraison, Prévision, Instruction de livraison et prévision, Non accepté, Accepté, avec modification dans la section d'en-tête, Accepté sans modification, Accepté, avec modification dans la section détaillée, Copie, Approbation, Modification dans la section du titre, Accepté avec modification, Retransmission, Modification dans la section détaillée, Annulation d'un débit, Annulation d'un crédit, Annulation pour annulation, Demande de suppression, Finir/fermer l'ordre, Confirmation par des moyens spécifiques, Transmission supplémentaire, Accepté sans réserves, Accepté avec réserves, Provisoire, Définitif, Accepté, contenu rejeté, Litige réglé, Retrait, Autorisation, Proposition de modification, Test". Voir [UNTDID - D.95B - BGM - 1225] (https://service.unece.org/trade/untdid/d95b/uncl/uncl1225.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[string]`: Identifiant unique de l'entité  - `isContainerEmpty[boolean]`: Information indiquant si le conteneur est plein ou vide. Voir [UNTDID - D.95B - Segment EQD - 8169](https://service.unece.org/trade/untdid/d95b/uncl/uncl8169.htm)  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `loadingPort[string]`: Port où le conteneur est chargé (UN/LOCODE : Code des Nations Unies pour les lieux de commerce et de transport). Voir [UNTDID - D.95B - Segment LOC - C517 (3225)](https://service.unece.org/trade/untdid/d95b/uncl/uncl3225.htm) et [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory)  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `messageRaw[string]`: Message brut de l'EDI Codeco  . Model: [https://schema.org/Text](https://schema.org/Text)- `messageVersion[string]`: Version du type de message. Voir [UNTDID - D.95B - UNH - S009 (0052)] (https://service.unece.org/trade/untdid/d95b/trmd/codeco_d.htm#DSGI)  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: Le nom de cet élément  - `operationType[string]`: Code identifiant la fonction d'un lieu. Enum : 'Lieu des conditions de livraison, Lieu de paiement, Lieu de réception des marchandises, Lieu de départ, Lieu de livraison, Lieu de destination, Lieu/port de chargement, Lieu d'acceptation, Lieu/port de déchargement, Port de déchargement, Lieu de transbordement, Emplacement des marchandises, Lieu de transfert de responsabilité, Lieu de transfert de propriété, Lieu de passage de la frontière, Entrepôt, Usine/usine, Lieu de destination finale des marchandises, Lieu des conditions de vente, Bureau de douane de dédouanement, Port de mainlevée, Port d'entrée, Pays, Ville, Pays d'origine, Pays de destination des marchandises, Gare ferroviaire, Pays de provenance, Bâtiment, Début de la section taxable, Port de base du déchargement, Port de base du chargement, Pays d'exportation/d'expédition, Pays de destination finale, Pays de dernier envoi, Pays de première destination, Pays de production, Pays de commerce, Bureau de douane d'entrée, Bureau de douane de sortie, Lieu d'examen douanier, Lieu d'authentification du document, Bureau de douane de destination (transit), Région d'expédition, Région de destination, Région de production, Pays de transit, Bureau de douane de transit, Pays de garantie de transit non valable, Pays de destination (transit), Frais et fret dus par, Département de fabrication, Frais et fret dus à, Fin de la section imposable, Lieu de paiement, Chargement ou déchargement en pleine voie, Lieu d'arrivée, Port d'escale suivant, Port d'embarquement, Premier lieu de déchargement facultatif, Gare ferroviaire express, Gare ferroviaire pour cargaisons mixtes, Deuxième lieu de déchargement facultatif, Port d'escale suivant sans déchargement, Troisième lieu de déchargement facultatif, Point de regroupement, Quatrième lieu de déchargement facultatif, Bureau de libération du connaissement, Transbordement excluant ce lieu, Transbordement limité à ce lieu, Port de chargement initial, Premier port d'escale sans déchargement, Premier port d'escale avec déchargement, Lieu/port de première entrée, Lieu d'expédition, Cinquième lieu de déchargement facultatif, Port de préacheminement, Lieu de livraison (par transport sur wagon), Lieu d'acceptation du contrat de transport, Lieu de destination du contrat de transport, Pays de garantie de transit valable, Lieu/port d'arrivée initiale du moyen de transport, Lieu de réception, Lieu d'enregistrement, Lieu/emplacement où des traitements spéciaux ont eu lieu ou doivent avoir lieu, Lieu de délivrance des documents, Acheminement, Station d'application des frais supplémentaires, Lieu de dépôt des documents, Lieu de déchargement facultatif, Lieu d'expédition de l'équipement vide, Lieu de retour de l'équipement vide, Lieu/port d'entrée de l'entrepôt, Pays de la première vente, Pays de l'achat, Lieu de transfert, lieu de dégroupement, lieu de consommation, région d'origine, lieu de groupage, point de combinaison des taux, lieu de décision de prolongation du retard de livraison, lieu/emplacement de rechargement, bureau de douane d'expédition, pays d'expédition, bureau de douane d'exportation, zone franche d'exportation, région d'exportation/d'expédition, bureau de douane de départ, bureau de douane de garantie de transit, pays de transbordement, pays de vente, bureau de douane de destination, gare ferroviaire de wagons isolés, Voie d'évitement, dernier lieu/port d'escale du moyen de transport, pays du régime douanier précédent, bureau de douane d'enregistrement de la déclaration en douane précédente, lieu de l'expéditeur participant, district de négociation salariale, lieu de destination finale du moyen de transport, lieu de chargement de l'équipement vide, lieu de déchargement de l'équipement vide, région de livraison, entrepôt de produits pétroliers, lieu d'entrée (douane), lieu de soins aux animaux vivants, lieu de reglaçage, lieu de pesage, gare de triage, station de magasinage, quai de chargement, Connexion portuaire, Lieu d'expiration, Lieu de négociation, Lieu de paiement des créances, Crédit documentaire disponible dans, Cellule d'arrimage, Pour le transport vers, Chargement à bord/expédition/prise en charge à/depuis, Box privé, Port de déchargement suivant, Port d'escale, Lieu/emplacement d'embarquement, Lieu/emplacement de débarquement, Terminal d'autres transporteurs, Pays de la juridiction de la taxe sur la valeur ajoutée (TVA), Lieu de contact, Destination interne supplémentaire, Port d'escale étranger, Lieu d'entretien Défini mutuellement". Voir [UNTDID - D.95B - Segment TDT - LOC - 3227] (https://service.unece.org/trade/untdid/d95b/uncl/uncl3227.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `originTransportType[string]`: Code de la méthode de transport (CEE/ONU). Voir [UNTDID - D.95B - Segment TDT - C220 (8067)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8067.htm) et [UN/ECE - Rec 19](https://unece.org/trade/uncefact/cl-recommendations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `receiverIdentification[string]`: Interchange Recipient Identification (identification du destinataire de l'échange). Voir [UN/EDIFACT - S003] (https://unece.org/trade/uncefact/unedifact/part-4-Annex-B)  . Model: [https://schema.org/Text](https://schema.org/Text)- `release[string]`: Numéro de version dans le numéro de version actuel. Voir [UNTDID - D.95B - UNH - S009 (0054)] (https://service.unece.org/trade/untdid/d95b/trmd/codeco_d.htm#DSGI)  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `senderIdentification[string]`: Interchange Sender Identification (identification de l'expéditeur de l'échange). Voir [UN/EDIFACT - S002] (https://unece.org/trade/uncefact/unedifact/part-4-Annex-B)  . Model: [https://schema.org/Text](https://schema.org/Text)- `sentAt[date-time]`: Date et heure d'envoi du message représentées par un format ISO 8601 UTC. Voir [UN/EDIFACT - S004] (https://unece.org/trade/uncefact/unedifact/part-4-Annex-B)  . Model: [https://schema.org/Text](https://schema.org/Text)- `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `travelReference[string]`: Numéro de référence du moyen de transport. Voir [UNTDID - D.95B - Segment TDT - 8028] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8028.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `truckLicenseCode[string]`: Plaque d'immatriculation du camion. Voir [UNTDID - D.95B - Segment TDT - C222 (8213)] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Type d'entité NGSI. Il doit s'agir d'EdiCodeco  - `vesselCallSign[string]`: Les indicatifs d'appel maritimes sont des indicatifs d'appel attribués comme identificateurs uniques aux navires. Voir [UNTDID - D.95B - Segment TDT - C222 (8213)] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `vesselCarrier[string]`: Identification du transporteur maritime (identification de la partie qui entreprend ou organise le transport de marchandises entre des points désignés). Voir [UNTDID - D.95B - Segment TDT - C040 (3127)] (https://service.unece.org/trade/untdid/d95b/uncl/uncl3127.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `vesselImo[number]`: Numéro de l'Organisation maritime internationale (un UID mondial pour toujours). Voir [UNTDID - D.95B - Segment TDT - C222 (8213)] (https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)  . Model: [https://schema.org/Number](https://schema.org/Number)- `vesselMmsi[number]`: Numéro d'identité du service mobile maritime (UID attribué temporairement, délivré par l'État du pavillon actuel de l'objet). Voir [UNTDID - D.95B - Segment TDT - C222 (8213)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8213.htm)  . Model: [https://schema.org/Number](https://schema.org/Number)- `vesselName[string]`: Nom du navire. Voir [UNTDID - D.95B - Segment TDT - C222 (8212)](https://service.unece.org/trade/untdid/d95b/uncl/uncl8212.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)- `vesselVoyage[string]`: Numéro de référence du voyage du navire. Voir [UNTDID - D.95B - Segment RFF - C506 (1154)](https://service.unece.org/trade/untdid/d95b/uncl/uncl1154.htm)  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `containerIdentification`  - `id`  - `type`  - `vesselImo`  <!-- /35-RequiredProperties -->  
@@ -306,8 +307,20 @@ EdiCodeco:
         model: https://schema.org/Text    
         type: Property    
     id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
-      type: string    
       x-ngsi:    
         type: Property    
     isContainerEmpty:    
@@ -796,11 +809,11 @@ EdiCodeco:
     - containerIdentification    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/EdiCodeco/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.io/dataModels.MarineTransport/EdiCodeco/schema.json    
+  x-model-schema: https://smart-data-models.github.io/dataModel.MarineTransport/EdiCodeco/schema.json    
   x-model-tags: i4trust    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -813,36 +826,36 @@ EdiCodeco:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:mrn:eshuv:edi-codeco:1625763902090",  
-    "type": "EdiCodeco",  
-    "fileName": "file name",  
-    "sentAt": "2023-08-11T14:50:00Z",  
-    "travelReference": "110823110823CCHRIB",  
-    "ata": "2023-08-11T14:47:00Z",  
-    "bookingCode": "FUE110823",  
-    "containerCarrierIdentification": "ALU",  
-    "containerClass": "Export",  
-    "containerIdentification": "TESI1120274",  
-    "containerIsoCode": "Refrigerated tank",  
-    "containerSeal": "28103",  
-    "containerWeight": 27000,  
-    "destinationTransportType": "Vessel",  
-    "dischargingPort": "ESFUE",  
-    "functionCode": "Deletion",  
-    "isContainerEmpty": false,  
-    "loadingPort": "ESHUV",  
-    "operationType": "Port of entry",  
-    "originTransportType": "Truck",  
-    "messageRaw": "UNB+UNOA:1+ESHUV+PA+230811:1450+174749339'UNH+92218+CODECO:D:95B:UN:SMDG16'BGM+34++9'TDT+20+110823110823CCHRIB+1++ALU:172:166:ALUsios+++1111111:146::CHRISTIAN'RFF+ON:110823110823CCHRIB'NAD+CF+ALU:172:166'NAD+MS+ESSCT:160:ZZZ'EQD+CN+TESI1120274+4EG1:102:5++2+5'RFF+BN:FUE110823'RFF+ACA:FUE110823'DTM+7:202308111447:203'LOC+9+ESHUV:139:6'LOC+11+ESFUE:139:6'LOC+165+ESHUV:139:6+CONCHUV:TER:ZZZ'LOC+164+ESFUE:139:6'MEA+AAE+VGM+KGM:27000.0'SEL+88200+SH'TDT+1++3++:172:ZZZ+++993NGR:146'DTM+ACT:202308111447:203'NAD+CA+ALU:172:166'NAD+CF+ALU:172:166'CNT+16:1'UNT+000022+92218'UNZ+1+174749339'",  
-    "receiverIdentification": "PA",  
-    "release": "95B",  
-    "senderIdentification": "ESHUV",  
-    "truckLicenseCode": "993NGR",  
-    "messageVersion": "D",  
-    "vesselCarrier": "ALQ",  
-    "vesselImo": 1111111,  
-    "vesselName": "Name",  
-    "vesselVoyage": "110823110823CCHRIB"  
+  "id": "urn:mrn:eshuv:edi-codeco:1625763902090",  
+  "type": "EdiCodeco",  
+  "fileName": "file name",  
+  "sentAt": "2023-08-11T14:50:00Z",  
+  "travelReference": "110823110823CCHRIB",  
+  "ata": "2023-08-11T14:47:00Z",  
+  "bookingCode": "FUE110823",  
+  "containerCarrierIdentification": "ALU",  
+  "containerClass": "Export",  
+  "containerIdentification": "TESI1120274",  
+  "containerIsoCode": "Refrigerated tank",  
+  "containerSeal": "28103",  
+  "containerWeight": 27000,  
+  "destinationTransportType": "Vessel",  
+  "dischargingPort": "ESFUE",  
+  "functionCode": "Deletion",  
+  "isContainerEmpty": false,  
+  "loadingPort": "ESHUV",  
+  "operationType": "Port of entry",  
+  "originTransportType": "Truck",  
+  "messageRaw": "UNB+UNOA:1+ESHUV+PA+230811:1450+174749339'UNH+92218+CODECO:D:95B:UN:SMDG16'BGM+34++9'TDT+20+110823110823CCHRIB+1++ALU:172:166:ALUsios+++1111111:146::CHRISTIAN'RFF+ON:110823110823CCHRIB'NAD+CF+ALU:172:166'NAD+MS+ESSCT:160:ZZZ'EQD+CN+TESI1120274+4EG1:102:5++2+5'RFF+BN:FUE110823'RFF+ACA:FUE110823'DTM+7:202308111447:203'LOC+9+ESHUV:139:6'LOC+11+ESFUE:139:6'LOC+165+ESHUV:139:6+CONCHUV:TER:ZZZ'LOC+164+ESFUE:139:6'MEA+AAE+VGM+KGM:27000.0'SEL+88200+SH'TDT+1++3++:172:ZZZ+++993NGR:146'DTM+ACT:202308111447:203'NAD+CA+ALU:172:166'NAD+CF+ALU:172:166'CNT+16:1'UNT+000022+92218'UNZ+1+174749339'",  
+  "receiverIdentification": "PA",  
+  "release": "95B",  
+  "senderIdentification": "ESHUV",  
+  "truckLicenseCode": "993NGR",  
+  "messageVersion": "D",  
+  "vesselCarrier": "ALQ",  
+  "vesselImo": 1111111,  
+  "vesselName": "Name",  
+  "vesselVoyage": "110823110823CCHRIB"  
 }  
 ```  
 </details>  
@@ -851,120 +864,120 @@ EdiCodeco:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:mrn:eshuv:edi-codeco:1625763902090",  
-    "type": "EdiCodeco",  
-    "fileName": {  
-        "type": "Text",  
-        "value": "file name"  
-    },  
-    "sentAt": {  
-        "type": "DateTime",  
-        "value": "2023-08-11T14:50:00Z"  
-    },  
-    "travelReference": {  
-        "type": "Text",  
-        "value": "110823110823CCHRIB"  
-    },  
-    "ata": {  
-        "type": "DateTime",  
-        "value": "2023-08-11T14:47:00Z"  
-    },  
-    "bookingCode": {  
-        "type": "Text",  
-        "value": "FUE110823"  
-    },  
-    "containerCarrierIdentification": {  
-        "type": "Text",  
-        "value": "ALU"  
-    },  
-    "containerClass": {  
-        "type": "Text",  
-        "value": "Export"  
-    },  
-    "containerIdentification": {  
-        "type": "Text",  
-        "value": "TESI1120274"  
-    },  
-    "containerIsoCode": {  
-        "type": "Text",  
-        "value": "Refrigerated tank"  
-    },  
-    "containerSeal": {  
-        "type": "Text",  
-        "value": "28103"  
-    },  
-    "containerWeight": {  
-        "type": "Number",  
-        "value": 27000  
-    },  
-    "destinationTransportType": {  
-        "type": "Text",  
-        "value": "Vessel"  
-    },  
-    "dischargingPort": {  
-        "type": "Text",  
-        "value": "ESFUE"  
-    },  
-    "functionCode": {  
-        "type": "Text",  
-        "value": "Deletion"  
-    },  
-    "isContainerEmpty": {  
-        "type": "Boolean",  
-        "value": false  
-    },  
-    "loadingPort": {  
-        "type": "Text",  
-        "value": "ESHUV"  
-    },  
-    "operationType": {  
-        "type": "Text",  
-        "value": "Port of entry"  
-    },  
-    "originTransportType": {  
-        "type": "Text",  
-        "value": "Truck"  
-    },  
-    "messageRaw": {  
-        "type": "Text",  
-        "value": "UNB+UNOA:1+ESHUV+PA+230811:1450+174749339'UNH+92218+CODECO:D:95B:UN:SMDG16'BGM+34++9'TDT+20+110823110823CCHRIB+1++ALU:172:166:ALUsios+++1111111:146::CHRISTIAN'RFF+ON:110823110823CCHRIB'NAD+CF+ALU:172:166'NAD+MS+ESSCT:160:ZZZ'EQD+CN+TESI1120274+4EG1:102:5++2+5'RFF+BN:FUE110823'RFF+ACA:FUE110823'DTM+7:202308111447:203'LOC+9+ESHUV:139:6'LOC+11+ESFUE:139:6'LOC+165+ESHUV:139:6+CONCHUV:TER:ZZZ'LOC+164+ESFUE:139:6'MEA+AAE+VGM+KGM:27000.0'SEL+88200+SH'TDT+1++3++:172:ZZZ+++993NGR:146'DTM+ACT:202308111447:203'NAD+CA+ALU:172:166'NAD+CF+ALU:172:166'CNT+16:1'UNT+000022+92218'UNZ+1+174749339'"  
-    },  
-    "receiverIdentification": {  
-        "type": "Text",  
-        "value": "PA"  
-    },  
-    "release": {  
-        "type": "Text",  
-        "value": "95B"  
-    },  
-    "senderIdentification": {  
-        "type": "Text",  
-        "value": "ESHUV"  
-    },  
-    "truckLicenseCode": {  
-        "type": "Text",  
-        "value": "993NGR"  
-    },  
-    "messageVersion": {  
-        "type": "Text",  
-        "value": "D"  
-    },  
-    "vesselCarrier": {  
-        "type": "Text",  
-        "value": "ALQ"  
-    },  
-    "vesselImo": {  
-        "type": "Number",  
-        "value": 1111111  
-    },  
-    "vesselName": {  
-        "type": "Text",  
-        "value": "Name"  
-    },  
-    "vesselVoyage": {  
-        "type": "Text",  
-        "value": "110823110823CCHRIB"  
-    }  
+  "id": "urn:mrn:eshuv:edi-codeco:1625763902090",  
+  "type": "EdiCodeco",  
+  "fileName": {  
+    "type": "Text",  
+    "value": "file name"  
+  },  
+  "sentAt": {  
+    "type": "DateTime",  
+    "value": "2023-08-11T14:50:00Z"  
+  },  
+  "travelReference": {  
+    "type": "Text",  
+    "value": "110823110823CCHRIB"  
+  },  
+  "ata": {  
+    "type": "DateTime",  
+    "value": "2023-08-11T14:47:00Z"  
+  },  
+  "bookingCode": {  
+    "type": "Text",  
+    "value": "FUE110823"  
+  },  
+  "containerCarrierIdentification": {  
+    "type": "Text",  
+    "value": "ALU"  
+  },  
+  "containerClass": {  
+    "type": "Text",  
+    "value": "Export"  
+  },  
+  "containerIdentification": {  
+    "type": "Text",  
+    "value": "TESI1120274"  
+  },  
+  "containerIsoCode": {  
+    "type": "Text",  
+    "value": "Refrigerated tank"  
+  },  
+  "containerSeal": {  
+    "type": "Text",  
+    "value": "28103"  
+  },  
+  "containerWeight": {  
+    "type": "Number",  
+    "value": 27000  
+  },  
+  "destinationTransportType": {  
+    "type": "Text",  
+    "value": "Vessel"  
+  },  
+  "dischargingPort": {  
+    "type": "Text",  
+    "value": "ESFUE"  
+  },  
+  "functionCode": {  
+    "type": "Text",  
+    "value": "Deletion"  
+  },  
+  "isContainerEmpty": {  
+    "type": "Boolean",  
+    "value": false  
+  },  
+  "loadingPort": {  
+    "type": "Text",  
+    "value": "ESHUV"  
+  },  
+  "operationType": {  
+    "type": "Text",  
+    "value": "Port of entry"  
+  },  
+  "originTransportType": {  
+    "type": "Text",  
+    "value": "Truck"  
+  },  
+  "messageRaw": {  
+    "type": "Text",  
+    "value": "UNB+UNOA:1+ESHUV+PA+230811:1450+174749339'UNH+92218+CODECO:D:95B:UN:SMDG16'BGM+34++9'TDT+20+110823110823CCHRIB+1++ALU:172:166:ALUsios+++1111111:146::CHRISTIAN'RFF+ON:110823110823CCHRIB'NAD+CF+ALU:172:166'NAD+MS+ESSCT:160:ZZZ'EQD+CN+TESI1120274+4EG1:102:5++2+5'RFF+BN:FUE110823'RFF+ACA:FUE110823'DTM+7:202308111447:203'LOC+9+ESHUV:139:6'LOC+11+ESFUE:139:6'LOC+165+ESHUV:139:6+CONCHUV:TER:ZZZ'LOC+164+ESFUE:139:6'MEA+AAE+VGM+KGM:27000.0'SEL+88200+SH'TDT+1++3++:172:ZZZ+++993NGR:146'DTM+ACT:202308111447:203'NAD+CA+ALU:172:166'NAD+CF+ALU:172:166'CNT+16:1'UNT+000022+92218'UNZ+1+174749339'"  
+  },  
+  "receiverIdentification": {  
+    "type": "Text",  
+    "value": "PA"  
+  },  
+  "release": {  
+    "type": "Text",  
+    "value": "95B"  
+  },  
+  "senderIdentification": {  
+    "type": "Text",  
+    "value": "ESHUV"  
+  },  
+  "truckLicenseCode": {  
+    "type": "Text",  
+    "value": "993NGR"  
+  },  
+  "messageVersion": {  
+    "type": "Text",  
+    "value": "D"  
+  },  
+  "vesselCarrier": {  
+    "type": "Text",  
+    "value": "ALQ"  
+  },  
+  "vesselImo": {  
+    "type": "Number",  
+    "value": 1111111  
+  },  
+  "vesselName": {  
+    "type": "Text",  
+    "value": "Name"  
+  },  
+  "vesselVoyage": {  
+    "type": "Text",  
+    "value": "110823110823CCHRIB"  
+  }  
 }  
 ```  
 </details>  
@@ -973,39 +986,39 @@ EdiCodeco:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:mrn:eshuv:edi-codeco:1625763902090",  
-    "type": "EdiCodeco",  
-    "fileName": "file name",  
-    "sentAt": "2023-08-11T14:50:00Z",  
-    "travelReference": "110823110823CCHRIB",  
-    "ata": "2023-08-11T14:47:00Z",  
-    "bookingCode": "FUE110823",  
-    "containerCarrierIdentification": "ALU",  
-    "containerClass": "Export",  
-    "containerIdentification": "TESI1120274",  
-    "containerIsoCode": "Refrigerated tank",  
-    "containerSeal": "28103",  
-    "containerWeight": 27000,  
-    "destinationTransportType": "Vessel",  
-    "dischargingPort": "ESFUE",  
-    "functionCode": "Deletion",  
-    "isContainerEmpty": false,  
-    "loadingPort": "ESHUV",  
-    "operationType": "Port of entry",  
-    "originTransportType": "Truck",  
-    "messageRaw": "UNB+UNOA:1+ESHUV+PA+230811:1450+174749339'UNH+92218+CODECO:D:95B:UN:SMDG16'BGM+34++9'TDT+20+110823110823CCHRIB+1++ALU:172:166:ALUsios+++1111111:146::CHRISTIAN'RFF+ON:110823110823CCHRIB'NAD+CF+ALU:172:166'NAD+MS+ESSCT:160:ZZZ'EQD+CN+TESI1120274+4EG1:102:5++2+5'RFF+BN:FUE110823'RFF+ACA:FUE110823'DTM+7:202308111447:203'LOC+9+ESHUV:139:6'LOC+11+ESFUE:139:6'LOC+165+ESHUV:139:6+CONCHUV:TER:ZZZ'LOC+164+ESFUE:139:6'MEA+AAE+VGM+KGM:27000.0'SEL+88200+SH'TDT+1++3++:172:ZZZ+++993NGR:146'DTM+ACT:202308111447:203'NAD+CA+ALU:172:166'NAD+CF+ALU:172:166'CNT+16:1'UNT+000022+92218'UNZ+1+174749339'",  
-    "receiverIdentification": "PA",  
-    "release": "95B",  
-    "senderIdentification": "ESHUV",  
-    "truckLicenseCode": "993NGR",  
-    "messageVersion": "D",  
-    "vesselCarrier": "ALQ",  
-    "vesselImo": 1111111,  
-    "vesselName": "CHRISTIAN",  
-    "vesselVoyage": "110823110823CCHRIB",  
-    "@context": [  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
-    ]  
+  "id": "urn:mrn:eshuv:edi-codeco:1625763902090",  
+  "type": "EdiCodeco",  
+  "fileName": "file name",  
+  "sentAt": "2023-08-11T14:50:00Z",  
+  "travelReference": "110823110823CCHRIB",  
+  "ata": "2023-08-11T14:47:00Z",  
+  "bookingCode": "FUE110823",  
+  "containerCarrierIdentification": "ALU",  
+  "containerClass": "Export",  
+  "containerIdentification": "TESI1120274",  
+  "containerIsoCode": "Refrigerated tank",  
+  "containerSeal": "28103",  
+  "containerWeight": 27000,  
+  "destinationTransportType": "Vessel",  
+  "dischargingPort": "ESFUE",  
+  "functionCode": "Deletion",  
+  "isContainerEmpty": false,  
+  "loadingPort": "ESHUV",  
+  "operationType": "Port of entry",  
+  "originTransportType": "Truck",  
+  "messageRaw": "UNB+UNOA:1+ESHUV+PA+230811:1450+174749339'UNH+92218+CODECO:D:95B:UN:SMDG16'BGM+34++9'TDT+20+110823110823CCHRIB+1++ALU:172:166:ALUsios+++1111111:146::CHRISTIAN'RFF+ON:110823110823CCHRIB'NAD+CF+ALU:172:166'NAD+MS+ESSCT:160:ZZZ'EQD+CN+TESI1120274+4EG1:102:5++2+5'RFF+BN:FUE110823'RFF+ACA:FUE110823'DTM+7:202308111447:203'LOC+9+ESHUV:139:6'LOC+11+ESFUE:139:6'LOC+165+ESHUV:139:6+CONCHUV:TER:ZZZ'LOC+164+ESFUE:139:6'MEA+AAE+VGM+KGM:27000.0'SEL+88200+SH'TDT+1++3++:172:ZZZ+++993NGR:146'DTM+ACT:202308111447:203'NAD+CA+ALU:172:166'NAD+CF+ALU:172:166'CNT+16:1'UNT+000022+92218'UNZ+1+174749339'",  
+  "receiverIdentification": "PA",  
+  "release": "95B",  
+  "senderIdentification": "ESHUV",  
+  "truckLicenseCode": "993NGR",  
+  "messageVersion": "D",  
+  "vesselCarrier": "ALQ",  
+  "vesselImo": 1111111,  
+  "vesselName": "CHRISTIAN",  
+  "vesselVoyage": "110823110823CCHRIB",  
+  "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details>  
