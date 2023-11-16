@@ -15,7 +15,7 @@
     "shipTypeCategory": "CONTAINER",
     "shipTypeClass": "FULL CONTAINER"
   },
-  "vesselAgent": "GRIMALDI LOGISTICA ESPAÑA S.L.",
+  "vesselAgent": "GRIMALDI LOGISTICA ESPA\u00d1A S.L.",
   "voyageCode": "1202106029",
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"
