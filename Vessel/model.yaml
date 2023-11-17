@@ -187,8 +187,20 @@ Vessel:
         type: Property
         units: ' degree'
     id:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
       description: Unique identifier of the entity
-      type: string
       x-ngsi:
         type: Property
     imo:
@@ -207,15 +219,168 @@ Vessel:
         type: Property
         units: ' meters'
     location:
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty'
-      properties:
-        coordinates:
-          items:
-            type: number
-          type: array
-        type:
-          type: string
-      type: object
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
+      oneOf:
+        - description: Geojson reference to the item. Point
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                type: number
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. LineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
       x-ngsi:
         type: GeoProperty
     manager:
@@ -245,10 +410,9 @@ Vessel:
         model: https://schema.org/Text
         type: Property
     name:
-      description: Vessel Name
+      description: The name of this item
       type: string
       x-ngsi:
-        model: https://schema.org/Text
         type: Property
     navigationStatus:
       description: 'Enum: ''0=Under way using engine,1=At anchor,2=Not under command,3=Restricted manoeuverability,4=Constrained by her draught,5=Moored,6=Aground,7=Engaged in Fishing,8=Under way sailing,9=Reserved for future amendment of Navigational Status for HSC,10=Reserved for future amendment of Navigational Status for WIG,11=Reserved for future use,12=Reserved for future use,13=Reserved for future use,14=AIS-SART is active,15=Not defined (default)''. Navigation Status. AIVDM/AIVDO data format'
@@ -540,8 +704,8 @@ Vessel:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Vessel/LICENSE.md
   x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/Vessel/schema.json
   x-model-tags: I4Trust
-  x-version: 0.0.2
+  x-version: 0.1.1
