@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.1.0",
+  "$schemaVersion": "0.1.1",
   "modelTags": "I4Trust",
   "derivedFrom": "",
   "license": "",
@@ -23,21 +23,6 @@
           "enum": [
             "Vessel"
           ]
-        },
-        "location": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string"
-            },
-            "coordinates": {
-              "type": "array",
-              "items": {
-                "type": "number"
-              }
-            }
-          },
-          "description": "GeoProperty. Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty"
         },
         "imo": {
           "type": "number",
