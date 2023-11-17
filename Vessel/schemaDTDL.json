@@ -1,0 +1,422 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Vessel;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models Vessel schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/Vessel/schema.json",
+    "description": "The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information",
+    "displayName": "Vessel",
+    "contents": [
+        {
+            "name": "airDraught",
+            "writable": true,
+            "displayName": "airDraught",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Air Draught (distance from the top of a vessel''s highest point to its waterline)"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "beam",
+            "writable": true,
+            "displayName": "beam",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Beam of Vessel"
+        },
+        {
+            "name": "buildingAt",
+            "writable": true,
+            "displayName": "buildingAt",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of building of the vessel represented by an ISO 8601 UTC format"
+        },
+        {
+            "name": "callSign",
+            "writable": true,
+            "displayName": "callSign",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Maritime call signs are call signs assigned as unique identifiers to vessels"
+        },
+        {
+            "name": "courseOverGround",
+            "writable": true,
+            "displayName": "courseOverGround",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Course Over Ground (COG)"
+        },
+        {
+            "name": "createdAt",
+            "writable": true,
+            "displayName": "createdAt",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of creation of the entity represented by an ISO 8601 UTC format"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "deadweightTonnage",
+            "writable": true,
+            "displayName": "deadweightTonnage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Deadweight Tonnage (DWT)"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "destinationPort",
+            "writable": true,
+            "displayName": "destinationPort",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Destination Port (Geographic coding scheme UN/LOCODE (United Nations Code for Trade and Transport Locations). https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)"
+        },
+        {
+            "name": "draught",
+            "writable": true,
+            "displayName": "draught",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Draught (vertical distance between the waterline and the bottom of the hull (keel))"
+        },
+        {
+            "name": "estimatedTimeOfArrival",
+            "writable": true,
+            "displayName": "estimatedTimeOfArrival",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Estimated time of arrival, as it was originally planned and entered by the shipper, represented by an ISO 8601 UTC format"
+        },
+        {
+            "name": "financialOwner",
+            "writable": true,
+            "displayName": "financialOwner",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Financial Owner"
+        },
+        {
+            "name": "flagCode",
+            "writable": true,
+            "displayName": "flagCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "International Flag Code (ISO 3166-1 alfa-2)"
+        },
+        {
+            "name": "grossTonnage",
+            "writable": true,
+            "displayName": "grossTonnage",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gross Tonnage (GT)"
+        },
+        {
+            "name": "heading",
+            "writable": true,
+            "displayName": "heading",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Heading of the Vessel (HDG)"
+        },
+        {
+            "name": "imo",
+            "writable": true,
+            "displayName": "imo",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "International Maritime Organization Number (a global forever UID)"
+        },
+        {
+            "name": "length",
+            "writable": true,
+            "displayName": "length",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Length of Vessel"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "manager",
+            "writable": true,
+            "displayName": "manager",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Manager Vessel"
+        },
+        {
+            "name": "maximumDraught",
+            "writable": true,
+            "displayName": "maximumDraught",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum Draught"
+        },
+        {
+            "name": "mmsi",
+            "writable": true,
+            "displayName": "mmsi",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Marine Mobile Service Identity Number (a temporarily assigned UID, issued by that object's current flag state)"
+        },
+        {
+            "name": "modifiedAt",
+            "writable": true,
+            "displayName": "modifiedAt",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of last modification of the entity represented by an ISO 8601 UTC format"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "navigationStatus",
+            "writable": true,
+            "displayName": "navigationStatus",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Enum: '0=Under way using engine,1=At anchor,2=Not under command,3=Restricted manoeuverability,4=Constrained by her draught,5=Moored,6=Aground,7=Engaged in Fishing,8=Under way sailing,9=Reserved for future amendment of Navigational Status for HSC,10=Reserved for future amendment of Navigational Status for WIG,11=Reserved for future use,12=Reserved for future use,13=Reserved for future use,14=AIS-SART is active,15=Not defined (default)'. Navigation Status. AIVDM/AIVDO data format"
+        },
+        {
+            "name": "observedAt",
+            "writable": true,
+            "displayName": "observedAt",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of this observation represented by an ISO 8601 UTC format"
+        },
+        {
+            "name": "ownerVessel",
+            "writable": true,
+            "displayName": "ownerVessel",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Owner Vessel"
+        },
+        {
+            "name": "photo",
+            "writable": true,
+            "displayName": "photo",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Vessel Photo URL"
+        },
+        {
+            "name": "positionAccuracy",
+            "writable": true,
+            "displayName": "positionAccuracy",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "global navigation satellite system (GNSS) receiver or of other electronic position fixing device; default),1=High (< 10 m; differential mode of e.g. DGNSS receiver)'. Code for the accuracy of the vessel position flag"
+        },
+        {
+            "name": "previousPort",
+            "writable": true,
+            "displayName": "previousPort",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Previous Port (Geographic coding scheme UN/LOCODE (United Nations Code for Trade and Transport Locations). https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)"
+        },
+        {
+            "name": "rateOfTurn",
+            "writable": true,
+            "displayName": "rateOfTurn",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rate of Turn (ROT)"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "specialManeuverIndicator",
+            "writable": true,
+            "displayName": "specialManeuverIndicator",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Enum: '0=Not available (default),1=Not engaged in special maneuver,2=Engaged in special maneuver'. Code for the special maneuver flag"
+        },
+        {
+            "name": "speedOverGround",
+            "writable": true,
+            "displayName": "speedOverGround",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Speed Over Ground (SOG)"
+        },
+        {
+            "name": "technicalManager",
+            "writable": true,
+            "displayName": "technicalManager",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Technical Manager"
+        },
+        {
+            "name": "toBow",
+            "writable": true,
+            "displayName": "toBow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dimension to Bow"
+        },
+        {
+            "name": "toPort",
+            "writable": true,
+            "displayName": "toPort",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dimension to Port"
+        },
+        {
+            "name": "toStardboard",
+            "writable": true,
+            "displayName": "toStardboard",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dimension to Starboard"
+        },
+        {
+            "name": "toStern",
+            "writable": true,
+            "displayName": "toStern",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dimension to Stern"
+        },
+        {
+            "name": "vesselSubType",
+            "writable": true,
+            "displayName": "vesselSubType",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Enum: '0=Not available (default),1-19=Reserved for future use,20=Wing in ground (WIG), all ships of this type,21=Wing in ground (WIG), Hazardous category A,22=Wing in ground (WIG), Hazardous category B,23=Wing in ground (WIG), Hazardous category C,24=Wing in ground (WIG), Hazardous category D,25-29=Wing in ground (WIG), Reserved for future use,30=Fishing,31=Towing,32=Towing: length exceeds 200m or breadth exceeds 25m,33=Dredging or underwater ops,34=Diving ops,35=Military ops,36=Sailing,37=Pleasure Craft,38"
+        },
+        {
+            "name": "vesselType",
+            "writable": true,
+            "displayName": "vesselType",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Enum: '1=Reserved,2=Wing In Ground,3=Special Category,4=High-Speed Craft,5=Special Category,6=Passenger,7=Cargo,8=Tanker,9=Other'. Code for vessel type"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}
