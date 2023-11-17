@@ -22,7 +22,9 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
 - `airDraught[number]`: 喫水（船舶の最上部から喫水線までの距離）  . Model: [http://schema.org/Number](http://schema.org/Number)- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `beam[number]`: 船幅  . Model: [https://schema.org/Number](https://schema.org/Number)- `buildingAt[date-time]`: ISO 8601 UTCフォーマットで表された船舶の建造日時  . Model: [https://schema.org/Text](https://schema.org/Text)- `callSign[string]`: 海上コールサインとは、船舶に固有の識別子として割り当てられるコールサインのことである。  . Model: [https://schema.org/Text](https://schema.org/Text)- `courseOverGround[number]`: コース・オーバー・グラウンド（COG）  . Model: [https://schema.org/Number](https://schema.org/Number)- `createdAt[date-time]`: ISO 8601 UTCフォーマットで表されるエンティティの作成日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `deadweightTonnage[number]`: 載貨重量トン数（DWT）  . Model: [https://schema.org/Number](https://schema.org/Number)- `description[string]`: この商品の説明  - `destinationPort[string]`: 仕向港（地理的コード化スキームUN/LOCODE（国連貿易・輸送地コード）https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations)  . Model: [https://schema.org/Text](https://schema.org/Text)- `draught[number]`: 喫水線（喫水線から船底（キール）までの垂直距離）  . Model: [http://schema.org/Number](http://schema.org/Number)- `estimatedTimeOfArrival[date-time]`: 荷送人が当初予定し、入力した到着予定時刻（ISO 8601 UTCフォーマットで表される  . Model: [https://schema.org/Text](https://schema.org/Text)- `financialOwner[string]`: 財務オーナー  . Model: [https://schema.org/Text](https://schema.org/Text)- `flagCode[string]`: 国際国旗コード (ISO 3166-1 alfa-2)  . Model: [https://schema.org/Text](https://schema.org/Text)- `grossTonnage[number]`: 総トン数（GT）  . Model: [https://schema.org/Number](https://schema.org/Number)- `heading[number]`: 船首方位（HDG）  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[string]`: エンティティの一意識別子  - `imo[number]`: 国際海事機関番号（世界共通のUID）  . Model: [https://schema.org/Number](https://schema.org/Number)- `length[number]`: 船の長さ  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[object]`: 項目への Geojson 参照。これは、Point、LineString、Polygon、MultiPoint、MultiLineString、または MultiPolygoProperty です。  	- `coordinates`:     
+	- `type`:     
 - `manager[string]`: マネージャー・ベッセル  . Model: [https://schema.org/Text](https://schema.org/Text)- `maximumDraught[number]`: 最大喫水  . Model: [https://schema.org/Number](https://schema.org/Number)- `mmsi[number]`: 海上移動サービス識別番号（一時的に割り当てられたUID。）  . Model: [https://schema.org/Number](https://schema.org/Number)- `modifiedAt[date-time]`: ISO 8601 UTCフォーマットで表されるエンティティの最終変更日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: 船舶名  . Model: [https://schema.org/Text](https://schema.org/Text)- `navigationStatus[number]`: 列挙する：'0=エンジンを使用して航行中,1=停泊中,2=指揮下にない,3=操船が制限されている,4=喫水による制約がある,5=係留中,6=着底中,7=漁業に従事している,8=航行中,9=HSCの航行状態の将来の修正のために予約されている、10=Reserved for future amendment of Navigational Status for WIG, 11=Reserved for future use, 12=Reserved for future use, 13=Reserved for future use, 14=AIS-SART is active, 15=Not defined (default)'.航行状況。AIVDM/AIVDOデータフォーマット  . Model: [http://schema.org/Number](http://schema.org/Number)- `observedAt[date-time]`: ISO 8601 UTCフォーマットで表された観測日時。  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `ownerVessel[string]`: オーナー船  . Model: [https://schema.org/Text](https://schema.org/Text)- `photo[string]`: 船舶写真URL  . Model: [https://schema.org/Text](https://schema.org/Text)- `positionAccuracy[number]`: 全地球航法衛星システム(GNSS)受信機または他の電子位置固定装置のもの。デフォルト),1=High (< 10 m; DGNSS受信機などのディファレンシャルモード)'.船舶位置フラグの精度を表すコード  . Model: [https://schema.org/Number.Enum: 0=Low (> 10 m; autonomous mode of e.g](https://schema.org/Number.Enum: 0=Low (> 10 m; autonomous mode of e.g)- `previousPort[string]`: 前港（地理的コード体系UN/LOCODE（国連貿易・輸送機関コード）https://unece.org/trade/publications/recommendation-ndeg16-united-nations-code-trade-and-transport-locations）  . Model: [https://schema.org/Text](https://schema.org/Text)- `rateOfTurn[number]`: 回転率（ROT）  . Model: [https://schema.org/Number](https://schema.org/Number)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `specialManeuverIndicator[number]`: Enum: '0=使用不可(デフォルト),1=特殊作戦に参加していない,2=特殊作戦に参加している'.特別作戦フラグのコード  . Model: [https://schema.org/Number](https://schema.org/Number)- `speedOverGround[number]`: 地上速度（SOG）  . Model: [https://schema.org/Number](https://schema.org/Number)- `technicalManager[string]`: テクニカル・マネージャー  . Model: [https://schema.org/Text](https://schema.org/Text)- `toBow[number]`: 船首までの寸法  . Model: [http://schema.org/Number](http://schema.org/Number)- `toPort[number]`: 港までの寸法  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStardboard[number]`: 右舷寸法  . Model: [http://schema.org/Number](http://schema.org/Number)- `toStern[number]`: ディメンション・トゥ・スターン  . Model: [http://schema.org/Number](http://schema.org/Number)- `type[string]`: NGSIエンティティタイプ。Vesselでなければならない。  - `vesselSubType[number]`: 列挙：'0=利用不可(デフォルト),1-19=将来の使用のために予約,20=ウィング・イン・グラウンド(WIG),このタイプの全船舶,21=ウィング・イン・グラウンド(WIG),危険カテゴリA,22=ウィング・イン・グラウンド(WIG)、危険カテゴリB,23=ウィングイングラウンド(WIG),危険カテゴリC,24=ウィングイングラウンド(WIG),危険カテゴリD,25-29=ウィングイングラウンド(WIG),将来の使用のために予約,30=釣り,31=曳航,32=曳航：長さが200mを超えるか、幅が25mを超える,33=浚渫または水中作業,34=潜水作業,35=軍事作業,36=帆走,37=プレジャークラフト,38-39=予約,40=高速船(HSC)、この種の全ての船舶,41=高速船(HSC)、危険分類A,42=高速船(HSC)、危険分類B,43=高速船(HSC)、危険分類C、44=高速船(HSC)、危険カテゴリD,45-48=高速船(HSC)、将来の使用のために予約,49=高速船(HSC)、追加情報なし,50=パイロット船,51=捜索救助船,52=タグ,53=港湾テンダー,54=公害防止装置,55=法執行,56-57=予備-地方船,58=医療輸送,59=RR決議No.18,60=Passenger, all ships of this type,61=Passenger, Hazardous category A,62=Passenger, Hazardous category B,63=Passenger, Hazardous category C,64=Passenger, Hazardous category D,65-68=Passenger, reserved for future use,69=Passenger, No additional information、70=貨物、この種の全ての船舶,71=貨物、危険なカテゴリーA,72=貨物、危険なカテゴリーB,73=貨物、危険なカテゴリーC,74=貨物、危険なカテゴリーD,75-78=貨物、将来の使用のために予約,79=貨物、追加情報なし,80=タンカー、この型の全船,81=タンカー,危険等級A,82=タンカー,危険等級B,83=タンカー,危険等級C,84=タンカー,危険等級D,85-88=タンカー,今後の使用のため予約,89=タンカー,追加情報なし,90=その他の型、91=その他型、危険分類A,92=その他型、危険分類B,93=その他型、危険分類C,94=その他型、危険分類D,95-98=その他型、今後の使用予約,99=その他型、追加情報なし」。容器サブタイプのコード  . Model: [https://schema.org/Number](https://schema.org/Number)- `vesselType[number]`: 列挙型：'1=Reserved,2=Wing In Ground,3=Special Category,4=High-Speed Craft,5=Special Category,6=Passenger,7=Cargo,8=Tanker,9=Other'.船種コード  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
@@ -225,8 +227,20 @@ Vessel:
         type: Property    
         units: ' degree'    
     id:    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
+          format: uri    
+          type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
-      type: string    
       x-ngsi:    
         type: Property    
     imo:    
@@ -245,15 +259,168 @@ Vessel:
         type: Property    
         units: ' meters'    
     location:    
-      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygoProperty'    
-      properties:    
-        coordinates:    
-          items:    
-            type: number    
-          type: array    
-        type:    
-          type: string    
-      type: object    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
+      oneOf:    
+        - description: Geojson reference to the item. Point    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                type: number    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - Point    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Point    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              minItems: 2    
+              type: array    
+            type:    
+              enum:    
+                - LineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON LineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 4    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - Polygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON Polygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  type: number    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPoint    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPoint    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    type: number    
+                  minItems: 2    
+                  type: array    
+                minItems: 2    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiLineString    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiLineString    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
+          properties:    
+            bbox:    
+              items:    
+                type: number    
+              minItems: 4    
+              type: array    
+            coordinates:    
+              items:    
+                items:    
+                  items:    
+                    items:    
+                      type: number    
+                    minItems: 2    
+                    type: array    
+                  minItems: 4    
+                  type: array    
+                type: array    
+              type: array    
+            type:    
+              enum:    
+                - MultiPolygon    
+              type: string    
+          required:    
+            - type    
+            - coordinates    
+          title: GeoJSON MultiPolygon    
+          type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     manager:    
@@ -283,10 +450,9 @@ Vessel:
         model: https://schema.org/Text    
         type: Property    
     name:    
-      description: Vessel Name    
+      description: The name of this item    
       type: string    
       x-ngsi:    
-        model: https://schema.org/Text    
         type: Property    
     navigationStatus:    
       description: 'Enum: ''0=Under way using engine,1=At anchor,2=Not under command,3=Restricted manoeuverability,4=Constrained by her draught,5=Moored,6=Aground,7=Engaged in Fishing,8=Under way sailing,9=Reserved for future amendment of Navigational Status for HSC,10=Reserved for future amendment of Navigational Status for WIG,11=Reserved for future use,12=Reserved for future use,13=Reserved for future use,14=AIS-SART is active,15=Not defined (default)''. Navigation Status. AIVDM/AIVDO data format'    
@@ -578,11 +744,11 @@ Vessel:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Vessel/LICENSE.md    
   x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/Vessel/schema.json    
   x-model-tags: I4Trust    
-  x-version: 0.0.2    
+  x-version: 0.1.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -595,54 +761,54 @@ Vessel:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:mrn:amura:vessel:test",  
-    "type": "Vessel",  
-    "location": {  
-        "type": "Point",  
-        "coordinates": [  
-            -5.993307,  
-            37.362882  
-        ]  
-    },  
-    "imo": 9863637,  
-    "mmsi": 210049000,  
-    "callSign": "5BPC5",  
-    "name": "ELEANOR ROOSEVELT",  
-    "speedOverGround": 1,  
-    "courseOverGround": 1,  
-    "heading": 1,  
-    "rateOfTurn": 1,  
-    "createdAt": "2022-06-01T07:00:00.00Z",  
-    "modifiedAt": "2022-06-01T07:00:00.00Z",  
-    "observedAt": "2022-06-01T07:00:00.00Z",  
-    "flagCode": "CY",  
-    "vesselType": 1,  
-    "vesselSubType": 2,  
-    "grossTonnage": 12467,  
-    "beam": 7,  
-    "length": 32,  
-    "maximumDraught": 5,  
-    "deadweightTonnage": 8,  
-    "buildingAt": "2021-01-01T07:00:00.00Z",  
-    "toBow": 3,  
-    "toStern": 20,  
-    "toPort": 17,  
-    "toStardboard": 4,  
-    "navigationStatus": 4,  
-    "airDraught": 4,  
-    "draught": 4,  
-    "photo": "PHOTO URL",  
-    "ownerVessel": "OWNER NAME",  
-    "manager": "MANAGER NAME",  
-    "financialOwner": "FINANCIAL OWNER NAME",  
-    "technicalManager": "TECHNICAL MANAGER NAME",  
-    "dataProvider": "AIS",  
-    "destinationPort": "ESVLC",  
-    "previousPort": "ESPMI",  
-    "estimatedTimeOfArrival": "2023-03-01T07:00:00.00Z",  
-    "calculatedTimeOfArrival": "2023-03-02T07:00:00.00Z",  
-    "positionAccuracy": 0,  
-    "specialManeuverIndicator": 1  
+  "id": "urn:mrn:amura:vessel:test",  
+  "type": "Vessel",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      -5.993307,  
+      37.362882  
+    ]  
+  },  
+  "imo": 9863637,  
+  "mmsi": 210049000,  
+  "callSign": "5BPC5",  
+  "name": "ELEANOR ROOSEVELT",  
+  "speedOverGround": 1,  
+  "courseOverGround": 1,  
+  "heading": 1,  
+  "rateOfTurn": 1,  
+  "createdAt": "2022-06-01T07:00:00.00Z",  
+  "modifiedAt": "2022-06-01T07:00:00.00Z",  
+  "observedAt": "2022-06-01T07:00:00.00Z",  
+  "flagCode": "CY",  
+  "vesselType": 1,  
+  "vesselSubType": 2,  
+  "grossTonnage": 12467,  
+  "beam": 7,  
+  "length": 32,  
+  "maximumDraught": 5,  
+  "deadweightTonnage": 8,  
+  "buildingAt": "2021-01-01T07:00:00.00Z",  
+  "toBow": 3,  
+  "toStern": 20,  
+  "toPort": 17,  
+  "toStardboard": 4,  
+  "navigationStatus": 4,  
+  "airDraught": 4,  
+  "draught": 4,  
+  "photo": "PHOTO URL",  
+  "ownerVessel": "OWNER NAME",  
+  "manager": "MANAGER NAME",  
+  "financialOwner": "FINANCIAL OWNER NAME",  
+  "technicalManager": "TECHNICAL MANAGER NAME",  
+  "dataProvider": "AIS",  
+  "destinationPort": "ESVLC",  
+  "previousPort": "ESPMI",  
+  "estimatedTimeOfArrival": "2023-03-01T07:00:00.00Z",  
+  "calculatedTimeOfArrival": "2023-03-02T07:00:00.00Z",  
+  "positionAccuracy": 0,  
+  "specialManeuverIndicator": 1  
 }  
 ```  
 </details>  
@@ -651,170 +817,170 @@ Vessel:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:mrn:amura:vessel:test",  
-    "type": "Vessel",  
-    "location": {  
-        "type": "geo:json",  
-        "value": {  
-            "type": "Point",  
-            "coordinates": [  
-                -5.993307,  
-                37.362882  
-            ]  
-        }  
-    },  
-    "imo": {  
-        "type": "Number",  
-        "value": 9863637  
-    },  
-    "mmsi": {  
-        "type": "Number",  
-        "value": 210049000  
-    },  
-    "callSign": {  
-        "type": "Text",  
-        "value": "5BPC5"  
-    },  
-    "name": {  
-        "type": "Text",  
-        "value": "ELEANOR ROOSEVELT"  
-    },  
-    "speedOverGround": {  
-        "type": "Number",  
-        "value": 1  
-    },  
-    "courseOverGround": {  
-        "type": "Number",  
-        "value": 1  
-    },  
-    "heading": {  
-        "type": "Number",  
-        "value": 1  
-    },  
-    "rateOfTurn": {  
-        "type": "Number",  
-        "value": 1  
-    },  
-    "createdAt": {  
-        "type": "DateTime",  
-        "value": "2022-06-01T07:00:00.00Z"  
-    },  
-    "modifiedAt": {  
-        "type": "DateTime",  
-        "value": "2022-06-01T07:00:00.00Z"  
-    },  
-    "observedAt": {  
-        "type": "DateTime",  
-        "value": "2022-06-01T07:00:00.00Z"  
-    },  
-    "flagCode": {  
-        "type": "Text",  
-        "value": "CY"  
-    },  
-    "vesselType": {  
-        "type": "Number",  
-        "value": 1  
-    },  
-    "vesselSubType": {  
-        "type": "Number",  
-        "value": 2  
-    },  
-    "grossTonnage": {  
-        "type": "Number",  
-        "value": 12467  
-    },  
-    "beam": {  
-        "type": "Number",  
-        "value": 7  
-    },  
-    "length": {  
-        "type": "Number",  
-        "value": 32  
-    },  
-    "maximumDraught": {  
-        "type": "Number",  
-        "value": 5  
-    },  
-    "deadweightTonnage": {  
-        "type": "Number",  
-        "value": 8  
-    },  
-    "buildingAt": {  
-        "type": "DateTime",  
-        "value": "2021-01-01T07:00:00.00Z1"  
-    },  
-    "toBow": {  
-        "type": "Number",  
-        "value": 3  
-    },  
-    "toStern": {  
-        "type": "Number",  
-        "value": 20  
-    },  
-    "toPort": {  
-        "type": "Number",  
-        "value": 17  
-    },  
-    "toStardboard": {  
-        "type": "Number",  
-        "value": 4  
-    },  
-    "navigationStatus": {  
-        "type": "Number",  
-        "value": 4  
-    },  
-    "airDraught": {  
-        "type": "Number",  
-        "value": 4  
-    },  
-    "draught": {  
-        "type": "Number",  
-        "value": 4  
-    },  
-    "photo": {  
-        "type": "Text",  
-        "value": "URL PHOTO"  
-    },  
-    "ownerVessel": {  
-        "type": "Text",  
-        "value": "OWNER NAME"  
-    },  
-    "manager": {  
-        "type": "Text",  
-        "value": "MANAGER NAME"  
-    },  
-    "financialOwner": {  
-        "type": "Text",  
-        "value": "FINANCIAL OWNER NAME"  
-    },  
-    "technicalManager": {  
-        "type": "Text",  
-        "value": "TECHNICAL MANAGER NAME"  
-    },  
-    "dataProvider": {  
-        "type": "Text",  
-        "value": "AIS"  
-    },  
-    "destinationPort": {  
-        "type": "Text",  
-        "value": "ESVLC"  
-    },  
-    "previousPort": {  
-        "type": "Text",  
-        "value": "ESPMI"  
-    },  
-    "estimatedTimeOfArrival": {  
-        "type": "DateTime",  
-        "value": "2023-03-01T07:00:00.00Z"  
-    },  
-    "positionAccuracy": {  
-        "type": "Number",  
-        "value": 0  
-    },  
-    "specialManeuverIndicator": {  
-        "type": "Number",  
-        "value": 1  
+  "id": "urn:mrn:amura:vessel:test",  
+  "type": "Vessel",  
+  "location": {  
+    "type": "geo:json",  
+    "value": {  
+      "type": "Point",  
+      "coordinates": [  
+        -5.993307,  
+        37.362882  
+      ]  
     }  
+  },  
+  "imo": {  
+    "type": "Number",  
+    "value": 9863637  
+  },  
+  "mmsi": {  
+    "type": "Number",  
+    "value": 210049000  
+  },  
+  "callSign": {  
+    "type": "Text",  
+    "value": "5BPC5"  
+  },  
+  "name": {  
+    "type": "Text",  
+    "value": "ELEANOR ROOSEVELT"  
+  },  
+  "speedOverGround": {  
+    "type": "Boolean",  
+    "value": true  
+  },  
+  "courseOverGround": {  
+    "type": "Boolean",  
+    "value": true  
+  },  
+  "heading": {  
+    "type": "Boolean",  
+    "value": true  
+  },  
+  "rateOfTurn": {  
+    "type": "Boolean",  
+    "value": true  
+  },  
+  "createdAt": {  
+    "type": "DateTime",  
+    "value": "2022-06-01T07:00:00.00Z"  
+  },  
+  "modifiedAt": {  
+    "type": "DateTime",  
+    "value": "2022-06-01T07:00:00.00Z"  
+  },  
+  "observedAt": {  
+    "type": "DateTime",  
+    "value": "2022-06-01T07:00:00.00Z"  
+  },  
+  "flagCode": {  
+    "type": "Text",  
+    "value": "CY"  
+  },  
+  "vesselType": {  
+    "type": "Boolean",  
+    "value": true  
+  },  
+  "vesselSubType": {  
+    "type": "Number",  
+    "value": 2  
+  },  
+  "grossTonnage": {  
+    "type": "Number",  
+    "value": 12467  
+  },  
+  "beam": {  
+    "type": "Number",  
+    "value": 7  
+  },  
+  "length": {  
+    "type": "Number",  
+    "value": 32  
+  },  
+  "maximumDraught": {  
+    "type": "Number",  
+    "value": 5  
+  },  
+  "deadweightTonnage": {  
+    "type": "Number",  
+    "value": 8  
+  },  
+  "buildingAt": {  
+    "type": "DateTime",  
+    "value": "2021-01-01T07:00:00.00Z1"  
+  },  
+  "toBow": {  
+    "type": "Number",  
+    "value": 3  
+  },  
+  "toStern": {  
+    "type": "Number",  
+    "value": 20  
+  },  
+  "toPort": {  
+    "type": "Number",  
+    "value": 17  
+  },  
+  "toStardboard": {  
+    "type": "Number",  
+    "value": 4  
+  },  
+  "navigationStatus": {  
+    "type": "Number",  
+    "value": 4  
+  },  
+  "airDraught": {  
+    "type": "Number",  
+    "value": 4  
+  },  
+  "draught": {  
+    "type": "Number",  
+    "value": 4  
+  },  
+  "photo": {  
+    "type": "Text",  
+    "value": "URL PHOTO"  
+  },  
+  "ownerVessel": {  
+    "type": "Text",  
+    "value": "OWNER NAME"  
+  },  
+  "manager": {  
+    "type": "Text",  
+    "value": "MANAGER NAME"  
+  },  
+  "financialOwner": {  
+    "type": "Text",  
+    "value": "FINANCIAL OWNER NAME"  
+  },  
+  "technicalManager": {  
+    "type": "Text",  
+    "value": "TECHNICAL MANAGER NAME"  
+  },  
+  "dataProvider": {  
+    "type": "Text",  
+    "value": "AIS"  
+  },  
+  "destinationPort": {  
+    "type": "Text",  
+    "value": "ESVLC"  
+  },  
+  "previousPort": {  
+    "type": "Text",  
+    "value": "ESPMI"  
+  },  
+  "estimatedTimeOfArrival": {  
+    "type": "DateTime",  
+    "value": "2023-03-01T07:00:00.00Z"  
+  },  
+  "positionAccuracy": {  
+    "type": "Boolean",  
+    "value": false  
+  },  
+  "specialManeuverIndicator": {  
+    "type": "Boolean",  
+    "value": true  
+  }  
 }  
 ```  
 </details>  
@@ -823,57 +989,57 @@ Vessel:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:mrn:amura:vessel:test",  
-    "type": "Vessel",  
-    "location": {  
-        "type": "Point",  
-        "coordinates": [  
-            -5.993307,  
-            37.362882  
-        ]  
-    },  
-    "imo": 9863637,  
-    "mmsi": 210049000,  
-    "callSign": "5BPC5",  
-    "name": "ELEANOR ROOSEVELT",  
-    "speedOverGround": 1,  
-    "courseOverGround": 1,  
-    "heading": 1,  
-    "rateOfTurn": 1,  
-    "createdAt": "2022-06-01T07:00:00.00Z",  
-    "modifiedAt": "2022-06-01T07:00:00.00Z",  
-    "observedAt": "2022-06-01T07:00:00.00Z",  
-    "flagCode": "CY",  
-    "vesselType": 1,  
-    "vesselSubType": 2,  
-    "grossTonnage": 12467,  
-    "beam": 7,  
-    "length": 32,  
-    "maximumDraught": 5,  
-    "deadweightTonnage": 8,  
-    "buildingAt": "2021-01-01T07:00:00.00Z",  
-    "toBow": 3,  
-    "toStern": 20,  
-    "toPort": 17,  
-    "toStardboard": 4,  
-    "navigationStatus": 4,  
-    "airDraught": 4,  
-    "draught": 4,  
-    "photo": "PHOTO URL",  
-    "ownerVessel": "OWNER NAME",  
-    "manager": "MANAGER NAME",  
-    "financialOwner": "FINANCIAL OWNER NAME",  
-    "technicalManager": "TECHNICAL MANAGER NAME",  
-    "dataProvider": "AIS",  
-    "destinationPort": "ESVLC",  
-    "previousPort": "ESPMI",  
-    "estimatedTimeOfArrival": "2023-03-01T07:00:00.00Z",  
-    "positionAccuracy": 0,  
-    "specialManeuverIndicator": 1,  
-    "@context": [  
-        "https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/context.jsonld",  
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
+  "id": "urn:mrn:amura:vessel:test",  
+  "type": "Vessel",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      -5.993307,  
+      37.362882  
     ]  
+  },  
+  "imo": 9863637,  
+  "mmsi": 210049000,  
+  "callSign": "5BPC5",  
+  "name": "ELEANOR ROOSEVELT",  
+  "speedOverGround": 1,  
+  "courseOverGround": 1,  
+  "heading": 1,  
+  "rateOfTurn": 1,  
+  "createdAt": "2022-06-01T07:00:00.00Z",  
+  "modifiedAt": "2022-06-01T07:00:00.00Z",  
+  "observedAt": "2022-06-01T07:00:00.00Z",  
+  "flagCode": "CY",  
+  "vesselType": 1,  
+  "vesselSubType": 2,  
+  "grossTonnage": 12467,  
+  "beam": 7,  
+  "length": 32,  
+  "maximumDraught": 5,  
+  "deadweightTonnage": 8,  
+  "buildingAt": "2021-01-01T07:00:00.00Z",  
+  "toBow": 3,  
+  "toStern": 20,  
+  "toPort": 17,  
+  "toStardboard": 4,  
+  "navigationStatus": 4,  
+  "airDraught": 4,  
+  "draught": 4,  
+  "photo": "PHOTO URL",  
+  "ownerVessel": "OWNER NAME",  
+  "manager": "MANAGER NAME",  
+  "financialOwner": "FINANCIAL OWNER NAME",  
+  "technicalManager": "TECHNICAL MANAGER NAME",  
+  "dataProvider": "AIS",  
+  "destinationPort": "ESVLC",  
+  "previousPort": "ESPMI",  
+  "estimatedTimeOfArrival": "2023-03-01T07:00:00.00Z",  
+  "positionAccuracy": 0,  
+  "specialManeuverIndicator": 1,  
+  "@context": [  
+    "https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/context.jsonld",  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details>  
