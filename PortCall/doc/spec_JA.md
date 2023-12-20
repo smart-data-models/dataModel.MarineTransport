@@ -8,7 +8,7 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 グローバルな説明**寄港とは、貨物の積み下ろしなど、何らかの有用な機能を果たすために、船舶が一定期間港を訪れることである。  
-バージョン: 0.0.1  
+バージョン: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -23,7 +23,7 @@
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
-- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivalDate[date-time]`: 本船が港に到着した日時  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `arrivalDateScheduled[date-time]`: 船舶代理店が申告した、港湾区域への船舶到着予定日時  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `departureDate[date-time]`: 出港日時  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `departureDateScheduled[date-time]`: 海運代理店が申告した出港予定日時  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `regularLine[string]`: ポートコールの通常回線  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `status[string]`: 手術のステータス。列挙型：「予定、認可、運用、完了  - `terminal[string]`: ポートコールのターミナル  - `vessel[object]`: ポートコールの寄港船舶  	- `IMO[number]`: 国際海事機関が定めた[スキーム](https://www.imo.org/en/OurWork/IIIS/Pages/IMO-Identification-Number-Schemes.aspx)に従ったIMO船舶識別番号。    
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivalDate[date-time]`: 本船が港に到着した日時  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `arrivalDateScheduled[date-time]`: 船舶代理店が申告した、港湾区域への船舶到着予定日時  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `departureDate[date-time]`: 出港日時  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `departureDateScheduled[date-time]`: 海運代理店が申告した出港予定日時  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: この商品の説明  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `regularLine[string]`: ポートコールの通常回線  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `status[string]`: 手術のステータス。列挙型：「予定、認可、運用、完了  - `terminal[string]`: ポートコールのターミナル  - `type[string]`: NGSIエンティティタイプ。PortCallでなければならない。  - `vessel[object]`: ポートコールの寄港船舶  	- `IMO[number]`: 国際海事機関が定めた[スキーム](https://www.imo.org/en/OurWork/IIIS/Pages/IMO-Identification-Number-Schemes.aspx)に従ったIMO船舶識別番号。    
 	- `shipName[string]`: 船舶名    
 	- `shipTypeCategory[string]`: 船舶カテゴリーの説明。列挙：'CONTAINER, GENERAL CARGO NON SPECIALIZED, LIQUID BULK, DRY BULK, CRUISE'.    
 	- `shipTypeClass[string]`: 船舶クラスの説明。Enum: 'MULTI-DECKER, CHEMICAL TANKER, FULL CONTAINER, OIL TANKER, BULK CARRIER, LG TANKER'.    
@@ -409,6 +409,13 @@ PortCall:
       type: string    
       x-ngsi:    
         type: Property    
+    type:    
+      description: NGSI Entity type. It has to be PortCall    
+      enum:    
+        - PortCall    
+      type: string    
+      x-ngsi:    
+        type: Property    
     vessel:    
       description: Calling vessel of the portcall    
       properties:    
@@ -465,11 +472,11 @@ PortCall:
     - arrivalDate    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortCall/LICENSE.md    
   x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/PortCall/schema.json    
   x-model-tags: i4trust    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -482,24 +489,24 @@ PortCall:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
-    "type": "PortCall",  
-    "UNLOCODE": "ESVLC",  
-    "arrivalDate": "2021-12-01T00:46:00Z",  
-    "arrivalDateScheduled": "2021-12-01T00:46:00Z",  
-    "departureDate": "2021-12-01T11:35:00Z",  
-    "departureDateScheduled": "2021-12-01T11:35:00Z",  
-    "regularLine": "GRIMALDI - SHORT SEA SERVICE B",  
-    "status": "Completed",  
-    "terminal": "VALENCIA TERMINAL EUROPA, S.A.",  
-    "vessel": {  
-        "shipName": "ECO BARCELONA",  
-        "IMO": 8712345,  
-        "shipTypeCategory": "CONTAINER",  
-        "shipTypeClass": "FULL CONTAINER"  
-    },  
-    "vesselAgent": "GRIMALDI LOGISTICA ESPAÑA S.L.",  
-    "voyageCode": "1202106029"  
+  "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+  "type": "PortCall",  
+  "UNLOCODE": "ESVLC",  
+  "arrivalDate": "2021-12-01T00:46:00Z",  
+  "arrivalDateScheduled": "2021-12-01T00:46:00Z",  
+  "departureDate": "2021-12-01T11:35:00Z",  
+  "departureDateScheduled": "2021-12-01T11:35:00Z",  
+  "regularLine": "GRIMALDI - SHORT SEA SERVICE B",  
+  "status": "Completed",  
+  "terminal": "VALENCIA TERMINAL EUROPA, S.A.",  
+  "vessel": {  
+    "shipName": "ECO BARCELONA",  
+    "IMO": 8712345,  
+    "shipTypeCategory": "CONTAINER",  
+    "shipTypeClass": "FULL CONTAINER"  
+  },  
+  "vesselAgent": "GRIMALDI LOGISTICA ESPA\u00d1A S.L.",  
+  "voyageCode": "1202106029"  
 }  
 ```  
 </details>  
@@ -507,70 +514,70 @@ PortCall:
 以下は、正規化されたJSON-LD形式のPortCallの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
-    {  
-        "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
-        "type": "PortCall",  
-        "UNLOCODE": {  
-            "type": "Text",  
-            "value": "ESVLC",  
-            "metadata": {}  
-        },  
-        "arrivalDate": {  
-            "type": "Text",  
-            "value": "2021-12-01T00:46:00Z",  
-            "metadata": {}  
-        },  
-        "arrivalDateScheduled": {  
-            "type": "Text",  
-            "value": "2021-12-01T00:46:00Z",  
-            "metadata": {}  
-        },  
-        "departureDate": {  
-            "type": "Text",  
-            "value": "2021-12-01T11:35:00Z",  
-            "metadata": {}  
-        },  
-        "departureDateScheduled": {  
-            "type": "Text",  
-            "value": "2021-12-01T11:35:00Z",  
-            "metadata": {}  
-        },  
-        "regularLine": {  
-            "type": "Text",  
-            "value": "GRIMALDI - SHORT SEA SERVICE B",  
-            "metadata": {}  
-        },  
-        "status": {  
-            "type": "Text",  
-            "value": "Completed",  
-            "metadata": {}  
-        },  
-        "terminal": {  
-            "type": "Text",  
-            "value": "VALENCIA TERMINAL EUROPA, S.A.",  
-            "metadata": {}  
-        },  
-        "vessel": {  
-            "type": "StructuredValue",  
-            "value": {  
-                "shipName": "ECO BARCELONA",  
-                "IMO": 8712345,  
-                "shipTypeCategory": "CONTAINER",  
-                "shipTypeClass": "FULL CONTAINER"  
-            },  
-            "metadata": {}  
-        },  
-        "vesselAgent": {  
-            "type": "Text",  
-            "value": "GRIMALDI LOGISTICA ESPAÑA S.L.",  
-            "metadata": {}  
-        },  
-        "voyageCode": {  
-            "type": "Text",  
-            "value": "1202106029",  
-            "metadata": {}  
-        }  
-    }  
+{  
+  "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+  "type": "PortCall",  
+  "UNLOCODE": {  
+    "type": "Text",  
+    "value": "ESVLC",  
+    "metadata": {}  
+  },  
+  "arrivalDate": {  
+    "type": "DateTime",  
+    "value": "2021-12-01T00:46:00Z",  
+    "metadata": {}  
+  },  
+  "arrivalDateScheduled": {  
+    "type": "DateTime",  
+    "value": "2021-12-01T00:46:00Z",  
+    "metadata": {}  
+  },  
+  "departureDate": {  
+    "type": "DateTime",  
+    "value": "2021-12-01T11:35:00Z",  
+    "metadata": {}  
+  },  
+  "departureDateScheduled": {  
+    "type": "DateTime",  
+    "value": "2021-12-01T11:35:00Z",  
+    "metadata": {}  
+  },  
+  "regularLine": {  
+    "type": "Text",  
+    "value": "GRIMALDI - SHORT SEA SERVICE B",  
+    "metadata": {}  
+  },  
+  "status": {  
+    "type": "Text",  
+    "value": "Completed",  
+    "metadata": {}  
+  },  
+  "terminal": {  
+    "type": "Text",  
+    "value": "VALENCIA TERMINAL EUROPA, S.A.",  
+    "metadata": {}  
+  },  
+  "vessel": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "shipName": "ECO BARCELONA",  
+      "IMO": 8712345,  
+      "shipTypeCategory": "CONTAINER",  
+      "shipTypeClass": "FULL CONTAINER"  
+    },  
+    "metadata": {}  
+  },  
+  "vesselAgent": {  
+    "type": "Text",  
+    "value": "GRIMALDI LOGISTICA ESPA\u00d1A S.L.",  
+    "metadata": {}  
+  },  
+  "voyageCode": {  
+    "type": "Text",  
+    "value": "1202106029",  
+    "metadata": {}  
+  }  
+}  
 ```  
 </details>  
 #### ポートコール NGSI-LD キー値の例  
@@ -594,7 +601,7 @@ PortCall:
     "shipTypeCategory": "CONTAINER",  
     "shipTypeClass": "FULL CONTAINER"  
   },  
-  "vesselAgent": "GRIMALDI LOGISTICA ESPAÃ‘A S.L.",  
+  "vesselAgent": "GRIMALDI LOGISTICA ESPA\u00d1A S.L.",  
   "voyageCode": "1202106029",  
   "@context": [  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
