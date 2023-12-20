@@ -7,8 +7,8 @@
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descrizione globale: **Uno scalo portuale è la visita di un'imbarcazione al porto per un periodo di tempo, al fine di svolgere qualche tipo di funzione utile, come il carico o lo scarico di merci **.  
-versione: 0.0.1  
+Descrizione globale: **Uno scalo portuale è la visita di un'imbarcazione al porto per un periodo di tempo, al fine di svolgere qualche tipo di funzione utile, come il carico o lo scarico delle merci.**  
+versione: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
@@ -18,12 +18,12 @@
 - `UNLOCODE[string]`: Codice delle Nazioni Unite per le località di commercio e trasporto, [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory), del porto.  - `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, la Spagna  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico e che si trova nella regione  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni Paesi, è gestita dal governo locale.    
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale.    
 	- `postOfficeBoxNumber[string]`: Il numero di casella postale per gli indirizzi di casella postale. Ad esempio, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Il codice postale. Ad esempio, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'indirizzo stradale  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
-- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivalDate[date-time]`: Data/ora di arrivo della nave nell'area portuale  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `arrivalDateScheduled[date-time]`: Data/ora prevista di arrivo della nave nell'area portuale, come dichiarato dall'agente marittimo  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `departureDate[date-time]`: Data/ora di uscita della nave dall'area portuale  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `departureDateScheduled[date-time]`: Data/ora prevista per la partenza della nave dall'area portuale, come dichiarato dall'agente marittimo  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `regularLine[string]`: Linea regolare della chiamata in porta  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Stato dell'operazione. Enum: "Stimato, Autorizzato, Operativo, Completato".  - `terminal[string]`: Terminale della portcall  - `vessel[object]`: Imbarcazione chiamante della chiamata in porto  	- `IMO[number]`: Numero di identificazione IMO della nave, secondo lo [schema](https://www.imo.org/en/OurWork/IIIS/Pages/IMO-Identification-Number-Schemes.aspx) definito dall'Organizzazione marittima internazionale.    
+- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `arrivalDate[date-time]`: Data/ora di arrivo della nave nell'area portuale  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `arrivalDateScheduled[date-time]`: Data/ora prevista di arrivo della nave nell'area portuale, come dichiarato dall'agente marittimo  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dataProvider[string]`: una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione  - `departureDate[date-time]`: Data/ora di uscita della nave dall'area portuale  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `departureDateScheduled[date-time]`: Data/ora prevista per la partenza della nave dall'area portuale, come dichiarato dall'agente marittimo  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Descrizione dell'articolo  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `regularLine[string]`: Linea regolare della chiamata in porta  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `status[string]`: Stato dell'operazione. Enum: "Stimato, Autorizzato, Operativo, Completato".  - `terminal[string]`: Terminale della chiamata in porta  - `type[string]`: Tipo di entità NGSI. Deve essere PortCall  - `vessel[object]`: Imbarcazione chiamante della chiamata in porto  	- `IMO[number]`: Numero di identificazione IMO della nave, secondo lo [schema](https://www.imo.org/en/OurWork/IIIS/Pages/IMO-Identification-Number-Schemes.aspx) definito dall'Organizzazione marittima internazionale.    
 	- `shipName[string]`: Nome della nave    
 	- `shipTypeCategory[string]`: Descrizione della categoria di nave. Enum: "CONTAINER, GENERAL CARGO NON SPECIALIZED, LIQUID BULK, DRY BULK, CRUISE".    
 	- `shipTypeClass[string]`: Descrizione della classe della nave. Enum: "MULTIDECKER, CHEMICAL TANKER, FULL CONTAINER, OIL TANKER, BULK CARRIER, LG TANKER".    
@@ -409,6 +409,13 @@ PortCall:
       type: string    
       x-ngsi:    
         type: Property    
+    type:    
+      description: NGSI Entity type. It has to be PortCall    
+      enum:    
+        - PortCall    
+      type: string    
+      x-ngsi:    
+        type: Property    
     vessel:    
       description: Calling vessel of the portcall    
       properties:    
@@ -465,11 +472,11 @@ PortCall:
     - arrivalDate    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortCall/LICENSE.md    
   x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/PortCall/schema.json    
   x-model-tags: i4trust    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -482,24 +489,24 @@ PortCall:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-    "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
-    "type": "PortCall",  
-    "UNLOCODE": "ESVLC",  
-    "arrivalDate": "2021-12-01T00:46:00Z",  
-    "arrivalDateScheduled": "2021-12-01T00:46:00Z",  
-    "departureDate": "2021-12-01T11:35:00Z",  
-    "departureDateScheduled": "2021-12-01T11:35:00Z",  
-    "regularLine": "GRIMALDI - SHORT SEA SERVICE B",  
-    "status": "Completed",  
-    "terminal": "VALENCIA TERMINAL EUROPA, S.A.",  
-    "vessel": {  
-        "shipName": "ECO BARCELONA",  
-        "IMO": 8712345,  
-        "shipTypeCategory": "CONTAINER",  
-        "shipTypeClass": "FULL CONTAINER"  
-    },  
-    "vesselAgent": "GRIMALDI LOGISTICA ESPAÑA S.L.",  
-    "voyageCode": "1202106029"  
+  "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+  "type": "PortCall",  
+  "UNLOCODE": "ESVLC",  
+  "arrivalDate": "2021-12-01T00:46:00Z",  
+  "arrivalDateScheduled": "2021-12-01T00:46:00Z",  
+  "departureDate": "2021-12-01T11:35:00Z",  
+  "departureDateScheduled": "2021-12-01T11:35:00Z",  
+  "regularLine": "GRIMALDI - SHORT SEA SERVICE B",  
+  "status": "Completed",  
+  "terminal": "VALENCIA TERMINAL EUROPA, S.A.",  
+  "vessel": {  
+    "shipName": "ECO BARCELONA",  
+    "IMO": 8712345,  
+    "shipTypeCategory": "CONTAINER",  
+    "shipTypeClass": "FULL CONTAINER"  
+  },  
+  "vesselAgent": "GRIMALDI LOGISTICA ESPA\u00d1A S.L.",  
+  "voyageCode": "1202106029"  
 }  
 ```  
 </details>  
@@ -507,70 +514,70 @@ PortCall:
 Ecco un esempio di PortCall in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
-    {  
-        "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
-        "type": "PortCall",  
-        "UNLOCODE": {  
-            "type": "Text",  
-            "value": "ESVLC",  
-            "metadata": {}  
-        },  
-        "arrivalDate": {  
-            "type": "Text",  
-            "value": "2021-12-01T00:46:00Z",  
-            "metadata": {}  
-        },  
-        "arrivalDateScheduled": {  
-            "type": "Text",  
-            "value": "2021-12-01T00:46:00Z",  
-            "metadata": {}  
-        },  
-        "departureDate": {  
-            "type": "Text",  
-            "value": "2021-12-01T11:35:00Z",  
-            "metadata": {}  
-        },  
-        "departureDateScheduled": {  
-            "type": "Text",  
-            "value": "2021-12-01T11:35:00Z",  
-            "metadata": {}  
-        },  
-        "regularLine": {  
-            "type": "Text",  
-            "value": "GRIMALDI - SHORT SEA SERVICE B",  
-            "metadata": {}  
-        },  
-        "status": {  
-            "type": "Text",  
-            "value": "Completed",  
-            "metadata": {}  
-        },  
-        "terminal": {  
-            "type": "Text",  
-            "value": "VALENCIA TERMINAL EUROPA, S.A.",  
-            "metadata": {}  
-        },  
-        "vessel": {  
-            "type": "StructuredValue",  
-            "value": {  
-                "shipName": "ECO BARCELONA",  
-                "IMO": 8712345,  
-                "shipTypeCategory": "CONTAINER",  
-                "shipTypeClass": "FULL CONTAINER"  
-            },  
-            "metadata": {}  
-        },  
-        "vesselAgent": {  
-            "type": "Text",  
-            "value": "GRIMALDI LOGISTICA ESPAÑA S.L.",  
-            "metadata": {}  
-        },  
-        "voyageCode": {  
-            "type": "Text",  
-            "value": "1202106029",  
-            "metadata": {}  
-        }  
-    }  
+{  
+  "id": "urn:ngsi-ld:PortCall:VPF:1202106029",  
+  "type": "PortCall",  
+  "UNLOCODE": {  
+    "type": "Text",  
+    "value": "ESVLC",  
+    "metadata": {}  
+  },  
+  "arrivalDate": {  
+    "type": "DateTime",  
+    "value": "2021-12-01T00:46:00Z",  
+    "metadata": {}  
+  },  
+  "arrivalDateScheduled": {  
+    "type": "DateTime",  
+    "value": "2021-12-01T00:46:00Z",  
+    "metadata": {}  
+  },  
+  "departureDate": {  
+    "type": "DateTime",  
+    "value": "2021-12-01T11:35:00Z",  
+    "metadata": {}  
+  },  
+  "departureDateScheduled": {  
+    "type": "DateTime",  
+    "value": "2021-12-01T11:35:00Z",  
+    "metadata": {}  
+  },  
+  "regularLine": {  
+    "type": "Text",  
+    "value": "GRIMALDI - SHORT SEA SERVICE B",  
+    "metadata": {}  
+  },  
+  "status": {  
+    "type": "Text",  
+    "value": "Completed",  
+    "metadata": {}  
+  },  
+  "terminal": {  
+    "type": "Text",  
+    "value": "VALENCIA TERMINAL EUROPA, S.A.",  
+    "metadata": {}  
+  },  
+  "vessel": {  
+    "type": "StructuredValue",  
+    "value": {  
+      "shipName": "ECO BARCELONA",  
+      "IMO": 8712345,  
+      "shipTypeCategory": "CONTAINER",  
+      "shipTypeClass": "FULL CONTAINER"  
+    },  
+    "metadata": {}  
+  },  
+  "vesselAgent": {  
+    "type": "Text",  
+    "value": "GRIMALDI LOGISTICA ESPA\u00d1A S.L.",  
+    "metadata": {}  
+  },  
+  "voyageCode": {  
+    "type": "Text",  
+    "value": "1202106029",  
+    "metadata": {}  
+  }  
+}  
 ```  
 </details>  
 #### Valori chiave PortCall NGSI-LD Esempio  
@@ -594,7 +601,7 @@ PortCall:
     "shipTypeCategory": "CONTAINER",  
     "shipTypeClass": "FULL CONTAINER"  
   },  
-  "vesselAgent": "GRIMALDI LOGISTICA ESPAÃ‘A S.L.",  
+  "vesselAgent": "GRIMALDI LOGISTICA ESPA\u00d1A S.L.",  
   "voyageCode": "1202106029",  
   "@context": [  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"  
