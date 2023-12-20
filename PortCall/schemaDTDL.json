@@ -1,0 +1,260 @@
+{
+    "@id": "dtmi:com:ngsi-ld:PortCall;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "DataPorts - PortCall schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/PortCall/schema.json",
+    "description": "A Port Call is a vessel's visit to the port for a period of time, in order to perform some kind of useful function, like the loading or unloading of goods.",
+    "displayName": "PortCall",
+    "contents": [
+        {
+            "name": "UNLOCODE",
+            "writable": true,
+            "displayName": "UNLOCODE",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "United Nations Code for Trade and Transport Locations, [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory), of the port"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "arrivalDate",
+            "writable": true,
+            "displayName": "arrivalDate",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date/time of ship arrival at port area"
+        },
+        {
+            "name": "arrivalDateScheduled",
+            "writable": true,
+            "displayName": "arrivalDateScheduled",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Scheduled date/time of ship arrival at port area, as declared by shipping agent"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "departureDate",
+            "writable": true,
+            "displayName": "departureDate",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date/time of ship leaving port area"
+        },
+        {
+            "name": "departureDateScheduled",
+            "writable": true,
+            "displayName": "departureDateScheduled",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Scheduled date/time of ship leaving port area, as declared by shipping agent"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "regularLine",
+            "writable": true,
+            "displayName": "regularLine",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Regular line of the portcall"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "terminal",
+            "writable": true,
+            "displayName": "terminal",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Terminal of the portcall"
+        },
+        {
+            "name": "vesselAgent",
+            "writable": true,
+            "displayName": "vesselAgent",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Vessel Agent of the portcall"
+        },
+        {
+            "name": "voyageCode",
+            "writable": true,
+            "displayName": "voyageCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Voyage code (unique ID of a voyage)"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "vessel",
+            "comment": "Calling vessel of the portcall",
+            "displayName": "vessel",
+            "fields": [
+                {
+                    "name": "IMO",
+                    "schema": "long"
+                },
+                {
+                    "name": "shipName",
+                    "schema": "string"
+                },
+                {
+                    "name": "shipTypeCategory",
+                    "schema": "enum"
+                },
+                {
+                    "name": "shipTypeClass",
+                    "schema": "enum"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "status",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Estimated",
+                        "displayName": "Estimated",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Authorized",
+                        "displayName": "Authorized",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Operational",
+                        "displayName": "Operational",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Completed",
+                        "displayName": "Completed",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        }
+    ]
+}
