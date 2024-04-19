@@ -7,7 +7,7 @@
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descrizione globale: **Uno scalo portuale è la visita di un'imbarcazione al porto per un periodo di tempo, al fine di svolgere qualche tipo di funzione utile, come il carico o lo scarico delle merci.**  
+Descrizione globale: **Uno scalo portuale è la visita di un'imbarcazione al porto per un periodo di tempo, al fine di svolgere qualche tipo di funzione utile, come il carico o lo scarico di merci **.  
 versione: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -31,9 +31,9 @@
 <!-- 35-RequiredProperties -->  
 Proprietà richieste  
 - `arrivalDate`  - `id`  - `type`  - `vessel`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
 Modello di dati del progetto H2020 DataPorts.  
-<!-- /40-RequiredProperties -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
@@ -472,7 +472,7 @@ PortCall:
     - arrivalDate    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortCall/LICENSE.md    
   x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/PortCall/schema.json    
   x-model-tags: i4trust    
