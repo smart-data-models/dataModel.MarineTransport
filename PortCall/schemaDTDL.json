@@ -2,8 +2,8 @@
     "@id": "dtmi:com:ngsi-ld:PortCall;0",
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
-    "comment": "DataPorts - PortCall schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/PortCall/schema.json",
-    "description": "A Port Call is a vessel's visit to the port for a period of time, in order to perform some kind of useful function, like the loading or unloading of goods.",
+    "comment": "Smart Data models PortCall schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/PortCall/schema.json",
+    "description": "This data model is intended to provide information about PortCalls (the visit of a ship to a port). It allows to represent the properties of each PortCall, including the visiting Vessel (partially loaded and referenced to Vessel entity for more info). On each attribute references related to elements of other well known standards are included. The data model is intended to provide the basic information about a PortCall, that is, the data relative to the arrival and the departure of the ship from the port, bu",
     "displayName": "PortCall",
     "contents": [
         {
@@ -12,7 +12,31 @@
             "displayName": "UNLOCODE",
             "@type": "Property",
             "schema": "string",
-            "comment": "United Nations Code for Trade and Transport Locations, [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory), of the port"
+            "comment": "United Nations Code for Trade and Transport Locations, [UN/LOCODE](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory), of the port. to be deprecated. Use portCode instead"
+        },
+        {
+            "name": "agentChangeDate",
+            "writable": true,
+            "displayName": "agentChangeDate",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "[EMSWe: -] [EDI: -] [S211: -] [IMO: -] "
+        },
+        {
+            "name": "agentLegalCode",
+            "writable": true,
+            "displayName": "agentLegalCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Legal identifier code of the PortCall's ship Agent. [EMSWe: -] [EDI: -] [S211: -] [IMO: -] "
+        },
+        {
+            "name": "agentName",
+            "writable": true,
+            "displayName": "agentName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of the Agent at Port of the ship (aka consignor). [EMSWe: DE-009-01] [EDI: NAD-3035-ZME-CV] [IMO: IMO0002]"
         },
         {
             "name": "alternateName",
@@ -36,7 +60,7 @@
             "displayName": "arrivalDate",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Date/time of ship arrival at port area"
+            "comment": "Date/time of ship arrival at port area. To be deprecated. Use ata instead"
         },
         {
             "name": "arrivalDateScheduled",
@@ -44,7 +68,79 @@
             "displayName": "arrivalDateScheduled",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Scheduled date/time of ship arrival at port area, as declared by shipping agent"
+            "comment": "Scheduled date/time of ship arrival at port area, as declared by shipping agent. To be deprecated. Use eta instead"
+        },
+        {
+            "name": "ata",
+            "writable": true,
+            "displayName": "ata",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of Actual Time of Arrival to Port (ISO 8601 UTC format). [EMSWe: DE-005-02] [IALA_S211:locationState.timeType.ACTUAL] [IMO:IMO0063]"
+        },
+        {
+            "name": "atd",
+            "writable": true,
+            "displayName": "atd",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of Actual Time of Departure  from Port.  (ISO 8601 UTC format). [IALA_S211:timeType=2] [EMSWe: DE-005-03] [IALA_S211:locationState.timeType.ACTUAL] [IMO:IMO0065] "
+        },
+        {
+            "name": "authorizationDate",
+            "writable": true,
+            "displayName": "authorizationDate",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of authorization represented by an ISO 8601 UTC format"
+        },
+        {
+            "name": "callSign",
+            "writable": true,
+            "displayName": "callSign",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Identification signal of a vessel when initially connecting by radio [EMSWe: DE-065-05] [EDI: BGM-RFF] [S211: Call Name / Call Sign] [IMO: IMO0136] "
+        },
+        {
+            "name": "crewArrival",
+            "writable": true,
+            "displayName": "crewArrival",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of crew at arrival. [EMSWe: DE-013-03] [EDIFACT:QTY-6063-ZTE] [IMO:IMO0086]"
+        },
+        {
+            "name": "crewDeparture",
+            "writable": true,
+            "displayName": "crewDeparture",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of crew at departure. [EMSWe: DE-013-03] [EDIFACT:QTY-6063-ZTS] [IMO:IMO0086] "
+        },
+        {
+            "name": "dangerousGoodsCarried",
+            "writable": true,
+            "displayName": "dangerousGoodsCarried",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "A 'yes/no' indicator whether the ship is carrying any dangerous goods.[EMSWe: DE-018-02] [EDIFACT:FTX-4441-ZCD] [IMO:IMO0046]"
+        },
+        {
+            "name": "dangerousGoodsLoading",
+            "writable": true,
+            "displayName": "dangerousGoodsLoading",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "A 'yes/no' indicator whether the ship is loading any dangerous goods in this port. [EMSWe: DE-018-02] [EDIFACT:FTX-4441-ZDD] [IMO:IMO0046]"
+        },
+        {
+            "name": "dangerousGoodsUnloading",
+            "writable": true,
+            "displayName": "dangerousGoodsUnloading",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "A 'yes/no' indicator whether the ship is unloading any dangerous goods in this port. [EMSWe: DE-018-02] [EDIFACT:FTX-4441-ZBD] [IMO:IMO0046]"
         },
         {
             "name": "dataProvider",
@@ -71,12 +167,20 @@
             "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
+            "name": "departureAuthorizationDate",
+            "writable": true,
+            "displayName": "departureAuthorizationDate",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of authorization for the departure by authorities represented by an ISO 8601 UTC format"
+        },
+        {
             "name": "departureDate",
             "writable": true,
             "displayName": "departureDate",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Date/time of ship leaving port area"
+            "comment": "Date/time of ship leaving port area. To be deprecated. Use atd instead"
         },
         {
             "name": "departureDateScheduled",
@@ -84,7 +188,7 @@
             "displayName": "departureDateScheduled",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Scheduled date/time of ship leaving port area, as declared by shipping agent"
+            "comment": "Scheduled date/time of ship leaving port area, as declared by shipping agent. To be deprecated. Use etd instead"
         },
         {
             "name": "description",
@@ -95,9 +199,89 @@
             "comment": "A description of this item"
         },
         {
+            "name": "eta",
+            "writable": true,
+            "displayName": "eta",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of Estimated Time of Arrival to Port expected by Port Authority  (ISO 8601 UTC format). [EMSWe: DE-005-09] [EDIFACT:DTM-2005-132] [IALA_S211:locationState.timeType.ESTIMATED] [IMO:IMO0064]"
+        },
+        {
+            "name": "etd",
+            "writable": true,
+            "displayName": "etd",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of Estimated Time of Departure  from Port, expected by Port Authority  (ISO 8601 UTC format). [EMSWe: DE-005-04] [EDIFACT:DTM-2005-133] [IALA_S211:locationState.timeType.ESTIMATED] [IMO:IMO0066]"
+        },
+        {
+            "name": "imo",
+            "writable": true,
+            "displayName": "imo",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "IMO ship identification number, following the [scheme](https://www.imo.org/en/OurWork/IIIS/Pages/IMO-Identification-Number-Schemes.aspx) defined by the International Maritime Organization. [EMSWe: DE-003-03] [EDIFACT:TDT-8213] [IALA_S211:vesselId] [IMO:IMO0140]"
+        },
+        {
+            "name": "interiorTraffic",
+            "writable": true,
+            "displayName": "interiorTraffic",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": ""
+        },
+        {
+            "name": "lastPortCode",
+            "writable": true,
+            "displayName": "lastPortCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Last port of call, coded.The code representing the port immediately previous to the port of arrival, if available. [EMSWe: DE-005-05] [EDIFACT:LOC-3227-92] [IMO:IMO0076] "
+        },
+        {
             "name": "location",
             "writable": true,
             "displayName": "location"
+        },
+        {
+            "name": "manifestActivated",
+            "writable": true,
+            "displayName": "manifestActivated",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": ""
+        },
+        {
+            "name": "manifestActivationDate",
+            "writable": true,
+            "displayName": "manifestActivationDate",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of approval of the cargo manifest. [MSWE: DE-036-04:Manifest number]"
+        },
+        {
+            "name": "masterName",
+            "writable": true,
+            "displayName": "masterName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of master [EMSWe: DE-053-01] [EDIFACT:NAD-3035-ZME] [IMO:IMO0083]"
+        },
+        {
+            "name": "mmsi",
+            "writable": true,
+            "displayName": "mmsi",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Marine Mobile Service Identity Number (a temporarily assigned UID, issued by that object's current flag state)[EMSWe: DE-068-09] [EDIFACT:TDT-1131] [IALA_S211:vesselId] [IMO:IMO0178]"
+        },
+        {
+            "name": "mrn",
+            "writable": true,
+            "displayName": "mrn",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "MRN coded identifier. It has to be related to the entity in a way that is well-known by different organisms the meaning and the initiator of the entity, and all next parties will maintain on its original value. This identifier must be an UNIQUE identifier of the PortCall entity assigned by the system who created on first the entity. This URN should Conforms MRN & IETF specifically RFC 2141, RFC 5234, and RFC 8141. The proposed format is id::='urn:mrn:<OID>:<ONSS>:portcalls:portcall:id:[0-9]+' where OID:= Or"
         },
         {
             "name": "name",
@@ -108,17 +292,121 @@
             "comment": "The name of this item"
         },
         {
+            "name": "nextPortCode",
+            "writable": true,
+            "displayName": "nextPortCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Next port of call, coded.The code representing the port immediately previous to the port of arrival, if available.. Related to IALA_S211:nestPortCallCod / IMO. [EMSWe: DE-005-07] [EDIFACT:LOC-3227-61] [IMO:IMO0120]"
+        },
+        {
+            "name": "passengersArrival",
+            "writable": true,
+            "displayName": "passengersArrival",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of passengers at arrival. [EMSWe: DE-013-02] [EDIFACT:QTY-6063-ZPE] [IMO:IMO0087]."
+        },
+        {
+            "name": "passengersDeparture",
+            "writable": true,
+            "displayName": "passengersDeparture",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of passengers at departure. [EMSWe: DE-013-02] [EDIFACT:QTY-6063-ZPS] [IMO:IMO0087]"
+        },
+        {
+            "name": "portCallNumber",
+            "writable": true,
+            "displayName": "portCallNumber",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Port call identifier in MRN format. First element of the NSS should be the 5 character UN/Locode of the port, later the YEAR and finishing with a sequential number in this port [LLLLLYYYY99999] where LLLLL is the UN/LOCODE of the visited port, YYYY is the year, and 99999 is a unique sequential number assigned by port authority unique on each year (i.e. ESHUV202310323). An abbreviation can be used for UN/LOCODE (i.e. H202310323).  The portCallNumber is assigned during the initial steps of the visit, but coul"
+        },
+        {
+            "name": "portCode",
+            "writable": true,
+            "displayName": "portCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "United Nations Code for Trade and Transport Locations. See [Unlocode](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory) [EMSWe: DE-004-04] [EDIFACT:LOC-3227-153] [IALA_S211:portCode] [IMO:IMO0108]"
+        },
+        {
+            "name": "pta",
+            "writable": true,
+            "displayName": "pta",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of Planned Time of Arrival to Port by Port Authority Berthing Plan  (ISO 8601 UTC format). [EDIFACT:DTM-2005-155] [IALA_S211:locationState.timeType.PLANNED] [IMO:IMO0235]"
+        },
+        {
+            "name": "ptd",
+            "writable": true,
+            "displayName": "ptd",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of Planned Time of Departure  from Port, planned by Port Authority Berthing Plan  (ISO 8601 UTC format). [EDI: DTM-2005-156] [S211: locationState.timeType.PLANNED] [IMO: IMO0236]"
+        },
+        {
             "name": "regularLine",
             "writable": true,
             "displayName": "regularLine",
             "@type": "Property",
             "schema": "string",
-            "comment": "Regular line of the portcall"
+            "comment": "Name of the regular line if any. [EMSWe: DE-004-02] [EDIFACT:-] [IMO:-]"
+        },
+        {
+            "name": "remarks",
+            "writable": true,
+            "displayName": "remarks",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Comments about this PortCall by the Porth Authority. [EMSWe: DE-038-01] [EDIFACT:FTX-4440-AAI] [IALA_S211:comment] [IMO: IMO0196]"
+        },
+        {
+            "name": "rta",
+            "writable": true,
+            "displayName": "rta",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of Requested Time of Arrival to Port. Requested by Consignee to Port Authority  (ISO 8601 UTC format). [EDIFACT:DTM-2005-178] [IALA_S211:locationState.timeType.REQUIRED] [IMO:IMO0234]"
+        },
+        {
+            "name": "rtd",
+            "writable": true,
+            "displayName": "rtd",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Date and time of Requested Time of Departure from Port. Requested by Consignee to Port Authority  (ISO 8601 UTC format). [EDIFACT:DTM-2005-189] [IALA_S211:locationState.timeType.REQUIRED] [IMO:IMO0237]"
+        },
+        {
+            "name": "secondAgentLegalCode",
+            "writable": true,
+            "displayName": "secondAgentLegalCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Legal identifier code of the PortCall's ship Agent. [EMSWe: -] [EDI: -] [S211: -] [IMO: -] "
+        },
+        {
+            "name": "secondAgentName",
+            "writable": true,
+            "displayName": "secondAgentName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of the new Agent at Port of the Sipping Line and usually the consignor or the load. [EMSWe: DE-009-01] [EDI: NAD-3035-ZME-CV] [IMO: IMO0002] "
         },
         {
             "name": "seeAlso",
             "writable": true,
             "displayName": "seeAlso"
+        },
+        {
+            "name": "shipName",
+            "writable": true,
+            "displayName": "shipName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the vessel"
         },
         {
             "name": "source",
@@ -134,7 +422,7 @@
             "displayName": "terminal",
             "@type": "Property",
             "schema": "string",
-            "comment": "Terminal of the portcall"
+            "comment": "Name of the terminal [EMSWe:-] [EDIFACT:-] [IMO:-]"
         },
         {
             "name": "vesselAgent",
@@ -142,7 +430,20 @@
             "displayName": "vesselAgent",
             "@type": "Property",
             "schema": "string",
-            "comment": "Vessel Agent of the portcall"
+            "comment": "Vessel Agent of the portcall. To be deprecated. Use agentName instead"
+        },
+        {
+            "name": "vesselName",
+            "writable": true,
+            "displayName": "vesselName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the Vessel. [EMSWe: DE-003-07] [EDIFACT:TDT-8212] [IMO:IMO0142]"
+        },
+        {
+            "name": "vesselRef",
+            "writable": true,
+            "displayName": "vesselRef"
         },
         {
             "name": "voyageCode",
@@ -150,7 +451,23 @@
             "displayName": "voyageCode",
             "@type": "Property",
             "schema": "string",
-            "comment": "Voyage code (unique ID of a voyage)"
+            "comment": "Voyage code (unique ID of a voyage). To be deprecated. Use voyageNumber instead"
+        },
+        {
+            "name": "voyageNumber",
+            "writable": true,
+            "displayName": "voyageNumber",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Number of voyage. [EMSWe: DE-004-02] [EDIFACT:-] [IMO:-]"
+        },
+        {
+            "name": "wasteAgreementExists",
+            "writable": true,
+            "displayName": "wasteAgreementExists",
+            "@type": "Property",
+            "schema": "boolean",
+            "comment": "All waste delivery indicator. Waste collection paid indicator. Exists agreement with Port Authority for waste discharge and treatment. [EDIFACT:FTX-4441-ZRS/ZRL] [IALA_S211:locationReferenceObject. SLUDGE_VESSEL]"
         },
         {
             "@type": "Telemetry",
@@ -205,11 +522,11 @@
         {
             "@type": "object",
             "name": "vessel",
-            "comment": "Calling vessel of the portcall",
+            "comment": "Calling vessel of the portcall. To be deprecated. Use individual attributes IMO, vesselTypeCategory, vesselTypeCategory, vesselName. To be deprecated in this object",
             "displayName": "vessel",
             "fields": [
                 {
-                    "name": "IMO",
+                    "name": "imo",
                     "schema": "long"
                 },
                 {
@@ -228,30 +545,170 @@
         },
         {
             "@type": "Telemetry",
+            "name": "authorizedBy",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "PORT_AUTHORITY",
+                        "displayName": "PORT_AUTHORITY",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "ARMY_AUTHORITY",
+                        "displayName": "ARMY_AUTHORITY",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "PORT_ARMY_AUTHORITIES",
+                        "displayName": "PORT_ARMY_AUTHORITIES",
+                        "enumValue": 3
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
             "name": "status",
             "schema": {
                 "@type": "Enum",
                 "valueSchema": "string",
                 "enumValues": [
                     {
-                        "name": "Estimated",
-                        "displayName": "Estimated",
+                        "name": "ACCEPTED",
+                        "displayName": "ACCEPTED",
                         "enumValue": 1
                     },
                     {
-                        "name": "Authorized",
-                        "displayName": "Authorized",
+                        "name": "AUTHORIZED",
+                        "displayName": "AUTHORIZED",
                         "enumValue": 2
                     },
                     {
-                        "name": "Operational",
-                        "displayName": "Operational",
+                        "name": "CANCELLED",
+                        "displayName": "CANCELLED",
                         "enumValue": 3
                     },
                     {
-                        "name": "Completed",
-                        "displayName": "Completed",
+                        "name": "COMPLETED",
+                        "displayName": "COMPLETED",
                         "enumValue": 4
+                    },
+                    {
+                        "name": "DENIED",
+                        "displayName": "DENIED",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "ESTIMATED",
+                        "displayName": "ESTIMATED",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "INITIATED",
+                        "displayName": "INITIATED",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "REQUESTED",
+                        "displayName": "REQUESTED",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "REJECTED",
+                        "displayName": "REJECTED",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "INVOICING",
+                        "displayName": "INVOICING",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "INVOICED",
+                        "displayName": "INVOICED",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "OPERATIONAL",
+                        "displayName": "OPERATIONAL",
+                        "enumValue": 12
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "vesselTypeCategory",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "CONTAINER",
+                        "displayName": "CONTAINER",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "GENERAL CARGO NON SPECIALIZED",
+                        "displayName": "GENERAL CARGO NON SPECIALIZED",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "LIQUID BULK",
+                        "displayName": "LIQUID BULK",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "DRY BULK",
+                        "displayName": "DRY BULK",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "CRUISE",
+                        "displayName": "CRUISE",
+                        "enumValue": 5
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "vesselTypeClass",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "MULTI-DECKER",
+                        "displayName": "MULTI-DECKER",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "CHEMICAL TANKER",
+                        "displayName": "CHEMICAL TANKER",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "FULL CONTAINER",
+                        "displayName": "FULL CONTAINER",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "OIL TANKER",
+                        "displayName": "OIL TANKER",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "BULK CARRIER",
+                        "displayName": "BULK CARRIER",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "LG TANKER",
+                        "displayName": "LG TANKER",
+                        "enumValue": 6
                     }
                 ]
             }
