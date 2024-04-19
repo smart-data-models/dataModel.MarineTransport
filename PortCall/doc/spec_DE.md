@@ -7,7 +7,7 @@
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Allgemeine Beschreibung: **Ein Hafenaufenthalt ist der zeitlich begrenzte Besuch eines Schiffes im Hafen, um eine nützliche Funktion zu erfüllen, z. B. das Laden oder Löschen von Waren.**  
+Globale Beschreibung: **Ein Hafenaufenthalt ist der zeitlich begrenzte Besuch eines Schiffes im Hafen, um eine nützliche Funktion zu erfüllen, z. B. das Laden oder Löschen von Waren.**  
 Version: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -31,9 +31,9 @@
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 - `arrivalDate`  - `id`  - `type`  - `vessel`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
 Datenmodell aus dem H2020-Projekt DataPorts.  
-<!-- /40-RequiredProperties -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
@@ -472,7 +472,7 @@ PortCall:
     - arrivalDate    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortCall/LICENSE.md    
   x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/PortCall/schema.json    
   x-model-tags: i4trust    
