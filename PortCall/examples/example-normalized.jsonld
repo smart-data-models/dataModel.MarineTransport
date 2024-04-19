@@ -1,64 +1,211 @@
 {
-  "id": "urn:ngsi-ld:PortCall:VPF:1202106029",
+  "id": "urn:ngsi-ld:$af4345f234525$",
   "type": "PortCall",
-  "UNLOCODE": {
-    "type": "Text",
+  "mrn": {
+    "type": "Property",
+    "value": "urn:mrn:eshuv:portcalls:portcall:id:941"
+  },
+  "portCode": {
+    "type": "Property",
     "value": "ESVLC"
   },
-  "arrivalDate": {
+  "portCallNumber": {
     "type": "Property",
-    "value": {
-      "@type": "date-time",
-      "@value": "2021-12-01T00:46:00Z"
-    }
-  },
-  "arrivalDateScheduled": {
-    "type": "Property",
-    "value": {
-      "@type": "date-time",
-      "@value": "2021-12-01T00:46:00Z"
-    }
-  },
-  "departureDate": {
-    "type": "Property",
-    "value": "2021-12-01T11:35:00Z",
-    "metadata": {}
-  },
-  "departureDateScheduled": {
-    "type": "Property",
-    "value": {
-      "@type": "date-time",
-      "@value": "2021-12-01T11:35:00Z"
-    }
+    "value": "ESHUV202301296"
   },
   "regularLine": {
     "type": "Property",
     "value": "GRIMALDI - SHORT SEA SERVICE B"
   },
-  "status": {
-    "type": "Property",
-    "value": "Completed"
-  },
   "terminal": {
     "type": "Property",
-    "value": "VALENCIA TERMINAL EUROPA, S.A."
+    "value": "TERMINAL ESTE, S.A."
   },
-  "vessel": {
+  "status": {
+    "type": "Property",
+    "value": "AUTHORIZED"
+  },
+  "authorizedBy": {
+    "type": "Property",
+    "value": "PORT_ARMY_AUTHORITIES"
+  },
+  "authorizationDate": {
+    "type": "Date-Time",
+    "value": "2023-01-01T08:00:00.00Z"
+  },
+  "voyageNumber": {
+    "type": "Property",
+    "value": "12021060223"
+  },
+  "lastPortCode": {
+    "type": "Property",
+    "value": "ESBCN"
+  },
+  "nextPortCode": {
+    "type": "Property",
+    "value": "NLRTM"
+  },
+  "vesselTypeCategory": {
+    "type": "Property",
+    "value": "CONTAINER"
+  },
+  "vesselTypeClass": {
+    "type": "Property",
+    "value": "FULL CONTAINER"
+  },
+  "vesselRef": {
+    "type": "Relationship",
+    "object": "URI:NGSI-LD:Portcall:001"
+  },
+  "vesselName": {
+    "type": "Property",
+    "value": "Acme ERC SHIP"
+  },
+  "imo": {
+    "type": "Property",
+    "value": 87123445
+  },
+  "mmsi": {
+    "type": "Property",
+    "value": 210049000
+  },
+  "callSign": {
+    "type": "Property",
+    "value": "5BP-*987C3"
+  },
+  "masterName": {
+    "type": "Property",
+    "value": "John Doe"
+  },
+  "wasteAgreementExists": {
+    "type": "Property",
+    "value": true
+  },
+  "dangerousGoodsCarried": {
+    "type": "Property",
+    "value": true
+  },
+  "dangerousGoodsLoading": {
+    "type": "Property",
+    "value": true
+  },
+  "dangerousGoodsUnloading": {
+    "type": "Property",
+    "value": false
+  },
+  "agentName": {
+    "type": "Property",
+    "value": "Acme Consignors S.L."
+  },
+  "agentLegalCode": {
+    "type": "Property",
+    "value": "A-43242342"
+  },
+  "agentChangeDate": {
     "type": "Property",
     "value": {
-      "shipName": "ECO BARCELONA",
-      "IMO": 8712345,
-      "shipTypeCategory": "CONTAINER",
-      "shipTypeClass": "FULL CONTAINER"
+      "@type": "date-time",
+      "@value": "2023-01-01T08:00:00"
     }
   },
-  "vesselAgent": {
+  "secondAgentName": {
     "type": "Property",
-    "value": "GRIMALDI LOGISTICA ESPAÑA S.L."
+    "value": "John Doe"
   },
-  "voyageCode": {
+  "secondAgentLegalCode": {
     "type": "Property",
-    "value": "1202106029"
+    "value": "31133133-V"
+  },
+  "manifestActivated": {
+    "type": "Property",
+    "value": true
+  },
+  "manifestActivationDate": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-01-01T08:00:00"
+    }
+  },
+  "interiorTraffic": {
+    "type": "Property",
+    "value": false
+  },
+  "remarks": {
+    "type": "Property",
+    "value": "Fondeado hasta arreglar averia"
+  },
+  "crewArrival": {
+    "type": "Property",
+    "value": 100
+  },
+  "crewDeparture": {
+    "type": "Property",
+    "value": 120
+  },
+  "passengersArrival": {
+    "type": "Property",
+    "value": 20
+  },
+  "passengersDeparture": {
+    "type": "Property",
+    "value": 25
+  },
+  "eta": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-01-01T07:15:00"
+    }
+  },
+  "rta": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-01-01T07:30:00"
+    }
+  },
+  "pta": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-01-01T07:15:00"
+    }
+  },
+  "ata": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-01-01T08:00:00"
+    }
+  },
+  "etd": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-01-02T07:15:00"
+    }
+  },
+  "rtd": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-01-02T07:00:00"
+    }
+  },
+  "ptd": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-01-02T07:00:00"
+    }
+  },
+  "atd": {
+    "type": "Property",
+    "value": {
+      "@type": "date-time",
+      "@value": "2023-01-02T07:00:00"
+    }
   },
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld"
