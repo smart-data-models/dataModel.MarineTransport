@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "Port"
 subject = "dataModel.MarineTransport"
-unlocode = "{'type': 'Property', 'value': 'Unlocode'}"
+unlocode = "Unlocode"
 attribute = "unlocode"
 value = unlocode
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-contactPoint = {'type': 'Property', 'value': {'telephone': '+34 12 34 56 78', 'email': 'example@port.com', 'availableLanguage': ['en-EN', 'es-ES'], 'faxProperty': '12 345 67 89', 'name': 'Portname', 'url': 'https://URL'}}
+contactPoint = {'telephone': '+34 12 34 56 78', 'email': 'example@port.com', 'availableLanguage': ['en-EN', 'es-ES'], 'faxNumber': '12 345 67 89', 'name': 'Portname', 'url': 'https://URL'}
 attribute = "contactPoint"
 value = contactPoint
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-portArea = {'type': 'GeoProperty', 'value': {'type': 'MultiPolygon', 'coordinates': [[[[-0.33295074395914526, 39.4631637203228], [-0.33295074395914526, 39.42053808578652], [-0.2829300303054083, 39.42053808578652], [-0.2829300303054083, 39.4631637203228], [-0.33295074395914526, 39.4631637203228]]]]}}
+portArea = {'type': 'MultiPolygon', 'coordinates': [[[[-0.33295074395914526, 39.4631637203228], [-0.33295074395914526, 39.42053808578652], [-0.2829300303054083, 39.42053808578652], [-0.2829300303054083, 39.4631637203228], [-0.33295074395914526, 39.4631637203228]]]]}
 attribute = "portArea"
 value = portArea
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-timeZone = "{'type': 'Property', 'value': 'Europe/London'}"
+timeZone = "Europe/London"
 attribute = "timeZone"
 value = timeZone
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
