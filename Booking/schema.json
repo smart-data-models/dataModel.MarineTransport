@@ -1,10 +1,10 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.1",
   "$id": "https://github.com/smart-data-models/dataModel.MarineTransport/master/Booking/schema.json",
   "title": "DataPorts - Booking schema",
   "description": "Provide the bookings electronic messaging description",
-  "modelTags":"",
+  "modelTags": "",
   "type": "object",
   "allOf": [
     {
