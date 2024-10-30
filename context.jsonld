@@ -70,7 +70,7 @@
         "courseOverGround": "https://smartdatamodels.org/dataModel.MarineTransport/courseOverGround",
         "createdAt": {
             "@id": "ngsi-ld:createdAt",
-            "@type": "DateTime"
+            "@type": "ngsi-ld:DateTime"
         },
         "crewArrival": "https://smartdatamodels.org/dataModel.MarineTransport/crewArrival",
         "crewDeparture": "https://smartdatamodels.org/dataModel.MarineTransport/crewDeparture",
@@ -137,7 +137,7 @@
         "mmsi": "https://smartdatamodels.org/dataModel.MarineTransport/mmsi",
         "modifiedAt": {
             "@id": "ngsi-ld:modifiedAt",
-            "@type": "DateTime"
+            "@type": "ngsi-ld:DateTime"
         },
         "mooringLines": "https://smartdatamodels.org/dataModel.MarineTransport/mooringLines",
         "mrn": "https://smartdatamodels.org/dataModel.MarineTransport/mrn",
@@ -147,7 +147,7 @@
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "observedAt": {
             "@id": "ngsi-ld:observedAt",
-            "@type": "DateTime"
+            "@type": "ngsi-ld:DateTime"
         },
         "operationRank": "https://smartdatamodels.org/dataModel.MarineTransport/operationRank",
         "operationType": "https://smartdatamodels.org/dataModel.MarineTransport/operationType",
