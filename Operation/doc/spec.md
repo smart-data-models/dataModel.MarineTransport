@@ -7,16 +7,26 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Global description: **This data model is intended to provide information about commercial operations made in a stop of a ship during a PortCall (Berth entity). An Operation is defined as the activities related to commercial operations that take in place during the berth. Each Operation has an entity and some operations can be made in the same berth (docked or anchorage), and are distinguished by its sequence number on time (operationRank)**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-<!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Number identifying a specific property on a public street    
+- `alternateName[string]`: An alternative name for this item  - `amount[number]`: Number of units loading/discharge  . Model: [https://schema.org/Number](https://schema.org/Number)- `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `berthRef[uri]`: Reference to parent MarineTransport:Berth entity  - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `description[string]`: A description of this item  - `etc[date-time]`: Represented by an ISO 8601 UTC format, Date and time of Estimated Time of Arrival to Berth expected by Port Authority  (ISO 8601 UTC format). If this is the first berthing, the ETA-berth should be the same than ETA-PBP  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `ets[date-time]`:   . Model: [https://schema.org/DateTime.Represented by an ISO 8601 UTC format, Date and time of Estimated Time of starting the operation.](https://schema.org/DateTime.Represented by an ISO 8601 UTC format, Date and time of Estimated Time of starting the operation.)- `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `manipulationMeansCode[string]`: Code identifying the manipulation means. Enum: 1=Vessel's own resources, 2=Roll-on-roll-off ramp, 3=Dock cranes, 4=Automotive cranes, 5=Pipes, 6=Conveyor belts, 7=Pneumatic pumping installations, 8=Special installations, 9=Other means'  . Model: [https://schema.org/Text](https://schema.org/Text)- `manipulationMeansNumber[number]`: Number of manipulation means  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxWeightPerUnit[number]`: Maximum Weight per unit loading/discharge  . Model: [https://schema.org/Number](https://schema.org/Number)- `measureUnit[string]`: Unit type of load loading/discharge  . Model: [https://schema.org/Text](https://schema.org/Text)- `name[string]`: The name of this item  - `operationRank[number]`: Rank or Number of this Operation in all the commercial operations made in berth in the sequence of operations (discharge, charge, ...)  . Model: [https://schema.org/Number](https://schema.org/Number)- `operationTypeCode[string]`: Code identifying the type of commercial operation. Enum: 'ZD=Disembarkation; ZE=Embarkation; ZT=Transshipment; ZR=Waste; AV=Victualling; DT=Disembarkation in transit; RE=Restow'  . Model: [https://schema.org/Text](https://schema.org/Text)- `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `portCallNumber[string]`: PortCall identifier in urn format. MarineTransport:PortCall:portCallNumber  . Model: [https://schema.org/Text](https://schema.org/Text)- `portCallRef[uri]`: Reference to parent MarineTransport:PortCall entity  - `portCode[string]`: Code of the port of the call  . Model: [https://schema.org/Text](https://schema.org/Text)- `position[string]`: Text specifying the position in the port where the operations has place  . Model: [https://schema.org/Text](https://schema.org/Text)- `productCode[string]`: Code identifying the type of product of this operation. Enum: Z01=Crude oil; Z02=Fuel oil; Z03=Gas-oil; Z04=Gasoline; Z05=Asphalt; Z06=Other petroleum products; Z07=Petroleum energy gases; Z08=Iron ore; Z09=Pyrites; Z10=Other minerals; Z11=Iron scrap; Z12=Coals and petroleum coke; Z13=Steel products; Z14=Phosphates; Z15=Potasses; Z16=Natural and artificial fertilizers; Z17=Chemical products; Z18=Cement and clinker; Z19=Wood and cork; Z20=Construction materials; Z21=Cereals and their flour; Z22=Beans and soy flour; Z23=Fruits, vegetables and legumes; Z24=Wines, alcoholic beverages and derivatives; Z25=Common salt; Z26=Paper and pulp; Z27=Canned; Z28=Tobacco, cocoa, coffee and spices; Z29=Oils and fats; Z30=Other food products; Z31=Machinery, appliances, tools and spare parts; Z32=Automobiles and parts; Z33=Frozen fish; Z34=Rest of merchandise; Z35=Natural gas; Z36=Other metallurgical products; Z37=Feed and forage; Z38=Tare truck cargo platform; Z39=Container tare; Z40=Merchandise in transit containers; Z41=Containers full; Z42=Empty containers; Z43=Vehicles; Z44=Vehicle parts; Z91=Passengers; Z92=Cruise passengers; 1=Fresh fish; Z51=Biofuels; Z52=Other non-metallic minerals; ZR1=Dirty ballast; ZR2=Sludge and settling tanks; ZR3=Bilge oily water tanks; ZR4=Dirty waters; ZR5=Garbage;  . Model: [https://schema.org/Text](https://schema.org/Text)- `remarks[string]`: Remarks of the operation  . Model: [https://schema.org/Text](https://schema.org/Text)- `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `stevedoreRef[string]`: Id of the stevedore. Format urn:mrn:<oid>:portcalls:operation:stevedore:9999  . Model: [https://schema.org/Text](https://schema.org/Text)- `stopRank[number]`: Rank or Number of this stop in the stop (berth or anchor area) ordered by time sequence  . Model: [https://schema.org/Number](https://schema.org/Number)- `terminal[string]`: Terminal where the operation takes place  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI Entity type. It has to be Operation. In some international standards is also known as [Ship's Stop]  - `year[number]`: Year of the init of the berthing  . Model: [https://schema.org/Number](https://schema.org/Number)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
-- No required properties  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
@@ -562,6 +572,34 @@ Operation:
 ## Example payloads    
 #### Operation NGSI-v2 key-values Example    
 Here is an example of a Operation in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
+{  
+  "id": "urn:mrn:eshuv:portcalls:activity:id:40923",  
+  "type": "Operation",  
+  "portCode": "ESHUV",  
+  "year": 2023,  
+  "portCallNumber": "ESHUV202300123",  
+  "portCallRef": "urn:mrn:eshuv:portcalls:activity:id:941",  
+  "berthRef": "urn:mrn:eshuv:portcalls:berth:id:1234",  
+  "stopRank": 2,  
+  "operationRank": 1,  
+  "ets": "2023-01-01T07:30:00",  
+  "etc": "2023-01-01T07:30:00",  
+  "operationTypeCode": "ZE",  
+  "productCode": "Z41",  
+  "amount": 120,  
+  "measureUnit": "TEU",  
+  "maxWeightPerUnit": 23.3,  
+  "terminal": "Muelle Sur",  
+  "position": "Segunda linea granel",  
+  "remarks": "Delayed 1h",  
+  "manipulationMeansCode": "3",  
+  "manipulationMeansNumber": 2,  
+  "stevedoreRef": "1234"  
+}  
+```  
+</details>  
 #### Operation NGSI-v2 normalized Example    
 Here is an example of a Operation in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
 <details><summary><strong>show/hide example</strong></summary>    
