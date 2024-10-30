@@ -25,6 +25,13 @@ contributors:
   organization: Universitat Politecnica de Valencia
   project: DataPorts (H2020)
   year: 2023
+- name: Miguel
+  surname: Llop
+  mail: mllop@fundacion.valenciaport.com
+  organization: Fundacion Valenciaport
+  project: Dataports
+  comments: Data model for covering the following five use cases; VGM Blockchain, Container Tracking, Goods Tracking, Transport Tracking, and Consignment Note
+  year: 2022
 - name: Alexandros
   surname: Zerzelidis
   mail: alexander_zerzelidis@iti.gr
