@@ -38,7 +38,7 @@
         "availableLanguage": "https://smartdatamodels.org/availableLanguage",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "beam": "https://smartdatamodels.org/dataModel.MarineTransport/beam",
         "berthCode": "https://smartdatamodels.org/dataModel.MarineTransport/berthCode",
@@ -65,12 +65,12 @@
         "containersImport": "https://smartdatamodels.org/dataModel.MarineTransport/containersImport",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "courseOverGround": "https://smartdatamodels.org/dataModel.MarineTransport/courseOverGround",
         "createdAt": {
-            "@id": "ngsi-ld:createdAt",
-            "@type": "DateTime"
+            "@id": "https://uri.etsi.org/ngsi-ld/createdAt",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
         "crewArrival": "https://smartdatamodels.org/dataModel.MarineTransport/crewArrival",
         "crewDeparture": "https://smartdatamodels.org/dataModel.MarineTransport/crewDeparture",
@@ -122,7 +122,7 @@
         "lastPortCode": "https://smartdatamodels.org/dataModel.MarineTransport/lastPortCode",
         "length": "https://smartdatamodels.org/dataModel.MarineTransport/length",
         "loadingPort": "https://smartdatamodels.org/dataModel.MarineTransport/loadingPort",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "manager": "https://smartdatamodels.org/dataModel.MarineTransport/manager",
         "manifestActivated": "https://smartdatamodels.org/dataModel.MarineTransport/manifestActivated",
         "manifestActivationDate": "https://smartdatamodels.org/dataModel.MarineTransport/manifestActivationDate",
@@ -136,8 +136,8 @@
         "messageVersion": "https://smartdatamodels.org/dataModel.MarineTransport/messageVersion",
         "mmsi": "https://smartdatamodels.org/dataModel.MarineTransport/mmsi",
         "modifiedAt": {
-            "@id": "ngsi-ld:modifiedAt",
-            "@type": "DateTime"
+            "@id": "https://uri.etsi.org/ngsi-ld/modifiedAt",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
         "mooringLines": "https://smartdatamodels.org/dataModel.MarineTransport/mooringLines",
         "mrn": "https://smartdatamodels.org/dataModel.MarineTransport/mrn",
@@ -146,8 +146,8 @@
         "nextPortCode": "https://smartdatamodels.org/dataModel.MarineTransport/nextPortCode",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "observedAt": {
-            "@id": "ngsi-ld:observedAt",
-            "@type": "DateTime"
+            "@id": "https://uri.etsi.org/ngsi-ld/observedAt",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
         "operationRank": "https://smartdatamodels.org/dataModel.MarineTransport/operationRank",
         "operationType": "https://smartdatamodels.org/dataModel.MarineTransport/operationType",
@@ -198,7 +198,7 @@
         "source": "https://smartdatamodels.org/source",
         "specialManeuverIndicator": "https://smartdatamodels.org/dataModel.MarineTransport/specialManeuverIndicator",
         "speedOverGround": "https://smartdatamodels.org/dataModel.MarineTransport/speedOverGround",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "stevedoreRef": "https://smartdatamodels.org/dataModel.MarineTransport/stevedoreRef",
         "stopRank": "https://smartdatamodels.org/dataModel.MarineTransport/stopRank",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
