@@ -10,7 +10,7 @@ notesFooter: Pending to agree the standards identification of each field. For UR
         - SO 3166-1 – The International Standard for country codes and codes for their subdivisions.
         - RFC 2141 – URN Syntax (https://www.ietf.org/rfc/rfc2141.txt)
         - RFC 8141 – Uniform Resource Names (URN) (https://tools.ietf.org/html/rfc8141)
-        - IALAs MRN Request: (https://www.iana.org/assignments/urn-formal/mrn)
+        - IALAs MRN Request (https://www.iana.org/assignments/urn-formal/mrn)
         
         <MRN> ::= "urn" ":" "mrn" ":" <OID> ":" <OSNID> ":" <OSNS>
         <OID> ::= (alphanum) 0*32(alphanum / "-") (alphanum) ; Organization ID (i.e. ESHUV)
