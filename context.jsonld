@@ -3,6 +3,7 @@
         "Berth": "https://smartdatamodels.org/dataModel.MarineTransport/Berth",
         "Booking": "https://smartdatamodels.org/dataModel.MarineTransport/Booking",
         "EdiCodeco": "https://smartdatamodels.org/dataModel.MarineTransport/EdiCodeco",
+        "Operation": "https://smartdatamodels.org/dataModel.MarineTransport/Operation",
         "Port": "https://smartdatamodels.org/dataModel.MarineTransport/Port",
         "PortAuthority": "https://smartdatamodels.org/dataModel.MarineTransport/PortAuthority",
         "PortCall": "https://smartdatamodels.org/dataModel.MarineTransport/PortCall",
@@ -20,6 +21,7 @@
         "agentName": "https://smartdatamodels.org/dataModel.MarineTransport/agentName",
         "airDraught": "https://smartdatamodels.org/dataModel.MarineTransport/airDraught",
         "alternateName": "https://smartdatamodels.org/alternateName",
+        "amount": "https://smartdatamodels.org/dataModel.MarineTransport/amount",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "arrivalDate": "https://smartdatamodels.org/dataModel.MarineTransport/arrivalDate",
         "arrivalDateScheduled": "https://smartdatamodels.org/dataModel.MarineTransport/arrivalDateScheduled",
@@ -36,11 +38,12 @@
         "availableLanguage": "https://smartdatamodels.org/availableLanguage",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "beam": "https://smartdatamodels.org/dataModel.MarineTransport/beam",
         "berthCode": "https://smartdatamodels.org/dataModel.MarineTransport/berthCode",
         "berthName": "https://smartdatamodels.org/dataModel.MarineTransport/berthName",
+        "berthRef": "https://smartdatamodels.org/dataModel.MarineTransport/berthRef",
         "berthingTypeCode": "https://smartdatamodels.org/dataModel.MarineTransport/berthingTypeCode",
         "bookingCode": "https://smartdatamodels.org/dataModel.MarineTransport/bookingCode",
         "bookingDate": "https://smartdatamodels.org/dataModel.MarineTransport/bookingDate",
@@ -62,12 +65,12 @@
         "containersImport": "https://smartdatamodels.org/dataModel.MarineTransport/containersImport",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "courseOverGround": "https://smartdatamodels.org/dataModel.MarineTransport/courseOverGround",
         "createdAt": {
-            "@id": "ngsi-ld:createdAt",
-            "@type": "DateTime"
+            "@id": "https://uri.etsi.org/ngsi-ld/createdAt",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
         "crewArrival": "https://smartdatamodels.org/dataModel.MarineTransport/crewArrival",
         "crewDeparture": "https://smartdatamodels.org/dataModel.MarineTransport/crewDeparture",
@@ -94,8 +97,10 @@
         "estimatedTimeOfArrival": "https://smartdatamodels.org/dataModel.MarineTransport/estimatedTimeOfArrival",
         "eta": "https://smartdatamodels.org/dataModel.MarineTransport/eta",
         "etaBerth": "https://smartdatamodels.org/dataModel.MarineTransport/etaBerth",
+        "etc": "https://smartdatamodels.org/dataModel.MarineTransport/etc",
         "etd": "https://smartdatamodels.org/dataModel.MarineTransport/etd",
         "etdBerth": "https://smartdatamodels.org/dataModel.MarineTransport/etdBerth",
+        "ets": "https://smartdatamodels.org/dataModel.MarineTransport/ets",
         "exportContainer1": "https://smartdatamodels.org/dataModel.MarineTransport/exportContainer1",
         "exportContainer2": "https://smartdatamodels.org/dataModel.MarineTransport/exportContainer2",
         "faxNumber": "https://smartdatamodels.org/faxNumber",
@@ -117,18 +122,22 @@
         "lastPortCode": "https://smartdatamodels.org/dataModel.MarineTransport/lastPortCode",
         "length": "https://smartdatamodels.org/dataModel.MarineTransport/length",
         "loadingPort": "https://smartdatamodels.org/dataModel.MarineTransport/loadingPort",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "manager": "https://smartdatamodels.org/dataModel.MarineTransport/manager",
         "manifestActivated": "https://smartdatamodels.org/dataModel.MarineTransport/manifestActivated",
         "manifestActivationDate": "https://smartdatamodels.org/dataModel.MarineTransport/manifestActivationDate",
+        "manipulationMeansCode": "https://smartdatamodels.org/dataModel.MarineTransport/manipulationMeansCode",
+        "manipulationMeansNumber": "https://smartdatamodels.org/dataModel.MarineTransport/manipulationMeansNumber",
         "masterName": "https://smartdatamodels.org/dataModel.MarineTransport/masterName",
+        "maxWeightPerUnit": "https://smartdatamodels.org/dataModel.MarineTransport/maxWeightPerUnit",
         "maximumDraught": "https://smartdatamodels.org/dataModel.MarineTransport/maximumDraught",
+        "measureUnit": "https://smartdatamodels.org/dataModel.MarineTransport/measureUnit",
         "messageRaw": "https://smartdatamodels.org/dataModel.MarineTransport/messageRaw",
         "messageVersion": "https://smartdatamodels.org/dataModel.MarineTransport/messageVersion",
         "mmsi": "https://smartdatamodels.org/dataModel.MarineTransport/mmsi",
         "modifiedAt": {
-            "@id": "ngsi-ld:modifiedAt",
-            "@type": "DateTime"
+            "@id": "https://uri.etsi.org/ngsi-ld/modifiedAt",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
         "mooringLines": "https://smartdatamodels.org/dataModel.MarineTransport/mooringLines",
         "mrn": "https://smartdatamodels.org/dataModel.MarineTransport/mrn",
@@ -137,10 +146,12 @@
         "nextPortCode": "https://smartdatamodels.org/dataModel.MarineTransport/nextPortCode",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "observedAt": {
-            "@id": "ngsi-ld:observedAt",
-            "@type": "DateTime"
+            "@id": "https://uri.etsi.org/ngsi-ld/observedAt",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
+        "operationRank": "https://smartdatamodels.org/dataModel.MarineTransport/operationRank",
         "operationType": "https://smartdatamodels.org/dataModel.MarineTransport/operationType",
+        "operationTypeCode": "https://smartdatamodels.org/dataModel.MarineTransport/operationTypeCode",
         "originTransportType": "https://smartdatamodels.org/dataModel.MarineTransport/originTransportType",
         "originalWindowFrom": "https://smartdatamodels.org/dataModel.MarineTransport/originalWindowFrom",
         "originalWindowTo": "https://smartdatamodels.org/dataModel.MarineTransport/originalWindowTo",
@@ -154,10 +165,12 @@
         "portCallRef": "https://smartdatamodels.org/dataModel.MarineTransport/portCallRef",
         "portCode": "https://smartdatamodels.org/dataModel.MarineTransport/portCode",
         "portType": "https://smartdatamodels.org/dataModel.MarineTransport/portType",
+        "position": "https://smartdatamodels.org/dataModel.MarineTransport/position",
         "positionAccuracy": "https://smartdatamodels.org/dataModel.MarineTransport/positionAccuracy",
         "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
         "postalCode": "https://smartdatamodels.org/postalCode",
         "previousPort": "https://smartdatamodels.org/dataModel.MarineTransport/previousPort",
+        "productCode": "https://smartdatamodels.org/dataModel.MarineTransport/productCode",
         "productSupported": "https://smartdatamodels.org/productSupported",
         "pta": "https://smartdatamodels.org/dataModel.MarineTransport/pta",
         "ptaBerth": "https://smartdatamodels.org/dataModel.MarineTransport/ptaBerth",
@@ -185,7 +198,8 @@
         "source": "https://smartdatamodels.org/source",
         "specialManeuverIndicator": "https://smartdatamodels.org/dataModel.MarineTransport/specialManeuverIndicator",
         "speedOverGround": "https://smartdatamodels.org/dataModel.MarineTransport/speedOverGround",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
+        "stevedoreRef": "https://smartdatamodels.org/dataModel.MarineTransport/stevedoreRef",
         "stopRank": "https://smartdatamodels.org/dataModel.MarineTransport/stopRank",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",

@@ -1,0 +1,643 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Operation;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models operation schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/Operation/schema.json",
+    "description": "This data model is intended to provide information about commercial operations made in a stop of a ship during a PortCall (Berth entity). An Operation is defined as the activities related to commercial operations that take in place during the berth. Each Operation has an entity and some operations can be made in the same berth (docked or anchorage), and are distinguished by its sequence number on time (operationRank)",
+    "displayName": "Operation",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "amount",
+            "writable": true,
+            "displayName": "amount",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of units loading/discharge"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "berthRef",
+            "writable": true,
+            "displayName": "berthRef",
+            "@type": "Relationship",
+            "comment": "Reference to parent MarineTransport:Berth entity"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "etc",
+            "writable": true,
+            "displayName": "etc",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Represented by an ISO 8601 UTC format, Date and time of Estimated Time of Arrival to Berth expected by Port Authority  (ISO 8601 UTC format). If this is the first berthing, the ETA-berth should be the same than ETA-PBP"
+        },
+        {
+            "name": "ets",
+            "writable": true,
+            "displayName": "ets",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": ""
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "manipulationMeansNumber",
+            "writable": true,
+            "displayName": "manipulationMeansNumber",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Number of manipulation means"
+        },
+        {
+            "name": "maxWeightPerUnit",
+            "writable": true,
+            "displayName": "maxWeightPerUnit",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum Weight per unit loading/discharge"
+        },
+        {
+            "name": "measureUnit",
+            "writable": true,
+            "displayName": "measureUnit",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Unit type of load loading/discharge"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "operationRank",
+            "writable": true,
+            "displayName": "operationRank",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rank or Number of this Operation in all the commercial operations made in berth in the sequence of operations (discharge, charge, ...)"
+        },
+        {
+            "name": "portCallNumber",
+            "writable": true,
+            "displayName": "portCallNumber",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "PortCall identifier in urn format. MarineTransport:PortCall:portCallNumber"
+        },
+        {
+            "name": "portCallRef",
+            "writable": true,
+            "displayName": "portCallRef",
+            "@type": "Relationship",
+            "comment": "Reference to parent MarineTransport:PortCall entity"
+        },
+        {
+            "name": "portCode",
+            "writable": true,
+            "displayName": "portCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Code of the port of the call"
+        },
+        {
+            "name": "position",
+            "writable": true,
+            "displayName": "position",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Text specifying the position in the port where the operations has place"
+        },
+        {
+            "name": "remarks",
+            "writable": true,
+            "displayName": "remarks",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Remarks of the operation"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "stevedoreRef",
+            "writable": true,
+            "displayName": "stevedoreRef",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Id of the stevedore. Format urn:mrn:<oid>:portcalls:operation:stevedore:9999"
+        },
+        {
+            "name": "stopRank",
+            "writable": true,
+            "displayName": "stopRank",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Rank or Number of this stop in the stop (berth or anchor area) ordered by time sequence"
+        },
+        {
+            "name": "terminal",
+            "writable": true,
+            "displayName": "terminal",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Terminal where the operation takes place"
+        },
+        {
+            "name": "year",
+            "writable": true,
+            "displayName": "year",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Year of the init of the berthing"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "manipulationMeansCode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": 1,
+                        "displayName": 1,
+                        "enumValue": 1
+                    },
+                    {
+                        "name": 2,
+                        "displayName": 2,
+                        "enumValue": 2
+                    },
+                    {
+                        "name": 3,
+                        "displayName": 3,
+                        "enumValue": 3
+                    },
+                    {
+                        "name": 4,
+                        "displayName": 4,
+                        "enumValue": 4
+                    },
+                    {
+                        "name": 5,
+                        "displayName": 5,
+                        "enumValue": 5
+                    },
+                    {
+                        "name": 6,
+                        "displayName": 6,
+                        "enumValue": 6
+                    },
+                    {
+                        "name": 7,
+                        "displayName": 7,
+                        "enumValue": 7
+                    },
+                    {
+                        "name": 8,
+                        "displayName": 8,
+                        "enumValue": 8
+                    },
+                    {
+                        "name": 9,
+                        "displayName": 9,
+                        "enumValue": 9
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "operationTypeCode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "AV",
+                        "displayName": "AV",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "DT",
+                        "displayName": "DT",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "RE",
+                        "displayName": "RE",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "ZD",
+                        "displayName": "ZD",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "ZE",
+                        "displayName": "ZE",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "ZR",
+                        "displayName": "ZR",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "ZT",
+                        "displayName": "ZT",
+                        "enumValue": 7
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "productCode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "Z01",
+                        "displayName": "Z01",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "Z02",
+                        "displayName": "Z02",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "Z03",
+                        "displayName": "Z03",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "Z04",
+                        "displayName": "Z04",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "Z05",
+                        "displayName": "Z05",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "Z06",
+                        "displayName": "Z06",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "Z07",
+                        "displayName": "Z07",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "Z08",
+                        "displayName": "Z08",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "Z09",
+                        "displayName": "Z09",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "Z10",
+                        "displayName": "Z10",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "Z11",
+                        "displayName": "Z11",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "Z12",
+                        "displayName": "Z12",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "Z13",
+                        "displayName": "Z13",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "Z14",
+                        "displayName": "Z14",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "Z15",
+                        "displayName": "Z15",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "Z16",
+                        "displayName": "Z16",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "Z17",
+                        "displayName": "Z17",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "Z18",
+                        "displayName": "Z18",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "Z19",
+                        "displayName": "Z19",
+                        "enumValue": 19
+                    },
+                    {
+                        "name": "Z20",
+                        "displayName": "Z20",
+                        "enumValue": 20
+                    },
+                    {
+                        "name": "Z21",
+                        "displayName": "Z21",
+                        "enumValue": 21
+                    },
+                    {
+                        "name": "Z22",
+                        "displayName": "Z22",
+                        "enumValue": 22
+                    },
+                    {
+                        "name": "Z23",
+                        "displayName": "Z23",
+                        "enumValue": 23
+                    },
+                    {
+                        "name": "Z24",
+                        "displayName": "Z24",
+                        "enumValue": 24
+                    },
+                    {
+                        "name": "Z25",
+                        "displayName": "Z25",
+                        "enumValue": 25
+                    },
+                    {
+                        "name": "Z26",
+                        "displayName": "Z26",
+                        "enumValue": 26
+                    },
+                    {
+                        "name": "Z27",
+                        "displayName": "Z27",
+                        "enumValue": 27
+                    },
+                    {
+                        "name": "Z28",
+                        "displayName": "Z28",
+                        "enumValue": 28
+                    },
+                    {
+                        "name": "Z29",
+                        "displayName": "Z29",
+                        "enumValue": 29
+                    },
+                    {
+                        "name": "Z30",
+                        "displayName": "Z30",
+                        "enumValue": 30
+                    },
+                    {
+                        "name": "Z31",
+                        "displayName": "Z31",
+                        "enumValue": 31
+                    },
+                    {
+                        "name": "Z32",
+                        "displayName": "Z32",
+                        "enumValue": 32
+                    },
+                    {
+                        "name": "Z33",
+                        "displayName": "Z33",
+                        "enumValue": 33
+                    },
+                    {
+                        "name": "Z34",
+                        "displayName": "Z34",
+                        "enumValue": 34
+                    },
+                    {
+                        "name": "Z35",
+                        "displayName": "Z35",
+                        "enumValue": 35
+                    },
+                    {
+                        "name": "Z36",
+                        "displayName": "Z36",
+                        "enumValue": 36
+                    },
+                    {
+                        "name": "Z37",
+                        "displayName": "Z37",
+                        "enumValue": 37
+                    },
+                    {
+                        "name": "Z38",
+                        "displayName": "Z38",
+                        "enumValue": 38
+                    },
+                    {
+                        "name": "Z39",
+                        "displayName": "Z39",
+                        "enumValue": 39
+                    },
+                    {
+                        "name": "Z40",
+                        "displayName": "Z40",
+                        "enumValue": 40
+                    },
+                    {
+                        "name": "Z41",
+                        "displayName": "Z41",
+                        "enumValue": 41
+                    },
+                    {
+                        "name": "Z42",
+                        "displayName": "Z42",
+                        "enumValue": 42
+                    },
+                    {
+                        "name": "Z43",
+                        "displayName": "Z43",
+                        "enumValue": 43
+                    },
+                    {
+                        "name": "Z44",
+                        "displayName": "Z44",
+                        "enumValue": 44
+                    },
+                    {
+                        "name": "Z91",
+                        "displayName": "Z91",
+                        "enumValue": 45
+                    },
+                    {
+                        "name": "Z92",
+                        "displayName": "Z92",
+                        "enumValue": 46
+                    },
+                    {
+                        "name": "Z51",
+                        "displayName": "Z51",
+                        "enumValue": 47
+                    },
+                    {
+                        "name": "Z52",
+                        "displayName": "Z52",
+                        "enumValue": 48
+                    },
+                    {
+                        "name": "ZR1",
+                        "displayName": "ZR1",
+                        "enumValue": 49
+                    },
+                    {
+                        "name": "ZR2",
+                        "displayName": "ZR2",
+                        "enumValue": 50
+                    },
+                    {
+                        "name": "ZR3",
+                        "displayName": "ZR3",
+                        "enumValue": 51
+                    },
+                    {
+                        "name": "ZR4",
+                        "displayName": "ZR4",
+                        "enumValue": 52
+                    },
+                    {
+                        "name": "ZR5",
+                        "displayName": "ZR5",
+                        "enumValue": 53
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -9,6 +9,8 @@ The following entity types are available:
 
 - [EdiCodeco](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/EdiCodeco/README.md). A message by which a terminal, depot, etc. confirms that the containers specified have been delivered or picked up by the inland carrier (road, rail or barge). This message can also be used to report internal terminal container movements (excluding loading and discharging the vessel) and to report the change in status of container(s) without those containers having physically been moved. See [UN/EDIFACT - CODECO](https://service.unece.org/trade/untdid/d19a/trmd/codeco_c.htm)
 
+- [Operation](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Operation/README.md). This data model is intended to provide information about commercial operations made in a stop of a ship during a PortCall (Berth entity). An Operation is defined as the activities related to commercial operations that take in place during the berth. Each Operation has an entity and some operations can be made in the same berth (docked or anchorage), and are distinguished by its sequence number on time (operationRank)
+
 - [Port](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Port/README.md). The data model is intended to provide information about ports
 
 - [PortAuthority](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortAuthority/README.md). The data model is intended to provide information about Port Authorities
@@ -20,7 +22,7 @@ The following entity types are available:
 
 
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/CONTRIBUTORS.yaml) to the 7 current contributors of the data models of this Subject.
+[Link](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/CONTRIBUTORS.yaml) to the 8 current contributors of the data models of this Subject.
 
 
 ### Contribution
