@@ -1,0 +1,515 @@
+{
+    "@id": "dtmi:com:ngsi-ld:MasterVessel;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models Vessel schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/MasterVessel/schema.json",
+    "description": "The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information",
+    "displayName": "MasterVessel",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "beam",
+            "writable": true,
+            "displayName": "beam",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Beam of the Vessel"
+        },
+        {
+            "name": "buildDate",
+            "writable": true,
+            "displayName": "buildDate",
+            "@type": "Property",
+            "schema": "date",
+            "comment": "Date of building of the vessel represented by an ISO 8601 UTC format"
+        },
+        {
+            "name": "callSign",
+            "writable": true,
+            "displayName": "callSign",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Identification signal of a vessel when initially connecting by radio [EMSWe: DE-065-05] [EDI: BGM-RFF] [S211: Call Name / Call Sign] [IMO: IMO0136] "
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "dwt",
+            "writable": true,
+            "displayName": "dwt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dead weight Tonnage (DWT)"
+        },
+        {
+            "name": "financialOwner",
+            "writable": true,
+            "displayName": "financialOwner",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Financial Owner of the vessel"
+        },
+        {
+            "name": "flagCode",
+            "writable": true,
+            "displayName": "flagCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "International Flag Code (ISO 3166-1 alfa-2)"
+        },
+        {
+            "name": "gt",
+            "writable": true,
+            "displayName": "gt",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Gross Tonnage (GT)"
+        },
+        {
+            "name": "imo",
+            "writable": true,
+            "displayName": "imo",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "International Maritime Organization Number (a global forever UID) [EMSWe: DE-003-03] [EDIFACT:TDT-8213] [IALA_S211:vesselId] [IMO:IMO0140] "
+        },
+        {
+            "name": "loa",
+            "writable": true,
+            "displayName": "loa",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Length Over All of Vessel"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "manager",
+            "writable": true,
+            "displayName": "manager",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Manager of the Vessel, usually Ship Company"
+        },
+        {
+            "name": "maxDraught",
+            "writable": true,
+            "displayName": "maxDraught",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Maximum Draught of the vessel"
+        },
+        {
+            "name": "maxLoadVehicle",
+            "writable": true,
+            "displayName": "maxLoadVehicle",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max capacity of vessel to transport vehicles"
+        },
+        {
+            "name": "maxPassenger",
+            "writable": true,
+            "displayName": "maxPassenger",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max capacity of vessel to transport passengers"
+        },
+        {
+            "name": "maxVehicle",
+            "writable": true,
+            "displayName": "maxVehicle",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Max dimensions of vehicle permitted"
+        },
+        {
+            "name": "minNumOfCrew",
+            "writable": true,
+            "displayName": "minNumOfCrew",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Minimum number of crew to operate the vessel"
+        },
+        {
+            "name": "mmsi",
+            "writable": true,
+            "displayName": "mmsi",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Marine Mobile Service Identity Number (a temporarily assigned UID, issued by that object's current flag state)[EMSWe: DE-068-09] [EDIFACT:TDT-1131] [IALA_S211:vesselId] [IMO:IMO0178]"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item"
+        },
+        {
+            "name": "photo",
+            "writable": true,
+            "displayName": "photo",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Vessel Photo URL"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "sleeve",
+            "writable": true,
+            "displayName": "sleeve",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Sleeve of Vessel"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "technicalManager",
+            "writable": true,
+            "displayName": "technicalManager",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Technical Manager of the vessel"
+        },
+        {
+            "name": "toBow",
+            "writable": true,
+            "displayName": "toBow",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dimension to Bow"
+        },
+        {
+            "name": "toPort",
+            "writable": true,
+            "displayName": "toPort",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dimension to Port"
+        },
+        {
+            "name": "toStardboard",
+            "writable": true,
+            "displayName": "toStardboard",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dimension to Starboard"
+        },
+        {
+            "name": "toStern",
+            "writable": true,
+            "displayName": "toStern",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Dimension to Stern"
+        },
+        {
+            "name": "vesselName",
+            "writable": true,
+            "displayName": "vesselName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Name of the Vessel. [EMSWe: DE-003-07] [EDIFACT:TDT-8212] [IMO:IMO0142]"
+        },
+        {
+            "name": "vesselOwner",
+            "writable": true,
+            "displayName": "vesselOwner",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Owner of the Vessel"
+        },
+        {
+            "name": "vesselSubType",
+            "writable": true,
+            "displayName": "vesselSubType",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Enum:'0=Not available (default),1-19=Reserved for future use,20=Wing in ground (WIG), all ships of this type,21=Wing in ground (WIG), Hazardous category A,22=Wing in ground (WIG), Hazardous category B,23=Wing in ground (WIG), Hazardous category C,24=Wing in ground (WIG), Hazardous category D,25-29=Wing in ground (WIG), Reserved for future use,30=Fishing,31=Towing,32=Towing: length exceeds 200m or breadth exceeds 25m,33=Dredging or underwater ops,34=Diving ops,35=Military ops,36=Sailing,37=Pleasure Craft,38-"
+        },
+        {
+            "name": "vesselType",
+            "writable": true,
+            "displayName": "vesselType",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Enum:'1=Reserved,2=Wing In Ground,3=Special Category,4=High-Speed Craft,5=Special Category,6=Passenger,7=Cargo,8=Tanker,9=Other'. Code for vessel type"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "vesselClass",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "BD",
+                        "displayName": "BD",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "BO",
+                        "displayName": "BO",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "BS",
+                        "displayName": "BS",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "BY",
+                        "displayName": "BY",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "FC",
+                        "displayName": "FC",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "FO",
+                        "displayName": "FO",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "GA",
+                        "displayName": "GA",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "GC",
+                        "displayName": "GC",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "GD",
+                        "displayName": "GD",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "GE",
+                        "displayName": "GE",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "GN",
+                        "displayName": "GN",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "GO",
+                        "displayName": "GO",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "GP",
+                        "displayName": "GP",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "GR",
+                        "displayName": "GR",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "OO",
+                        "displayName": "OO",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "OS",
+                        "displayName": "OS",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "TC",
+                        "displayName": "TC",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "TD",
+                        "displayName": "TD",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "TL",
+                        "displayName": "TL",
+                        "enumValue": 19
+                    },
+                    {
+                        "name": "TO",
+                        "displayName": "TO",
+                        "enumValue": 20
+                    },
+                    {
+                        "name": "XD",
+                        "displayName": "XD",
+                        "enumValue": 21
+                    },
+                    {
+                        "name": "XR",
+                        "displayName": "XR",
+                        "enumValue": 22
+                    },
+                    {
+                        "name": "XT",
+                        "displayName": "XT",
+                        "enumValue": 23
+                    },
+                    {
+                        "name": "XX",
+                        "displayName": "XX",
+                        "enumValue": 24
+                    },
+                    {
+                        "name": "UR",
+                        "displayName": "UR",
+                        "enumValue": 25
+                    },
+                    {
+                        "name": "G",
+                        "displayName": "G",
+                        "enumValue": 26
+                    },
+                    {
+                        "name": "T",
+                        "displayName": "T",
+                        "enumValue": 27
+                    },
+                    {
+                        "name": "S",
+                        "displayName": "S",
+                        "enumValue": 28
+                    },
+                    {
+                        "name": "OB",
+                        "displayName": "OB",
+                        "enumValue": 29
+                    },
+                    {
+                        "name": "UC",
+                        "displayName": "UC",
+                        "enumValue": 30
+                    },
+                    {
+                        "name": "OC",
+                        "displayName": "OC",
+                        "enumValue": 31
+                    }
+                ]
+            }
+        }
+    ]
+}
