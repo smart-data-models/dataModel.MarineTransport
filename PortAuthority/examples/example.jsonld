@@ -30,7 +30,6 @@
     "url": "https://URL"
   },
   "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/context.jsonld",
-    "https://gitlab.com/hiades/fiware/smart-data-models/-/raw/main/context.jsonld"
+    "https://smart-data-models.github.io/dataModel.MarineTransport/context.jsonld"
   ]
 }
