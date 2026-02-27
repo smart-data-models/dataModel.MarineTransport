@@ -1,10 +1,12 @@
 {
   "$schema": "http://json-schema.org/schema#",
   "$schemaVersion": "0.0.1",
-  "$id": "https://example.org/MarineTraffic.schema.json",
-  "title": "MarineTraffic NGSI-LD Schema",
+  "$id": "https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/AisVessel/schema.json",
+  "title": "AisVesel Data Models",
   "description": "NGSI-LD schema for AisVessel entity, representing vessel AIS information from different AIS data-sources",
   "type": "object",
+  "modelTags": "",
+  "derivedFrom": "",
   "allOf": [
     {
       "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
@@ -72,7 +74,7 @@
         },
         "distanceToPort": {
           "type": "number",
-          "description": "Property. Distance to the port of Huelva"
+          "description": "Property. Distance to the port"
         },
         "speedOverGround": {
           "type": "number",
@@ -96,22 +98,27 @@
         },
         "observedAt": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. Timestamp of the last observation (ISO 8601)"
         },
         "createdAt": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. Record creation time (ISO 8601)"
         },
         "modifiedAt": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. Last modification time (ISO 8601)"
         },
         "deletedAt": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. Logical deletion time (ISO 8601)"
         },
         "publishedAt": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. Time when record was published (ISO 8601)"
         },
         "dsrc": {
@@ -132,11 +139,11 @@
         },
         "loa": {
           "type": "number",
-          "description": "Property. Length Overall (meters)"
+          "description": "Property. Length Overall. Units:'meters'"
         },
         "beam": {
           "type": "number",
-          "description": "Property. Beam or width (meters)"
+          "description": "Property. Beam or width. Units:'meters'"
         },
         "gt": {
           "type": "number",
@@ -148,7 +155,7 @@
         },
         "draught": {
           "type": "number",
-          "description": "Property. Draught (meters)"
+          "description": "Property. Draught of the vessel. Units:'meters'"
         },
         "yearBuilt": {
           "type": "number",
@@ -180,6 +187,7 @@
         },
         "lastPortTime": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. Departure time from last port (ISO 8601)"
         },
         "lastPortName": {
@@ -232,14 +240,17 @@
         },
         "eta": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. Estimated Time of Arrival (ISO 8601)"
         },
         "etaCalculated": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. Calculated ETA (ISO 8601)"
         },
         "etaUpdatedAt": {
           "type": "string",
+          "format": "date-time",
           "description": "Property. ETA last updated (ISO 8601)"
         },
         "lfore": {
