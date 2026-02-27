@@ -1,0 +1,433 @@
+AisVessel:
+  description: NGSI-LD schema for AisVessel entity, representing vessel AIS information from different AIS data-sources
+  properties:
+    aisTypeSummary:
+      description: AIS ship type summary
+      type: string
+      x-ngsi:
+        type: Property
+    alternateName:
+      description: An alternative name for this item
+      type: string
+      x-ngsi:
+        type: Property
+    averageSpeed:
+      description: Average speed on last voyage
+      type: number
+      x-ngsi:
+        type: Property
+    beam:
+      description: Beam or width
+      type: number
+      x-ngsi:
+        type: Property
+        units: meters
+    callSign:
+      description: Call sign of the vessel
+      type: string
+      x-ngsi:
+        type: Property
+    courseOverGround:
+      description: Course over ground (degrees)
+      type: number
+      x-ngsi:
+        type: Property
+    createdAt:
+      description: Record creation time (ISO 8601)
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    currentPortCountry:
+      description: Country of current port
+      type: string
+      x-ngsi:
+        type: Property
+    currentPortId:
+      description: Current port ID
+      type: number
+      x-ngsi:
+        type: Property
+    currentPortName:
+      description: Current port name
+      type: string
+      x-ngsi:
+        type: Property
+    currentPortUnlocode:
+      description: UN/LOCODE of current port
+      type: string
+      x-ngsi:
+        type: Property
+    dataProvider:
+      description: AIS data provider
+      type: string
+      x-ngsi:
+        type: Property
+    dateCreated:
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateModified:
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    deletedAt:
+      description: Logical deletion time (ISO 8601)
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    description:
+      description: A description of this item
+      type: string
+      x-ngsi:
+        type: Property
+    destination:
+      description: Destination of the vessel
+      type: string
+      x-ngsi:
+        type: Property
+    distanceToGo:
+      description: Remaining distance to destination
+      type: number
+      x-ngsi:
+        type: Property
+    distanceToPort:
+      description: Distance to the port
+      type: number
+      x-ngsi:
+        type: Property
+    distanceTravelled:
+      description: Distance travelled since last port
+      type: number
+      x-ngsi:
+        type: Property
+    draught:
+      description: Draught of the vessel
+      type: number
+      x-ngsi:
+        type: Property
+        units: meters
+    dsrc:
+      description: AIS source (TER, SAT, ROAM)
+      type: string
+      x-ngsi:
+        type: Property
+    dwt:
+      description: Deadweight tonnage
+      type: number
+      x-ngsi:
+        type: Property
+    eta:
+      description: Estimated Time of Arrival (ISO 8601)
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    etaCalculated:
+      description: Calculated ETA (ISO 8601)
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    etaUpdatedAt:
+      description: ETA last updated (ISO 8601)
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    expectedArrival:
+      description: Is the vessel expected to arrive
+      type: boolean
+      x-ngsi:
+        type: Property
+    flagCode:
+      description: Country flag code
+      type: string
+      x-ngsi:
+        type: Property
+    gt:
+      description: Gross Tonnage
+      type: number
+      x-ngsi:
+        type: Property
+    heading:
+      description: Heading in degrees
+      type: number
+      x-ngsi:
+        type: Property
+    id:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: Unique identifier of the entity
+      x-ngsi:
+        type: Relationship
+    imo:
+      description: IMO number of the vessel
+      type: number
+      x-ngsi:
+        type: Property
+    lastPortCode:
+      description: Previous port code
+      type: string
+      x-ngsi:
+        type: Property
+    lastPortCountry:
+      description: Country of last port
+      type: string
+      x-ngsi:
+        type: Property
+    lastPortId:
+      description: ID of the last port
+      type: number
+      x-ngsi:
+        type: Property
+    lastPortName:
+      description: Name of last port
+      type: string
+      x-ngsi:
+        type: Property
+    lastPortTime:
+      description: Departure time from last port (ISO 8601)
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    lastPortUnlocode:
+      description: UN/LOCODE of last port
+      type: string
+      x-ngsi:
+        type: Property
+    latitude:
+      description: Latitude in decimal degrees
+      type: number
+      x-ngsi:
+        type: Property
+    lfore:
+      description: Distance from AIS station to bow
+      type: number
+      x-ngsi:
+        type: Property
+    loa:
+      description: Length Overall
+      type: number
+      x-ngsi:
+        type: Property
+        units: meters
+    longitude:
+      description: Longitude in decimal degrees
+      type: number
+      x-ngsi:
+        type: Property
+    market:
+      description: Vessel's commercial market
+      type: string
+      x-ngsi:
+        type: Property
+    maxSpeed:
+      description: Maximum speed recorded
+      type: number
+      x-ngsi:
+        type: Property
+    mmsi:
+      description: MMSI number of the vessel
+      type: number
+      x-ngsi:
+        type: Property
+    modifiedAt:
+      description: Last modification time (ISO 8601)
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    name:
+      description: The name of this item
+      type: string
+      x-ngsi:
+        type: Property
+    navigationStatus:
+      description: Navigation status ID
+      type: number
+      x-ngsi:
+        type: Property
+    nextPortCode:
+      description: Next port code
+      type: string
+      x-ngsi:
+        type: Property
+    nextPortCountry:
+      description: Next port country
+      type: string
+      x-ngsi:
+        type: Property
+    nextPortId:
+      description: Next port ID
+      type: number
+      x-ngsi:
+        type: Property
+    nextPortName:
+      description: Next port name
+      type: string
+      x-ngsi:
+        type: Property
+    nextPortUnlocode:
+      description: UN/LOCODE of next port
+      type: string
+      x-ngsi:
+        type: Property
+    observedAt:
+      description: Timestamp of the last observation (ISO 8601)
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    owner:
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
+      items:
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Property
+    portCallNumber:
+      description: Number of the port call
+      type: string
+      x-ngsi:
+        type: Property
+    portCode:
+      description: Current port code
+      type: string
+      x-ngsi:
+        type: Property
+    publishedAt:
+      description: Time when record was published (ISO 8601)
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    rot:
+      description: Rate of Turn
+      type: number
+      x-ngsi:
+        type: Property
+    seeAlso:
+      description: list of uri pointing to additional resources about the item
+      oneOf:
+        - items:
+            format: uri
+            type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+      x-ngsi:
+        type: Property
+    shipClass:
+      description: Class of the vessel
+      type: string
+      x-ngsi:
+        type: Property
+    shipCountry:
+      description: Country of the ship
+      type: string
+      x-ngsi:
+        type: Property
+    shipType:
+      description: Ship type from AIS
+      type: string
+      x-ngsi:
+        type: Property
+    source:
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      type: string
+      x-ngsi:
+        type: Property
+    speedOverGround:
+      description: Speed over ground (knots)
+      type: number
+      x-ngsi:
+        type: Property
+    type:
+      description: NGSI Entity type. Must be 'AisVessel'
+      enum:
+        - AisVessel
+      type: string
+      x-ngsi:
+        type: Property
+    typeName:
+      description: MarineTraffic ship type name
+      type: string
+      x-ngsi:
+        type: Property
+    utcSeconds:
+      description: UTC seconds of AIS timeslot
+      type: number
+      x-ngsi:
+        type: Property
+    vesselInPort:
+      description: Is the vessel currently in port
+      type: boolean
+      x-ngsi:
+        type: Property
+    vesselName:
+      description: Name of the vessel
+      type: string
+      x-ngsi:
+        type: Property
+    vesselRef:
+      description: Unique Master Vessel Reference
+      type: string
+      x-ngsi:
+        type: Property
+    wleft:
+      description: Distance from AIS station to port side
+      type: number
+      x-ngsi:
+        type: Property
+    yearBuilt:
+      description: Year the vessel was built
+      type: number
+      x-ngsi:
+        type: Property
+  required:
+    - id
+    - type
+    - mmsi
+    - latitude
+    - longitude
+  type: object
+  x-derived-from: ''
+  x-disclaimer: Redistribution and use in source and binary forms...
+  x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/AisVessel/LICENSE.md
+  x-model-schema: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/AisVessel/schema.json
+  x-model-tags: ''
+  x-version: 0.0.1
