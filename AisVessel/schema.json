@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "1.0.2",
+  "$schemaVersion": "0.0.1",
   "$id": "https://example.org/MarineTraffic.schema.json",
   "title": "MarineTraffic NGSI-LD Schema",
   "description": "NGSI-LD schema for AisVessel entity, representing vessel AIS information from different AIS data-sources",
