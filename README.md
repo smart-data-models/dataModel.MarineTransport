@@ -1,8 +1,12 @@
 # dataModel.MarineTransport
 
+
+
 ### List of data models
 
 The following entity types are available:
+- [AisVessel](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/AisVessel/README.md). NGSI-LD schema for AisVessel entity, representing vessel AIS information from different AIS data-sources
+
 - [Berth](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Berth/README.md). This data model is intended to provide information about Berths. We define 'berth' to each stop of a ship during a PortCall, both for a port-facility (berth) and as an anchorage area. Each berth has a berthing time (estimated, planned, etc.), a lifecycle (estimated, requested, approved, etc.), an main activity during the stop (commercial operations, major repair, etc.) and a number of attributes described below. When commercial operations take place, an Operation entity will define the details of each commercial operation
 
 - [Booking](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Booking/README.md). Provide the bookings electronic messaging description
@@ -21,11 +25,8 @@ The following entity types are available:
 
 - [Vessel](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Vessel/README.md). The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information
 
-
-
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/CONTRIBUTORS.yaml) to the 8 current contributors of the data models of this Subject.
-
+[Link](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/CONTRIBUTORS.yaml) to the 8 current contributors.
 
 ### Contribution
-You can raise an [issue](https://github.com/smart-data-models/dataModel.MarineTransport/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.MarineTransport/pulls) on existing data models
+You can raise an [issue](https://github.com/smart-data-models/dataModel.MarineTransport/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.MarineTransport/pulls) on existing data models.
