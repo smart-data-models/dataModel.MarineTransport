@@ -7,7 +7,7 @@
   "alias": "BERGE",
   "entityType": "Consignee",
   "address": {
-    "streeAddress": "Avda Sociedad colombina Onubense",
+    "streetAddress": "Avda Sociedad colombina Onubense",
     "addressLocality": "Huelva",
     "addressRegion": "Andalucía",
     "addressCountry": "ES",

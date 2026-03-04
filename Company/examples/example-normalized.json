@@ -24,7 +24,7 @@
   "address": {
     "type": "PostalAddress",
     "value": {
-      "streeAddress": "Avda Sociedad colombina Onubense",
+      "streetAddress": "Avda Sociedad colombina Onubense",
       "addressLocality": "Huelva",
       "addressRegion": "Andalucía",
       "addressCountry": "ES",
