@@ -5,7 +5,7 @@
   "legalCode": "B90244585",
   "registeredName": "BERGE Maritima SL",
   "alias": "BERGE",
-  "entityType": "Consignatario",
+  "entityType": "Consignee",
   "address": "Avda Sociendad colombina Onubense",
   "addressNumber": "S/N",
   "zipCode": "21300",
@@ -16,8 +16,6 @@
   "telephone": "900252526",
   "active": true,
   "admissionDate": "2024-12-01T00:00:00",
-  "createdAt": "2025-07-11T00:00:00",
-  "modifiedAt": "2025-07-11T00:00:00",
   "licenses": [
     [
       "Suministro de combustible a buques mediante camión",
@@ -32,7 +30,6 @@
       "MarpolAnnex1"
     ]
   ],
-  "deletedAt": null,
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"
   ]

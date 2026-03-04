@@ -19,7 +19,7 @@
   },
   "entityType": {
     "type": "Text",
-    "value": "Consignatario"
+    "value": "Consignee"
   },
   "address": {
     "type": "Text",
@@ -61,14 +61,6 @@
     "type": "DateTime",
     "value": "2024-12-01T00:00:00"
   },
-  "createdAt": {
-    "type": "DateTime",
-    "value": "2025-07-11T00:00:00"
-  },
-  "modifiedAt": {
-    "type": "DateTime",
-    "value": "2025-07-11T00:00:00"
-  },
   "licenses": {
     "type": "Array",
     "value": [
@@ -85,9 +77,5 @@
         "MarpolAnnex1"
       ]
     ]
-  },
-  "deletedAt": {
-    "type": "Text",
-    "value": null
   }
 }

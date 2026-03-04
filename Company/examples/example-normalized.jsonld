@@ -19,7 +19,7 @@
   },
   "entityType": {
     "type": "Property",
-    "value": "Consignatario"
+    "value": "Consignee"
   },
   "address": {
     "type": "Property",
@@ -64,20 +64,6 @@
       "@value": "2024-12-01T00:00:00"
     }
   },
-  "createdAt": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2025-07-11T00:00:00"
-    }
-  },
-  "modifiedAt": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2025-07-11T00:00:00"
-    }
-  },
   "licenses": {
     "type": "Property",
     "value": [
@@ -94,10 +80,6 @@
         "MarpolAnnex1"
       ]
     ]
-  },
-  "deletedAt": {
-    "type": "Property",
-    "value": null
   },
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"

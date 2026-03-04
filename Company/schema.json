@@ -43,6 +43,7 @@
           "enum": [
             "Agent",
             "Carrier",
+            "Consignee",
             "LogisticsOperator",
             "PortAuthority",
             "PortReceptionFacilityOperator",
