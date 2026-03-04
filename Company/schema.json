@@ -56,12 +56,10 @@
           ]
         },
         "email": {
-          "type": "string",
-          "description": "Property. email of the company or entity with activities or responsibility in the port"
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Contact-Commons/properties/contactPoint/properties/email"
         },
         "telephone": {
-          "type": "string",
-          "description": "Property. phone number of the company or entity with activities or responsibility in the port"
+          "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/Contact-Commons/properties/contactPoint/properties/telephone"
         },
         "active": {
           "type": "boolean",
@@ -77,9 +75,6 @@
   ],
   "required": [
     "id",
-    "legalCode",
-    "registeredName",
-    "entityType",
-    "status"
+    "type"
   ]
 }
