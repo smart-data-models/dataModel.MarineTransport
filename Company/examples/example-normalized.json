@@ -22,28 +22,15 @@
     "value": "Consignee"
   },
   "address": {
-    "type": "Text",
-    "value": "Avda Sociendad colombina Onubense"
-  },
-  "addressNumber": {
-    "type": "Text",
-    "value": "S/N"
-  },
-  "zipCode": {
-    "type": "Text",
-    "value": "21300"
-  },
-  "addressLocality": {
-    "type": "Text",
-    "value": "Huelva"
-  },
-  "addressRegion": {
-    "type": "Text",
-    "value": "Andalucía"
-  },
-  "countryCode": {
-    "type": "Text",
-    "value": "ES"
+    "type": "PostalAddress",
+    "value": {
+      "streeAddress": "Avda Sociedad colombina Onubense",
+      "addressLocality": "Huelva",
+      "addressRegion": "Andalucía",
+      "addressCountry": "ES",
+      "postalCode": "21300",
+      "streetNr": "S/N"
+    }
   },
   "email": {
     "type": "Text",

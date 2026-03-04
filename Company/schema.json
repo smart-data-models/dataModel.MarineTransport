@@ -74,6 +74,18 @@
       }
     }
   ],
+  "licenses": {
+    "type": "array",
+    "description": "Property. Licenses of operation of the Company. Usually n pairs, code and description",
+    "items": {
+      "type": "array",
+      "description": "Property. Description of an item of the licenses. Usually a pair code and description",
+      "items": {
+        "type": "string",
+        "description": "Property. Every item in the usual pairs. Can be either the code or the description"
+      }
+    }
+  },
   "required": [
     "id",
     "type"

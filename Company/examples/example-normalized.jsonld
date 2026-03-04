@@ -23,7 +23,14 @@
   },
   "address": {
     "type": "Property",
-    "value": "Avda Sociendad colombina Onubense"
+    "value": {
+      "streeAddress": "Avda Sociedad colombina Onubense",
+      "addressLocality": "Huelva",
+      "addressRegion": "Andalucía",
+      "addressCountry": "ES",
+      "postalCode": "21300",
+      "streetNr": "S/N"
+    }
   },
   "addressNumber": {
     "type": "Property",

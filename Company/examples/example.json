@@ -6,17 +6,30 @@
   "registeredName": "BERGE Maritima SL",
   "alias": "BERGE",
   "entityType": "Consignee",
-  "address": "Avda Sociendad colombina Onubense",
-  "addressNumber": "S/N",
-  "zipCode": "21300",
-  "addressLocality": "Huelva",
-  "addressRegion": "Andalucía",
-  "countryCode": "ES",
+  "address": {
+    "streeAddress": "Avda Sociedad colombina Onubense",
+    "addressLocality": "Huelva",
+    "addressRegion": "Andalucía",
+    "addressCountry": "ES",
+    "postalCode": "21300",
+    "streetNr": "S/N"
+  },
   "email": "berge@puertohuelva.es",
   "telephone": "900252526",
-  "active": "true",
+  "active": true,
   "admissionDate": "2024-12-01T00:00:00",
-  "licenses": [["Suministro de combustible a buques mediante camión","SC-013"],
-    [ "SCM-003", "Suministro de combustible a maquinaria mediante camión"],
-    ["MAR-23","MarpolAnnex1"]]
+  "licenses": [
+    [
+      "Suministro de combustible a buques mediante camión",
+      "SC-013"
+    ],
+    [
+      "SCM-003",
+      "Suministro de combustible a maquinaria mediante camión"
+    ],
+    [
+      "MAR-23",
+      "MarpolAnnex1"
+    ]
+  ]
 }
