@@ -73,7 +73,7 @@
         },
         "licenses": {
           "type": "array",
-          "description": "Property. Licenses of operation of the Company. Usually n pairs, code and description",
+          "description": "Property. Licenses of operation of the Company. Usually in pairs, code and description",
           "items": {
             "type": "array",
             "description": "Property. Description of an item of the licenses. Usually a pair code and description",
