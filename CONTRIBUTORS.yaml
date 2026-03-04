@@ -1,11 +1,25 @@
 description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
 contributors:
+- name: Jose Gabriel
+  surname: Álvarez Lorenzo
+  mail: gabriel@puertohuelva.com
+  organization:  Port Authority of Huelva
+  project: https://puertohuelva.com/
+  comments: Leading the technical and management of the design and transformation plan as CIO
+  year:  2024
 - name: Andreu
   surname: Belsa
   mail: anbelpel@upv.es
   organization: Universitat Politecnica de Valencia
   project: DataPorts (H2020)
   year: 2023
+- name: Luis Manuel
+  surname: Campos Chacón
+  mail: lmcamposc@ayesa.com
+  organization:  Ayesa Advanced Technologies, S.A.
+  project: https://ayesa.com/
+  comments: Support on planning, technical definition and project management of project for Puerto de Huelva Technology Area
+  year:  2024
 - name: Grigorios
   surname: Dimitriadis
   mail: gdimitriadis@thpa.gr
@@ -19,6 +33,13 @@ contributors:
   project: iGreenPort  (i4Trust Program) and others
   comments: HIADES is a consolidated company in the port sector, with its Ecosystem of Products 'AMURA' present internationally in more than 20 ports, and its Digital Twin 'AURORA'  Fiware-based, for the digitization of Smart Ports.
   year: 2023
+- name: Martín
+  surname: Huerta Gómez de Merodio
+  mail: martin@ayesa.com
+  organization:  Ayesa Advanced Technologies, S.A.
+  project: https://ayesa.com/
+  comments: Support on planning, technical definition and project management of projects for Puerto de Huelva Tecnology Area
+  year:  2024
 - name: Matilde
   surname: Julian
   mail: majuse@upv.es
@@ -32,6 +53,34 @@ contributors:
   project: Dataports
   comments: Data model for covering the following five use cases; VGM Blockchain, Container Tracking, Goods Tracking, Transport Tracking, and Consignment Note
   year: 2022
+- name: Jose Luis
+  surname: Madueño Casares
+  mail: joseluis.maduenocasares.ext@telefonica.com
+  organization:  Port Authority of Huelva
+  project: Puerto de Huelva Digital Platform
+  comments:
+  year:  2024
+- name: Manuel F.
+  surname: Martínez Torres
+  mail: manuelf.martinez@puertohuelva.com
+  organization:  Port Authority of Huelva
+  project: https://puertohuelva.com/
+  comments: Conception and leader of the Puerto de Huelva digital transformation plan as CTO
+  year:  2024
+- name: Airam
+  surname: Rodríguez
+  mail: arodriguez@hiades.es
+  organization:  Hiades Business Patterns, S.L. - https://hiades.es/
+  project: https://amurapilot.com/
+  comments: Marine Services Platform for the Huelva's Port Community - pilots, tugs and mooring
+  year:  2022
+- name: Alfonso
+  surname: Serrano Bermejo
+  mail: aserrano@portel.es
+  organization:  PORTEL Logistic Technologies, S.A.
+  project: https://www.portel.es/es/soluciones-productos
+  comments: Development of Artifical Intelligent algorithms into the Smart Port of Huelva
+  year:  2024
 - name: Alexandros
   surname: Zerzelidis
   mail: alexander_zerzelidis@iti.gr
@@ -52,6 +101,13 @@ contributors:
   project: SmartEDIPort (i4Trust Program)
   comments:
   year: 2023
+- name:
+  surname:
+  mail: mlucio@nextport.ai
+  organization:  NextPort, S.L. by Moffatt & Nichol
+  project: https://www.nextport.ai/
+  comments: Development of Artifical Intelligent algorithms into the Smart Port of Huelva
+  year:  2024
 
 
 
