@@ -1,0 +1,2 @@
+"id_", "type_", "portCode_", "facilityRef_", "code_", "bollardIndex_", "probe_", "distanceFromPrevious_", "distanceFromStart_", "latitude_", "longitude_", "outOfOrder_", "@context__0_"
+"urn:ngsi-ld:Bollard:urn:mrn:eshuv:facilities:bollard:id:20", "Bollard", "ESVLC", "urn:mrn:eshuv:facilities:facility:code:20", "1", "4", "12.5", "15.0", "132.2", "37.2614", "-6.9447", "False", "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"

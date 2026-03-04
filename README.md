@@ -9,6 +9,8 @@ The following entity types are available:
 
 - [Berth](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Berth/README.md). This data model is intended to provide information about Berths. We define 'berth' to each stop of a ship during a PortCall, both for a port-facility (berth) and as an anchorage area. Each berth has a berthing time (estimated, planned, etc.), a lifecycle (estimated, requested, approved, etc.), an main activity during the stop (commercial operations, major repair, etc.) and a number of attributes described below. When commercial operations take place, an Operation entity will define the details of each commercial operation
 
+- [Bollard](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Bollard/README.md). This data model describes a bollard in a port facility, used for mooring vessels.
+
 - [Booking](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Booking/README.md). Provide the bookings electronic messaging description
 
 - [EdiCodeco](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/EdiCodeco/README.md). A message by which a terminal, depot, etc. confirms that the containers specified have been delivered or picked up by the inland carrier (road, rail or barge). This message can also be used to report internal terminal container movements (excluding loading and discharging the vessel) and to report the change in status of container(s) without those containers having physically been moved. See [UN/EDIFACT - CODECO](https://service.unece.org/trade/untdid/d19a/trmd/codeco_c.htm)
