@@ -171,7 +171,6 @@
   ],
   "required": [
     "id",
-    "type",
-    "name"
+    "type"
   ]
 }
