@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.1",
   "modelTags": "I4Trust",
   "derivedFrom": "",
@@ -12,7 +12,7 @@
     {
       "$ref": "https://raw.githubusercontent.com/smart-data-models/data-models/refs/heads/master/common-schema.json#/definitions/GSMA-Commons"
     },
-     {
+    {
       "$ref": "https://raw.githubusercontent.com/smart-data-models/data-models/refs/heads/master/common-schema.json#/definitions/Location-Commons"
     },
     {
@@ -50,10 +50,11 @@
         },
         "portCallNumber": {
           "type": "string",
-          "description": "Property. Model:'https://schema.org/Text'. Port call identifier in MRN format. First element of the NSS should be the 5 character UN/Locode of the port, later the YEAR and finishing with a sequential number in this port [LLLLLYYYY99999] where LLLLL is the UN/LOCODE of the visited port, YYYY is the year, and 99999 is a unique sequential number assigned by port authority unique on each year (i.e. ESHUV202310323). An abbreviation can be used for UN/LOCODE (i.e. H202310323).  The portCallNumber is assigned during the initial steps of the visit, but could be null at the beginning. In international standards is also known as [Port Call ID], [Visit ID] or [Port Call Coded]. See [Unlocode](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory) [EMSWe: DG-004/DG-004-01] [EDIFACT:BGM-1004] [IALA_S211:portCallId] [IMO:IMO108+IMO0153]"
+          "description": "Property. Model:'https://schema.org/Text'. Port call identifier in MRN format. First element of the NSS should be the 5 character UN/Locode of the port, later the YEAR and finishing with a sequential number in this port [LLLLLYYYY99999] where LLLLL is the UN/LOCODE of the visited port, YYYY is the year, and 99999 is a unique sequential number assigned by port authority unique on each year (i.e. ESHUV202310323). An abbreviation can be used for UN/LOCODE (i.e. H202310323). The portCallNumber is assigned during the initial steps of the visit, but could be null at the beginning. In international standards is also known as [Port Call ID], [Visit ID] or [Port Call Coded]. See [Unlocode](https://unece.org/trade/cefact/unlocode-code-list-country-and-territory) [EMSWe: DG-004/DG-004-01] [EDIFACT:BGM-1004] [IALA_S211:portCallId] [IMO:IMO108+IMO0153]"
         },
         "portCallRef": {
-          "type": "Relationship",
+          "type": "string",
+          "format": "uri",
           "description": "Relationship. Reference to parent PortCall entity. [NGSI-MarineTransport.PortCall.id]"
         },
         "portCode": {
