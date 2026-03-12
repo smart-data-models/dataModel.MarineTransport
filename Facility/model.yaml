@@ -477,7 +477,7 @@ Facility:
       type: string
       x-ngsi:
         type: Property
-    terminalId/terminalRef:
+    terminalRef:
       description: Reference to the terminal entity associated with this facility.
       type: string
       x-ngsi:
