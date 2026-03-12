@@ -25,7 +25,8 @@
           "description": "Property. NGSI Entity type. It has to be KeyVessel"
         },
         "vesselRef": {
-          "type": "Relationship",
+          "type": "string",
+          "format": "uri",
           "description": "Relationship. Reference to parent MasterVessel entity. [NGSI-MarineTransport.MasterVessel.id]- urn:mrn:<oid>:portcalls:mastervessel:id:9999"
         },
         "imo": {
