@@ -55,7 +55,7 @@
           "type": "string",
           "description": "Property. Name of the terminal associated with this facility."
         },
-        "terminalId/terminalRef": {
+        "terminalRef": {
           "type": "string",
           "description": "Property. Reference to the terminal entity associated with this facility."
         },
