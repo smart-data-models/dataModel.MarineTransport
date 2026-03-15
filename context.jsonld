@@ -7,6 +7,7 @@
         "Company": "https://smartdatamodels.org/dataModel.MarineTransport/Company",
         "EdiCodeco": "https://smartdatamodels.org/dataModel.MarineTransport/EdiCodeco",
         "Facility": "https://smartdatamodels.org/dataModel.MarineTransport/Facility",
+        "KeyVessel": "https://smartdatamodels.org/dataModel.MarineTransport/KeyVessel",
         "MasterVessel": "https://smartdatamodels.org/dataModel.MarineTransport/MasterVessel",
         "Operation": "https://smartdatamodels.org/dataModel.MarineTransport/Operation",
         "Port": "https://smartdatamodels.org/dataModel.MarineTransport/Port",
@@ -87,6 +88,7 @@
             "@id": "https://uri.etsi.org/ngsi-ld/createdAt",
             "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
+        "createdDate": "https://smartdatamodels.org/dataModel.MarineTransport/createdDate",
         "crewArrival": "https://smartdatamodels.org/dataModel.MarineTransport/crewArrival",
         "crewDeparture": "https://smartdatamodels.org/dataModel.MarineTransport/crewDeparture",
         "currentPortCountry": "https://smartdatamodels.org/dataModel.MarineTransport/currentPortCountry",
@@ -105,6 +107,7 @@
             "@id": "https://uri.etsi.org/ngsi-ld/deletedAt",
             "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
+        "deletedDate": "https://smartdatamodels.org/dataModel.MarineTransport/deletedDate",
         "departureAuthorizationDate": "https://smartdatamodels.org/dataModel.MarineTransport/departureAuthorizationDate",
         "departureDate": "https://smartdatamodels.org/dataModel.MarineTransport/departureDate",
         "departureDateScheduled": "https://smartdatamodels.org/dataModel.MarineTransport/departureDateScheduled",
@@ -129,6 +132,8 @@
         "entityType": "https://smartdatamodels.org/dataModel.MarineTransport/entityType",
         "estimatedTimeOfArrival": "https://smartdatamodels.org/dataModel.MarineTransport/estimatedTimeOfArrival",
         "eta": "https://smartdatamodels.org/dataModel.MarineTransport/eta",
+        "etaAis": "https://smartdatamodels.org/dataModel.MarineTransport/etaAis",
+        "etaAlgorithm": "https://smartdatamodels.org/dataModel.MarineTransport/etaAlgorithm",
         "etaBerth": "https://smartdatamodels.org/dataModel.MarineTransport/etaBerth",
         "etaCalculated": "https://smartdatamodels.org/dataModel.MarineTransport/etaCalculated",
         "etaUpdatedAt": "https://smartdatamodels.org/dataModel.MarineTransport/etaUpdatedAt",
@@ -218,6 +223,7 @@
             "@id": "https://uri.etsi.org/ngsi-ld/observedAt",
             "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
+        "observedDate": "https://smartdatamodels.org/dataModel.MarineTransport/observedDate",
         "operationRank": "https://smartdatamodels.org/dataModel.MarineTransport/operationRank",
         "operationType": "https://smartdatamodels.org/dataModel.MarineTransport/operationType",
         "operationTypeCode": "https://smartdatamodels.org/dataModel.MarineTransport/operationTypeCode",
@@ -304,6 +310,7 @@
         "utcSeconds": "https://smartdatamodels.org/dataModel.MarineTransport/utcSeconds",
         "vessel": "https://smartdatamodels.org/dataModel.MarineTransport/vessel",
         "vesselAgent": "https://smartdatamodels.org/dataModel.MarineTransport/vesselAgent",
+        "vesselAtPort": "https://smartdatamodels.org/dataModel.MarineTransport/vesselAtPort",
         "vesselCallSign": "https://smartdatamodels.org/dataModel.MarineTransport/vesselCallSign",
         "vesselCarrier": "https://smartdatamodels.org/dataModel.MarineTransport/vesselCarrier",
         "vesselClass": "https://smartdatamodels.org/dataModel.MarineTransport/vesselClass",

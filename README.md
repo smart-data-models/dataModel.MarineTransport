@@ -19,6 +19,8 @@ The following entity types are available:
 
 - [Facility](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Facility/README.md). This data model describes a facility in a port, which may include berths, terminals, or other port infrastructure.
 
+- [KeyVessel](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/KeyVessel/README.md). The data model is intended to provide information about key vessels that a port community must focus his work on next days. It allows to represent the properties of each vessel: static and dynamic information
+
 - [MasterVessel](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/MasterVessel/README.md). The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information
 
 - [Operation](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Operation/README.md). This data model is intended to provide information about commercial operations made in a stop of a ship during a PortCall (Berth entity). An Operation is defined as the activities related to commercial operations that take in place during the berth. Each Operation has an entity and some operations can be made in the same berth (docked or anchorage), and are distinguished by its sequence number on time (operationRank)
