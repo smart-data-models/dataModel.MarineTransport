@@ -17,13 +17,13 @@
         {
           "observedAt": "2024-11-30T01:03:00Z",
           "currentSpeed": 2.24,
-          "currentDir": "170",
+          "currentDir": 170,
           "tideHeight": 2.24
         },
         {
           "observedAt": "2024-11-30T02:12:00Z",
           "currentSpeed": 2.24,
-          "currentDir": "170",
+          "currentDir": 170,
           "tideHeight": 2.24
         }
       ]
@@ -108,17 +108,13 @@
           "windSpeed": 2.16,
           "windDir": 61,
           "tideHeigh": 7.78,
-          ">>>antes seaLevel": "..",
           "currentSpeed": 2.53,
-          ">>>antes currentSpeedMs": "..",
           "currentDir": 122.0,
           "peakDateTime": "",
           "peakType": "",
           "peakHeight": 0.0,
           "tideHeight": 2.65,
-          ">>>antes height": "..",
           "tideHeight10mValues": [
-            ">>> antes height",
             2.65,
             2.59,
             2.53,
@@ -171,17 +167,13 @@
           "windSpeed": 2.16,
           "windDir": 61,
           "tideHeigh": 7.78,
-          ">>>antes seaLevel": "..",
           "currentSpeed": 2.53,
-          ">>>antes currentSpeedMs": "..",
           "currentDir": 122.0,
           "peakDateTime": "",
           "peakType": "",
           "peakHeight": 0.0,
           "tideHeight": 2.65,
-          ">>>antes height": "..",
           "tideHeight10mValues": [
-            ">>> antes height",
             2.65,
             2.59,
             2.53,

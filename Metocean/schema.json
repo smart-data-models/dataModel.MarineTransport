@@ -148,9 +148,10 @@
                     },
                     "tideHeight10mValues": {
                       "type": "array",
-                      "description": "Property. Optional intra-hour tide height values (e.g. 10-minute steps within the hour around 'observedAt'), in meters. Model:'https://schema.org/Number'",
+                      "description": "Property. Optional intra-hour tide height values (e.g.10-minute steps within the hour around 'observedAt'), in meters. Model:'https://schema.org/Number'",
                       "items": {
-                        "type": "number"
+                        "type": "number",
+                        "description": "Property. Every element in the optional intra-hour tide height values"
                       }
                     },
                     "peakDateTime": {
