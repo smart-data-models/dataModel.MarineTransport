@@ -6,7 +6,7 @@
   "facilityCode": "0011",
   "facilityType": "BERTH",
   "terminal": "Levante",
-  "terminalId/terminalRef": "urn:mrn:eshuv:infrastructure:terminal:code:20",
+  "terminalRef": "urn:mrn:eshuv:infrastructure:terminal:code:20",
   "planningGroup": "Levante",
   "navigationSector": "CINT",
   "minimumProbe": 2.4,

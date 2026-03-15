@@ -21,7 +21,7 @@
     "type": "Property",
     "value": "Levante"
   },
-  "terminalId/terminalRef": {
+  "terminalRef": {
     "type": "Property",
     "value": "urn:mrn:eshuv:infrastructure:terminal:code:20"
   },
