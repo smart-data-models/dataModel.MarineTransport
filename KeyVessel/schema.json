@@ -125,7 +125,7 @@
             0,
             1
           ],
-          "description": "Property. Model:'https://schema.org/Number'. Enum:'0=Low (> 10 m; autonomous mode of e.g. global navigation satellite system (GNSS) receiver or of other electronic position fixing device; default), 1=High (< 10 m; differential mode of e.g. DGNSS receiver)'. Code for the accuracy of the vessel position flag"
+          "description": "Property. Model:'https://schema.org/Number'. Enum:'0=Low (> 10 m; autonomous mode of e.g.global navigation satellite system (GNSS) receiver or of other electronic position fixing device; default), 1=High (< 10 m; differential mode of e.g.DGNSS receiver)'. Code for the accuracy of the vessel position flag"
         },
         "speedOverGround": {
           "type": "number",
