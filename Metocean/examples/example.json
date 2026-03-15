@@ -33,7 +33,7 @@
       "pointName": "canal-ext",
       "pointType": "current-meter",
       "variables": "currentSpeed,currentDir",
-      "dataType": "measure",
+      "dataNature": "measure",
       "data": [
         {
           "observedAt": "2024-11-30T01:03:00Z",
@@ -54,7 +54,7 @@
       "pointName": "mareografo-1",
       "pointType": "wave-gauge",
       "variables": "waveDir,wavePeakDir,waveHeight,significantWaveHeight,wavePeakPeriod",
-      "dataType": "measure",
+      "dataNature": "measure",
       "data": [
         {
           "observedAt": "2024-11-30T01:00:00Z",
@@ -71,7 +71,7 @@
       "pointName": "Muelle Levante",
       "pointType": "cma-prediction",
       "variables": "height,peakDate,currentSpeed,peakHeight,peakType,waveHeightM,waveDir,windSpeed",
-      "dataType": "forecast",
+      "dataNature": "forecast",
       "data": [
         {
           "observedAt": "2024-11-30T02:00:00",
@@ -128,7 +128,7 @@
       "pointName": "Muelle Levante",
       "pointType": "cma-prediction",
       "variables": "height,peakDate,currentSpeed,peakHeight,peakType,waveHeightM,waveDir,windSpeed",
-      "dataType": "forecast",
+      "dataNature": "forecast",
       "data": [
         {
           "observedAt": "2024-11-30T02:00:00",
