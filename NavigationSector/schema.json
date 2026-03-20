@@ -1,20 +1,17 @@
 {
-  "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.0.1",
   "modelTags": "ESHUV",
   "$id": "https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/NavigationSector/schema.json",
   "title": "Smart Data models Navigation Sector schema",
-  "description": "This data model describes a navigation sector in a port, including geographic boundaries and operational details.",
+  "description": "This data model describes a navigation sector in a port, including geographic boundaries and operational details",
   "type": "object",
   "allOf": [
-    {
-      "$ref": "https://smart-data-models.github.io/dataModel.MarineTransport/context.jsonld"
+ {
+      "$ref": "https://raw.githubusercontent.com/smart-data-models/data-models/refs/heads/master/common-schema.json#/definitions/Location-Commons"
     },
     {
-      "$ref": "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-    },
-    {
-      "$ref": "https://smart-data-models.github.io/data-models/context.jsonld"
+      "$ref": "https://raw.githubusercontent.com/smart-data-models/data-models/refs/heads/master/common-schema.json#/definitions/GSMA-Commons"
     },
     {
       "properties": {
@@ -34,63 +31,47 @@
         },
         "portCode": {
           "type": "string",
-          "description": "Property. Code of the port where this navigation sector is located."
+          "description": "Property. Code of the port where this navigation sector is located"
         },
         "navigationSector": {
           "type": "string",
-          "description": "Property. Identifier for the navigation sector within the port."
+          "description": "Property. Identifier for the navigation sector within the port"
         },
         "navigationArea": {
           "type": "string",
-          "description": "Property. The broader navigation area where this sector is situated."
+          "description": "Property. The broader navigation area where this sector is situated"
         },
         "rank": {
           "type": "integer",
-          "description": "Property. Rank or priority level of the navigation sector."
+          "description": "Property. Rank or priority level of the navigation sector"
         },
         "sectorType": {
           "type": "string",
-          "description": "Property. Type of navigation sector."
+          "description": "Property. Type of navigation sector"
         },
         "minProbe": {
           "type": "number",
-          "description": "Property. Minimum depth of water in meters within the sector."
+          "description": "Property. Minimum depth of water in meters within the sector"
         },
         "minProbeDate": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Date when the minimum depth was last recorded."
+          "description": "Property. Date when the minimum depth was last recorded"
         },
         "remarks": {
           "type": "string",
-          "description": "Property. Additional remarks or notes about the navigation sector."
-        },
-        "coordinates": {
-          "type": "array",
-          "items": {
-            "type": "array",
-            "items": {
-              "type": "number"
-            },
-            "minItems": 2,
-            "maxItems": 2
-          },
-          "description": "Property. List of latitude and longitude coordinate pairs defining the navigation sector boundary."
+          "description": "Property. Additional remarks or notes about the navigation sector"
         },
         "modifiedDate": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Date and time of last modification of the navigation sector entity."
+          "description": "Property. Date and time of last modification of the navigation sector entity"
         }
       }
     }
   ],
   "required": [
     "id",
-    "portCode",
-    "navigationSector",
-    "navigationArea",
-    "rank",
-    "sectorType"
+    "type"
   ]
 }
