@@ -25,6 +25,8 @@ The following entity types are available:
 
 - [Metocean](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Metocean/README.md). This data model represents metocean information (meteorology + oceanography) for a given period and location. It supports both time-series measures and forecasts using points with observed data samples
 
+- [NavigationSector](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/NavigationSector/README.md). This data model describes a navigation sector in a port, including geographic boundaries and operational details
+
 - [Operation](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Operation/README.md). This data model is intended to provide information about commercial operations made in a stop of a ship during a PortCall (Berth entity). An Operation is defined as the activities related to commercial operations that take in place during the berth. Each Operation has an entity and some operations can be made in the same berth (docked or anchorage), and are distinguished by its sequence number on time (operationRank)
 
 - [Port](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Port/README.md). The data model is intended to provide information about ports
