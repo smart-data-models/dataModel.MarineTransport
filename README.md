@@ -35,6 +35,8 @@ The following entity types are available:
 
 - [PortCall](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/PortCall/README.md). This data model is intended to provide information about PortCalls (the visit of a ship to a port). It allows to represent the properties of each PortCall, including the visiting Vessel (partially loaded and referenced to Vessel entity for more info). On each attribute references related to elements of other well known standards are included. The data model is intended to provide the basic information about a PortCall, that is, the data relative to the arrival and the departure of the ship from the port, but not intermediate activities (berthing, operations, ...) that are defined in other linked entities (Berth, Operation, ...)
 
+- [Terminal](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Terminal/README.md). This data model describes a terminal in a port as a join of facilities and ground, which can be used for various maritime operations.
+
 - [Vessel](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Vessel/README.md). The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information
 
 ### Contributors
