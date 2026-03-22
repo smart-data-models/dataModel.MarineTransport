@@ -36,32 +36,28 @@
     "type": "Property",
     "value": "Monoboya de crudo"
   },
-  "coordinates": {
-    "type": "Property",
-    "value": [
-      [
-        -3.70379,
-        40.416775
-      ],
-      [
-        -3.70379,
-        40.426775
-      ],
-      [
-        -3.69379,
-        40.426775
-      ],
-      [
-        -3.69379,
-        40.416775
-      ]
-    ]
-  },
-  "modifiedAt": {
-    "type": "Property",
+  "location": {
+    "type": "GeoProperty",
     "value": {
-      "@type": "DateTime",
-      "@value": "2024-09-02T00:00:00"
+      "type": "Polygon",
+      "coordinates": [
+        [
+          -3.70379,
+          40.416775
+        ],
+        [
+          -3.70379,
+          40.426775
+        ],
+        [
+          -3.69379,
+          40.426775
+        ],
+        [
+          -3.69379,
+          40.416775
+        ]
+      ]
     }
   },
   "@context": [
