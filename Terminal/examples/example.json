@@ -6,5 +6,5 @@
   "terminal": "Levante Pesquero",
   "code": "LEV",
   "remarks": "Fishing terminal",
-  "tafTsilocationCode": "XXXxxxx TAF-TSI label localizacion secundaria de la terminal"
+  "tafTsiLocationCode": "XXXxxxx TAF-TSI label localizacion secundaria de la terminal"
 }

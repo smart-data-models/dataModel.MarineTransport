@@ -21,7 +21,7 @@
     "type": "Text",
     "value": "Fishing terminal"
   },
-  "tafTsilocationCode": {
+  "tafTsiLocationCode": {
     "type": "Text",
     "value": "XXXxxxx TAF-TSI label localizacion secundaria de la terminal"
   }

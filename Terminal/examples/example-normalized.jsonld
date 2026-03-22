@@ -21,7 +21,7 @@
     "type": "Property",
     "value": "Fishing terminal"
   },
-  "tafTsilocationCode": {
+  "tafTsiLocationCode": {
     "type": "Property",
     "value": "XXXxxxx TAF-TSI label localizacion secundaria de la terminal"
   },
