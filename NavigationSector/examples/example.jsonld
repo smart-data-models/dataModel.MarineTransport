@@ -10,26 +10,28 @@
   "minProbeDate": "2022-01-01T00:00:00",
   "remarks": "Monoboya de crudo",
   "location": {
-     "type": "Polygon",
-     "coordinates": [
-       [
-         -3.703790,
-         40.416775
-       ],
-       [
-         -3.703790,
-         40.426775
-       ],
-       [
-         -3.693790,
-         40.426775
-       ],
-       [
-         -3.693790,
-         40.416775
-       ]
-     ]
-   },
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -3.703790,
+          40.416775
+        ],
+        [
+          -3.703790,
+          40.426775
+        ],
+        [
+          -3.693790,
+          40.426775
+        ],
+        [
+          -3.693790,
+          40.416775
+        ]
+      ]
+    ]
+  },
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.Ports/master/context.jsonld"
   ]
