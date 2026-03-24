@@ -1,0 +1,977 @@
+TrackedManeuver:
+  description: TrackedManoeuvre entity coming from Tracked (Operation Tracking System). Tracked maneuver. The entityId follows the pattern mrn:urn:eshuv:pdph:Tracked:type:attr:value, where type=Manoeuvre and attr=manoeuvreCode
+  properties:
+    address:
+      description: The mailing address
+      properties:
+        addressCountry:
+          description: The country. For example, Spain
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressCountry
+            type: Property
+        addressLocality:
+          description: The locality in which the street address is, and which is in the region
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressLocality
+            type: Property
+        addressRegion:
+          description: The region in which the locality is, and which is in the country
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressRegion
+            type: Property
+        district:
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          type: string
+          x-ngsi:
+            type: Property
+        postOfficeBoxNumber:
+          description: The post office box number for PO box addresses. For example, 03578
+          type: string
+          x-ngsi:
+            model: https://schema.org/postOfficeBoxNumber
+            type: Property
+        postalCode:
+          description: The postal code. For example, 24004
+          type: string
+          x-ngsi:
+            model: https://schema.org/https://schema.org/postalCode
+            type: Property
+        streetAddress:
+          description: The street address
+          type: string
+          x-ngsi:
+            model: https://schema.org/streetAddress
+            type: Property
+        streetNr:
+          description: Number identifying a specific property on a public street
+          type: string
+          x-ngsi:
+            type: Property
+      type: object
+      x-ngsi:
+        model: https://schema.org/address
+        type: Property
+    alternateName:
+      description: An alternative name for this item
+      type: string
+      x-ngsi:
+        type: Property
+    amendedOnMooringLocation:
+      description: Location of the 'made fast alongside / amended on mooring' maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    anchoringAnchorUpDate:
+      description: Anchor aweigh (anchor up) time for the anchoring maneuver
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    anchoringDate:
+      description: Anchor down time for the anchoring maneuver
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    anchoringLocation:
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+      oneOf:
+        - description: Geojson reference to the item. Point
+          properties:
+            bbox:
+              description: BBox of the  Point
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Point
+              items:
+                type: number
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. LineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the LineString
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              description: BBox coordinates of the Polygon
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Polygon
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MulitPoint
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MultiLineString
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              description: Coordinates of the MultiPolygon
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+      x-ngsi:
+        type: GeoProperty
+    anchoringZone:
+      description: Anchorage zone for the anchoring maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    areaServed:
+      description: The geographic area where a service or offered item is provided
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    dataProvider:
+      description: A sequence of characters identifying the provider of the harmonised data entity
+      type: string
+      x-ngsi:
+        type: Property
+    dateCreated:
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateModified:
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    description:
+      description: A description of this item
+      type: string
+      x-ngsi:
+        type: Property
+    durationHours:
+      description: Maneuver duration in hours
+      type: number
+      x-ngsi:
+        type: Property
+    endDate:
+      description: Maneuver end date
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    id:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: Unique identifier of the entity
+      x-ngsi:
+        type: Relationship
+    location:
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+      oneOf:
+        - description: Geojson reference to the item. Point
+          properties:
+            bbox:
+              description: BBox of the  Point
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Point
+              items:
+                type: number
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. LineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the LineString
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              description: BBox coordinates of the Polygon
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Polygon
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MulitPoint
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MultiLineString
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              description: Coordinates of the MultiPolygon
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+      x-ngsi:
+        type: GeoProperty
+    maneuverCode:
+      description: Maneuver code
+      type: string
+      x-ngsi:
+        type: Property
+    maneuverType:
+      description: Maneuver type
+      type: string
+      x-ngsi:
+        type: Property
+    mooringCablesNumber:
+      description: Number of lines for the mooring maneuver
+      type: number
+      x-ngsi:
+        type: Property
+    mooringChangeCablesNumber:
+      description: Number of lines for the berth-shifting maneuver
+      type: number
+      x-ngsi:
+        type: Property
+    mooringChangeFirstLandCableDate:
+      description: First shore line time for the berth-shifting maneuver
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    mooringChangeInitialLocation:
+      description: Initial location of the berth-shifting maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    mooringChangeLastCableDate:
+      description: Last line time for the berth-shifting maneuver
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    mooringChangeLastLocation:
+      description: Final location of the berth-shifting maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    mooringChangeNoraysFrom:
+      description: Bollard number from (berth-shifting maneuver)
+      type: number
+      x-ngsi:
+        type: Property
+    mooringChangeNoraysTo:
+      description: Bollard number to (berth-shifting maneuver)
+      type: number
+      x-ngsi:
+        type: Property
+    mooringChangeSide:
+      description: Mooring side for the berth-shifting maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    mooringFirstCableDate:
+      description: First line time for the mooring maneuver
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    mooringLocation:
+      description: Location of the mooring maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    mooringNoraysFrom:
+      description: Bollard number from (mooring maneuver)
+      type: number
+      x-ngsi:
+        type: Property
+    mooringNoraysTo:
+      description: Bollard number to (mooring maneuver)
+      type: number
+      x-ngsi:
+        type: Property
+    mooringSide:
+      description: Mooring side for the mooring maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    name:
+      description: The name of this item
+      type: string
+      x-ngsi:
+        type: Property
+    observations:
+      description: Maneuver observations
+      type: string
+      x-ngsi:
+        type: Property
+    observedDate:
+      description: Last update date of the entity
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    othersLocation:
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+      oneOf:
+        - description: Geojson reference to the item. Point
+          properties:
+            bbox:
+              description: BBox of the  Point
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Point
+              items:
+                type: number
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. LineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the LineString
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              description: BBox coordinates of the Polygon
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Polygon
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MulitPoint
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MultiLineString
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              description: Coordinates of the MultiPolygon
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+      x-ngsi:
+        type: GeoProperty
+    othersType:
+      description: Type of other maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    othersZone:
+      description: Zone/location of the other maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    owner:
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
+      items:
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Property
+    pilotageDisembarkDate:
+      description: Pilot disembarkation time for the pilotage maneuver
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    pilotageDisembarkLocation:
+      description: Pilot disembarkation location for the pilotage maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    pilotageEmbarkDate:
+      description: Pilot embarkation time for the pilotage maneuver
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    pilotageEmbarkLocation:
+      description: Pilot embarkation location for the pilotage maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    pilotageExempt:
+      description: Pilotage exemption
+      type: string
+      x-ngsi:
+        type: Property
+    pilotageObservations:
+      description: Pilotage maneuver observations
+      type: string
+      x-ngsi:
+        type: Property
+    pilotagePilots:
+      description: Pilots involved in the pilotage maneuver
+      type: string
+      x-ngsi:
+        type: Property
+    portCallCode:
+      description: STM register of the port call
+      type: string
+      x-ngsi:
+        type: Property
+    refPortCallId:
+      description: Reference to the port call
+      type: string
+      x-ngsi:
+        type: Property
+    refTugServiceId:
+      description: Reference to the tug service
+      type: string
+      x-ngsi:
+        type: Property
+    seeAlso:
+      description: list of uri pointing to additional resources about the item
+      oneOf:
+        - items:
+            format: uri
+            type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+      x-ngsi:
+        type: Property
+    source:
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      type: string
+      x-ngsi:
+        type: Property
+    startDate:
+      description: Maneuver start date
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    tugboatsNumber:
+      description: Number of tugboats for the tug service maneuver
+      type: number
+      x-ngsi:
+        type: Property
+    tugboatsObservations:
+      description: Tug service maneuver observations
+      type: string
+      x-ngsi:
+        type: Property
+    type:
+      description: NGSI Entity type. It has to be TrackedManoeuvre
+      enum:
+        - TrackedManeuver
+      type: string
+      x-ngsi:
+        type: Property
+    undockingLastCableDate:
+      description: Last line time for the unmooring (undocking) maneuver
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    undockingLocation:
+      description: Location of the unmooring (undocking) maneuver
+      type: string
+      x-ngsi:
+        type: Property
+  required:
+    - id
+    - type
+  type: object
+  x-derived-from: ''
+  x-disclaimer: Redistribution and use in source and binary forms...
+  x-license-url: https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/TrackedManeuver/LICENSE.md
+  x-model-schema: https://raw.githubusercontent.com/smart-data-models/dataModel.MarineTransport/master/TrackedManoeuvre/schema.json
+  x-model-tags: ESHUV, i4trust, Tracked
+  x-version: 0.0.1
