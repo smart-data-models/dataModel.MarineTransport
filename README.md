@@ -37,6 +37,8 @@ The following entity types are available:
 
 - [Terminal](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Terminal/README.md). This data model describes a terminal in a port as a join of facilities and ground, which can be used for various maritime operations.
 
+- [TrackedManeuver](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/TrackedManeuver/README.md). TrackedManoeuvre entity coming from Tracked (Operation Tracking System). Tracked maneuver. The entityId follows the pattern mrn:urn:eshuv:pdph:Tracked:type:attr:value, where type=Manoeuvre and attr=manoeuvreCode
+
 - [Vessel](https://github.com/smart-data-models/dataModel.MarineTransport/blob/master/Vessel/README.md). The data model is intended to provide information about vessels. It allows to represent the properties of each vessel: static and dynamic information
 
 ### Contributors
