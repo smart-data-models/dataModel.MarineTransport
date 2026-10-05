@@ -82,8 +82,7 @@
         },
         "latitude": {
           "type": [
-            "number",
-            "null"
+            "number"
           ],
           "description": "Property. Latitude coordinate of the facility location."
         },
