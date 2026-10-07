@@ -1,6 +1,6 @@
 /* (Beta) Export of data model Facility of the subject dataModel.MarineTransport for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE facilityType_type AS ENUM ('BERTH', 'TERMINAL', 'ANCHORAGE', 'OTHER');
-CREATE TYPE mrn_type AS ENUM ('PortCall');
+CREATE TYPE Facility_facilityType_type AS ENUM ('BERTH', 'TERMINAL', 'ANCHORAGE', 'OTHER');
+CREATE TYPE Facility_mrn_type AS ENUM ('PortCall');
 CREATE TYPE Facility_type AS ENUM ('Facility');
 CREATE TABLE Facility (
   "address" JSON,
@@ -16,7 +16,7 @@ CREATE TABLE Facility (
   "displacement" NUMERIC,
   "facilityCode" TEXT,
   "facilityName" TEXT,
-  "facilityType" facilityType_type,
+  "facilityType" Facility_facilityType_type,
   "firstBollard" NUMERIC,
   "id" TEXT PRIMARY KEY,
   "lastBollard" NUMERIC,
@@ -29,7 +29,7 @@ CREATE TABLE Facility (
   "minimumProbe" NUMERIC,
   "minimumProbeDate" TIMESTAMP,
   "modifiedDate" TIMESTAMP,
-  "mrn" mrn_type,
+  "mrn" Facility_mrn_type,
   "name" TEXT,
   "navigationSector" TEXT,
   "owner" JSON,
