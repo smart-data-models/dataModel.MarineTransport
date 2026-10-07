@@ -1,10 +1,10 @@
 /* (Beta) Export of data model Vessel of the subject dataModel.MarineTransport for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE navigationStatus_type AS ENUM ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15');
-CREATE TYPE positionAccuracy_type AS ENUM ('0', '1');
-CREATE TYPE specialManeuverIndicator_type AS ENUM ('0', '1', '2');
+CREATE TYPE Vessel_navigationStatus_type AS ENUM ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15');
+CREATE TYPE Vessel_positionAccuracy_type AS ENUM ('0', '1');
+CREATE TYPE Vessel_specialManeuverIndicator_type AS ENUM ('0', '1', '2');
 CREATE TYPE Vessel_type AS ENUM ('Vessel');
-CREATE TYPE vesselSubType_type AS ENUM ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99');
-CREATE TYPE vesselType_type AS ENUM ('1', '2', '3', '4', '5', '6', '7', '8', '9');
+CREATE TYPE Vessel_vesselSubType_type AS ENUM ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99');
+CREATE TYPE Vessel_vesselType_type AS ENUM ('1', '2', '3', '4', '5', '6', '7', '8', '9');
 CREATE TABLE Vessel (
   "address" JSON,
   "airDraught" NUMERIC,
@@ -36,17 +36,17 @@ CREATE TABLE Vessel (
   "mmsi" NUMERIC,
   "modifiedAt" TIMESTAMP,
   "name" TEXT,
-  "navigationStatus" navigationStatus_type,
+  "navigationStatus" Vessel_navigationStatus_type,
   "observedAt" TIMESTAMP,
   "owner" JSON,
   "ownerVessel" TEXT,
   "photo" TEXT,
-  "positionAccuracy" positionAccuracy_type,
+  "positionAccuracy" Vessel_positionAccuracy_type,
   "previousPort" TEXT,
   "rateOfTurn" NUMERIC,
   "seeAlso" JSON,
   "source" TEXT,
-  "specialManeuverIndicator" specialManeuverIndicator_type,
+  "specialManeuverIndicator" Vessel_specialManeuverIndicator_type,
   "speedOverGround" NUMERIC,
   "technicalManager" TEXT,
   "toBow" NUMERIC,
@@ -54,6 +54,6 @@ CREATE TABLE Vessel (
   "toStardboard" NUMERIC,
   "toStern" NUMERIC,
   "type" Vessel_type,
-  "vesselSubType" vesselSubType_type,
-  "vesselType" vesselType_type
+  "vesselSubType" Vessel_vesselSubType_type,
+  "vesselType" Vessel_vesselType_type
 );
