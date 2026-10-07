@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Bollard of the subject dataModel.MarineTransport for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE mrn_type AS ENUM ('PortCall');
+CREATE TYPE Bollard_mrn_type AS ENUM ('PortCall');
 CREATE TYPE Bollard_type AS ENUM ('Bollard');
 CREATE TABLE Bollard (
   "address" JSON,
@@ -19,7 +19,7 @@ CREATE TABLE Bollard (
   "location" JSON,
   "longitude" NUMERIC,
   "modifiedDate" TIMESTAMP,
-  "mrn" mrn_type,
+  "mrn" Bollard_mrn_type,
   "name" TEXT,
   "outOfOrder" BOOLEAN,
   "owner" JSON,
