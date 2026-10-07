@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Company of the subject dataModel.MarineTransport for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE entityType_type AS ENUM ('Agent', 'Carrier', 'Consignee', 'LogisticsOperator', 'PortAuthority', 'PortReceptionFacilityOperator', 'PublicBody', 'ServiceProvider', 'Steevedore', 'TerminalOperator', 'TransportCompany', 'WasteManagementCompany', 'Other');
+CREATE TYPE Company_entityType_type AS ENUM ('Agent', 'Carrier', 'Consignee', 'LogisticsOperator', 'PortAuthority', 'PortReceptionFacilityOperator', 'PublicBody', 'ServiceProvider', 'Steevedore', 'TerminalOperator', 'TransportCompany', 'WasteManagementCompany', 'Other');
 CREATE TABLE Company (
   "active" BOOLEAN,
   "address" JSON,
@@ -12,7 +12,7 @@ CREATE TABLE Company (
   "dateModified" TIMESTAMP,
   "description" TEXT,
   "email" TEXT,
-  "entityType" entityType_type,
+  "entityType" Company_entityType_type,
   "id" TEXT PRIMARY KEY,
   "legalCode" TEXT,
   "licenses" JSON,
