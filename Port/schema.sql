@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Port of the subject dataModel.MarineTransport for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE portType_type AS ENUM ('Dry', 'Fishing', 'Inland', 'Sea', 'WarmWater');
+CREATE TYPE Port_portType_type AS ENUM ('Dry', 'Fishing', 'Inland', 'Sea', 'WarmWater');
 CREATE TYPE Port_type AS ENUM ('Port');
 CREATE TABLE Port (
   "address" JSON,
@@ -16,7 +16,7 @@ CREATE TABLE Port (
   "name" TEXT,
   "owner" JSON,
   "portArea" JSON,
-  "portType" portType_type,
+  "portType" Port_portType_type,
   "refPortAuthority" JSON,
   "seeAlso" JSON,
   "source" TEXT,
