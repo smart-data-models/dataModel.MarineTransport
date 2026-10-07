@@ -1,5 +1,5 @@
 /* (Beta) Export of data model Booking of the subject dataModel.MarineTransport for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE bookingStatus_type AS ENUM ('Pending', 'No show', 'Visited', 'Cancelled by user (on time)', 'No-slot booking');
+CREATE TYPE Booking_bookingStatus_type AS ENUM ('Pending', 'No show', 'Visited', 'Cancelled by user (on time)', 'No-slot booking');
 CREATE TABLE Booking (
   "actualWindowFrom" NUMERIC,
   "actualWindowTo" NUMERIC,
@@ -8,7 +8,7 @@ CREATE TABLE Booking (
   "areaServed" TEXT,
   "bookingDate" NUMERIC,
   "bookingNumber" NUMERIC,
-  "bookingStatus" bookingStatus_type,
+  "bookingStatus" Booking_bookingStatus_type,
   "company" TEXT,
   "containersExport" NUMERIC,
   "containersImport" NUMERIC,
