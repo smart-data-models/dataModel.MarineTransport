@@ -1,10 +1,10 @@
 /* (Beta) Export of data model Berth of the subject dataModel.MarineTransport for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE activityCode_type AS ENUM ('ZGR', 'ZPV', 'ZCA', 'ZRA', 'ZRF', 'ZRT', 'ZDA', 'ZTA', 'ZTF', 'ZVO', 'ZAF', 'ZIN', 'ZIP', 'ZAR', 'ZAO', 'ZAB', 'ZOP', 'ZCT', 'ZTI', 'ZBO', 'ZCO', 'ZRE', 'ZDE', 'ZAP', 'ZDR', 'ZPB', 'ZCL', 'ZDJ', 'ZMR', 'ZPR', 'ZRM', 'ZVA', 'ZDS', 'ZOT', 'EST', 'ZSA', 'ZSH', 'ZSE', 'ZSC', 'ZSV');
-CREATE TYPE berthingTypeCode_type AS ENUM ('ABV', 'ABX', 'AB1', 'AB2', 'AEX', 'AX1', 'AEV', 'REM', 'REX', 'RE1', 'RE2', 'RPM', 'RPV', 'RPX', 'RXM', 'RXV', 'RXX', 'RX1', 'AE1', 'AE2', 'APM', 'APV', 'APX', 'AXM', 'AXV', 'AXX', 'AX2', 'FBM', 'FBV', 'FBX', 'FB1', 'FB2', 'FEM', 'FEV', 'FEX', 'FE1', 'FE2', 'FPM', 'FPV', 'FPX', 'FP1', 'FP2', 'FXM', 'FXV', 'FX1', 'FX2', 'RBM', 'RBX', 'RB1', 'RB2', 'RX2', 'YBM', 'YBV', 'YBX', 'YB1', 'YB2', 'YEM', 'YEV', 'YEX', 'YE1', 'YE2', 'YPM', 'YPV', 'YPX', 'YP1', 'YP2', 'YXM', 'YXV', 'YX1', 'YX2', 'ABM', 'AEM', 'FXX', 'YXX', 'AP1', 'AP2', 'RBV', 'REV');
-CREATE TYPE status_type AS ENUM ('ACCEPTED', 'AUTHORIZED', 'CANCELLED', 'COMPLETED', 'DENIED', 'INITIATED', 'REQUESTED', 'REJECTED', 'INVOICING', 'INVOICED');
+CREATE TYPE Berth_activityCode_type AS ENUM ('ZGR', 'ZPV', 'ZCA', 'ZRA', 'ZRF', 'ZRT', 'ZDA', 'ZTA', 'ZTF', 'ZVO', 'ZAF', 'ZIN', 'ZIP', 'ZAR', 'ZAO', 'ZAB', 'ZOP', 'ZCT', 'ZTI', 'ZBO', 'ZCO', 'ZRE', 'ZDE', 'ZAP', 'ZDR', 'ZPB', 'ZCL', 'ZDJ', 'ZMR', 'ZPR', 'ZRM', 'ZVA', 'ZDS', 'ZOT', 'EST', 'ZSA', 'ZSH', 'ZSE', 'ZSC', 'ZSV');
+CREATE TYPE Berth_berthingTypeCode_type AS ENUM ('ABV', 'ABX', 'AB1', 'AB2', 'AEX', 'AX1', 'AEV', 'REM', 'REX', 'RE1', 'RE2', 'RPM', 'RPV', 'RPX', 'RXM', 'RXV', 'RXX', 'RX1', 'AE1', 'AE2', 'APM', 'APV', 'APX', 'AXM', 'AXV', 'AXX', 'AX2', 'FBM', 'FBV', 'FBX', 'FB1', 'FB2', 'FEM', 'FEV', 'FEX', 'FE1', 'FE2', 'FPM', 'FPV', 'FPX', 'FP1', 'FP2', 'FXM', 'FXV', 'FX1', 'FX2', 'RBM', 'RBX', 'RB1', 'RB2', 'RX2', 'YBM', 'YBV', 'YBX', 'YB1', 'YB2', 'YEM', 'YEV', 'YEX', 'YE1', 'YE2', 'YPM', 'YPV', 'YPX', 'YP1', 'YP2', 'YXM', 'YXV', 'YX1', 'YX2', 'ABM', 'AEM', 'FXX', 'YXX', 'AP1', 'AP2', 'RBV', 'REV');
+CREATE TYPE Berth_status_type AS ENUM ('ACCEPTED', 'AUTHORIZED', 'CANCELLED', 'COMPLETED', 'DENIED', 'INITIATED', 'REQUESTED', 'REJECTED', 'INVOICING', 'INVOICED');
 CREATE TYPE Berth_type AS ENUM ('Berth');
 CREATE TABLE Berth (
-  "activityCode" activityCode_type,
+  "activityCode" Berth_activityCode_type,
   "address" JSON,
   "agentLegalCode" TEXT,
   "agentName" TEXT,
@@ -17,7 +17,7 @@ CREATE TABLE Berth (
   "authorizedAt" TIMESTAMP,
   "berthCode" TEXT,
   "berthName" TEXT,
-  "berthingTypeCode" berthingTypeCode_type,
+  "berthingTypeCode" Berth_berthingTypeCode_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
@@ -45,7 +45,7 @@ CREATE TABLE Berth (
   "rtdBerth" TIMESTAMP,
   "seeAlso" JSON,
   "source" TEXT,
-  "status" status_type,
+  "status" Berth_status_type,
   "stopRank" NUMERIC,
   "terminal" TEXT,
   "type" Berth_type,
