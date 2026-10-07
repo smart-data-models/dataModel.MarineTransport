@@ -1,9 +1,9 @@
 /* (Beta) Export of data model PortCall of the subject dataModel.MarineTransport for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE authorizedBy_type AS ENUM ('PORT_AUTHORITY', 'ARMY_AUTHORITY', 'PORT_ARMY_AUTHORITIES');
-CREATE TYPE status_type AS ENUM ('ACCEPTED', 'AUTHORIZED', 'CANCELLED', 'COMPLETED', 'DENIED', 'ESTIMATED', 'INITIATED', 'REQUESTED', 'REJECTED', 'INVOICING', 'INVOICED', 'OPERATIONAL');
+CREATE TYPE PortCall_authorizedBy_type AS ENUM ('PORT_AUTHORITY', 'ARMY_AUTHORITY', 'PORT_ARMY_AUTHORITIES');
+CREATE TYPE PortCall_status_type AS ENUM ('ACCEPTED', 'AUTHORIZED', 'CANCELLED', 'COMPLETED', 'DENIED', 'ESTIMATED', 'INITIATED', 'REQUESTED', 'REJECTED', 'INVOICING', 'INVOICED', 'OPERATIONAL');
 CREATE TYPE PortCall_type AS ENUM ('PortCall');
-CREATE TYPE vesselTypeCategory_type AS ENUM ('CONTAINER', 'GENERAL CARGO NON SPECIALIZED', 'LIQUID BULK', 'DRY BULK', 'CRUISE');
-CREATE TYPE vesselTypeClass_type AS ENUM ('MULTI-DECKER', 'CHEMICAL TANKER', 'FULL CONTAINER', 'OIL TANKER', 'BULK CARRIER', 'LG TANKER');
+CREATE TYPE PortCall_vesselTypeCategory_type AS ENUM ('CONTAINER', 'GENERAL CARGO NON SPECIALIZED', 'LIQUID BULK', 'DRY BULK', 'CRUISE');
+CREATE TYPE PortCall_vesselTypeClass_type AS ENUM ('MULTI-DECKER', 'CHEMICAL TANKER', 'FULL CONTAINER', 'OIL TANKER', 'BULK CARRIER', 'LG TANKER');
 CREATE TABLE PortCall (
   "UNLOCODE" TEXT,
   "address" JSON,
@@ -17,7 +17,7 @@ CREATE TABLE PortCall (
   "ata" TIMESTAMP,
   "atd" TIMESTAMP,
   "authorizationDate" TIMESTAMP,
-  "authorizedBy" authorizedBy_type,
+  "authorizedBy" PortCall_authorizedBy_type,
   "callSign" TEXT,
   "crewArrival" NUMERIC,
   "crewDeparture" NUMERIC,
@@ -61,15 +61,15 @@ CREATE TABLE PortCall (
   "seeAlso" JSON,
   "shipName" TEXT,
   "source" TEXT,
-  "status" status_type,
+  "status" PortCall_status_type,
   "terminal" TEXT,
   "type" PortCall_type,
   "vessel" JSON,
   "vesselAgent" TEXT,
   "vesselName" TEXT,
   "vesselRef" JSON,
-  "vesselTypeCategory" vesselTypeCategory_type,
-  "vesselTypeClass" vesselTypeClass_type,
+  "vesselTypeCategory" PortCall_vesselTypeCategory_type,
+  "vesselTypeClass" PortCall_vesselTypeClass_type,
   "voyageCode" TEXT,
   "voyageNumber" TEXT,
   "wasteAgreementExists" BOOLEAN
